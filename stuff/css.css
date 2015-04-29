@@ -1,6 +1,11 @@
 .wht {color: #fff;}
 .subtle {color: #444;}
 .inline {display: inline;}
+.nofix .masthead,.nofix .mastfoot {position: relative;}
+@media (min-width: 768px){
+  .nofix .masthead,.nofix .mastfoot {position: fixed;
+  }
+}
 /*!
  * Bootstrap v3.3.4 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
