@@ -1,0 +1,21 @@
+<script>
+    function initialize() {
+      var mapOptions = {
+        zoom: 3,
+        center: new google.maps.LatLng(-25.363882,131.044922)
+      };
+
+      var map = new google.maps.Map(document.getElementById('map-canvas'),
+          mapOptions);
+    }
+
+    function loadScript() {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
+          '&signed_in=false&callback=initialize';
+      document.body.appendChild(script);
+    }
+
+  window.onload = loadScript;
+</script>
