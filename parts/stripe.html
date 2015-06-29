@@ -1,0 +1,51 @@
+<form action="https://buy.stoqe.com/" method="POST">
+    <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="pk_test_HwIHROuDOEekL9xANeIl7UDn"
+        data-image="https://www.stoqe.com/i/stoke-tw-th.png"
+        data-name="Roll Recovery R8"
+        data-description="SECURE PAYMENT"
+        data-amount="17900"
+        data-panel-label="Pay {{amount}}"
+        data-label="Buy Now"
+        data-zip-code="true"
+        data-allow-remember-me="true"
+    ></script>
+    <input name="amount" value="17900" type="hidden">
+    <input name="description" value="Roll Recovery R8" type="hidden">
+    <!--input name="metadata" value="{ product: 'Roll Recovery R8' }" type="hidden"-->
+</form>
+
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<button id="customButton" class="stripe-button-el">
+    <span style="display: block; min-height: 30px;">Pay Card</span>
+</button>
+
+<script>
+  var handler = StripeCheckout.configure({
+    key: 'pk_test_HwIHROuDOEekL9xANeIl7UDn',
+    token: function(token) {
+      // Use the token to create the charge with a server-side script.
+      // You can access the token ID with `token.id`
+    }
+  });
+
+  $('#customButton').on('click', function(e) {
+    // Open Checkout with further options
+    handler.open({
+      name: 'Roll Recovery R8',
+      description: 'SECURE PAYMENT',
+      amount: 17900,
+      panelLabel: 'Pay {{amount}}',
+      zipCode: 'true',
+      allowRememberMe: 'true'
+    });
+    e.preventDefault();
+  });
+
+  // Close Checkout on page navigation
+  $(window).on('popstate', function() {
+    handler.close();
+  });
+</script>
