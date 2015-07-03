@@ -1,4 +1,3 @@
-/****** PLACE YOUR CUSTOM STYLES HERE ******/
 
 .wht { color: #fff; }
 .gry { color: #ccc; }
@@ -7,6 +6,10 @@ h2 span.subtle-blk,
 .feature span.subtle-blk,
 .image-bg .feature i.subtle-blk  {
   color: #333;
+}
+
+.subtle-gry  {
+  color: #bbb;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,6 +65,12 @@ a[rel="external"]:before {
 
 a[rel="external"]:after {
   content: '\00a0\00a0\00a0\00a0';
+}
+
+form button.stripe-button-el span:after {
+  content: "\f023";
+  font-family: FontAwesome;
+  padding-left: 6px;
 }
 
 blockquote {
@@ -166,7 +175,21 @@ footer hr {
   padding: 0px
 }
 
-.strong {font-weight: bold }
+@media (max-width: 767px) {
+  br {
+    display: block;
+  }
+}
+
+span {font-weight: 300}
+.blue,
+.pay-safe i,
+.pay-safe a:link,
+.pay-safe a:visited,
+h4 .small.blue {
+  color: #008cdd
+}
+.strong, p.strong {font-weight: bold }
 .lowercase {text-transform: lowercase;}
 .taC {text-align: center;}
 .p0 {padding: 0; }
@@ -177,3 +200,4 @@ footer hr {
 .mb10 { margin-bottom: 10px }
 .mb20 { margin-bottom: 20px }
 .mb200 { margin-bottom: 200px }
+.width0 {width: 0px}
