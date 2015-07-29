@@ -963,6 +963,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/i\/goodwell-toothbrush.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 220503,
+		"inputAbbreviatedPath": "\/i\/goodwell-toothbrush.jpg",
+		"outputAbbreviatedPath": "\/i\/goodwell-toothbrush.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/i\/halo-back.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1366,6 +1377,17 @@
 		"initialSize": 21426,
 		"inputAbbreviatedPath": "\/i\/reddot-design-award.jpg",
 		"outputAbbreviatedPath": "\/i\/reddot-design-award.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/roll-recovery-hero-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 348339,
+		"inputAbbreviatedPath": "\/i\/roll-recovery-hero-sm.jpg",
+		"outputAbbreviatedPath": "\/i\/roll-recovery-hero-sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1832,21 +1854,21 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/index-old.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index-old.kit",
+		"outputAbbreviatedPath": "\/index-old.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/index.kit": {
-		"fileType": 2048,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.kit",
-		"outputAbbreviatedPath": "\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
