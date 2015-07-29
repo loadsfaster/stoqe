@@ -778,6 +778,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/i\/brands\/goodwell.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 122069,
+		"inputAbbreviatedPath": "\/i\/brands\/goodwell.jpg",
+		"outputAbbreviatedPath": "\/i\/brands\/goodwell.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/brands\/roll-recovery.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36618,
+		"inputAbbreviatedPath": "\/i\/brands\/roll-recovery.png",
+		"outputAbbreviatedPath": "\/i\/brands\/roll-recovery.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/i\/bryt.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1306,6 +1328,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/i\/rr\/roll-recovery-ad.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 527031,
+		"inputAbbreviatedPath": "\/i\/rr\/roll-recovery-ad.png",
+		"outputAbbreviatedPath": "\/i\/rr\/roll-recovery-ad.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/i\/rr\/roll-recovery-hero-new.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1625,6 +1658,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/i\/stock\/Side_Spring_Focus.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6.09883e+06,
+		"inputAbbreviatedPath": "\/i\/stock\/Side_Spring_Focus.jpg",
+		"outputAbbreviatedPath": "\/i\/stock\/Side_Spring_Focus.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/lightbox\/close.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1657,15 +1701,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/index.kit": {
 		"fileType": 2048,
