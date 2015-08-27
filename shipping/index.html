@@ -4,7 +4,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>STOQE Payment Success</title>
+        <title>STOQE Shipping</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="../css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -33,7 +33,7 @@
                 <img alt="Logo" class="logo" src="../img/logo-square-light.png">
               </a>
               <ul class="menu">
-                <li><a href="/">STOQE Payment Success</a></li>
+                <li><a href="/">STOQE Shipping</a></li>
               </ul>
 
               <!--div class="nav-functions">
@@ -66,8 +66,8 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12 col-md-offset-0 col-sm-12">
-                <h1 class="text-white">PAYMENT SUCCESS</h1>
-                <h2 class="super-lead text-white">Thanks for your payment. Free shipping is included in your purchase and Express Post is also available for faster delivery. Please choose your delivery method.</h2>
+                <h1 class="text-white">SHIPPING</h1>
+                <h2 class="super-lead text-white">You get free shipping with your purchase so expect your goods within 5 days. Express Post is available for faster deliveries of 1-2 days.</h2>
               </div>
             </div><!--end of row-->
           </div><!--end of container-->
@@ -80,18 +80,20 @@
             <div class="col-md-9 col-md-offset-3">
               <div class="text-block">
                 <h3 class="">
-                    <strong>Get faster delivery with Express Post for ONLY $9</strong>
+                    <strong>Get faster delivery with Express Post (1-2 Days)</strong>
                 </h3>
               </div>
             </div>
           </div>
 
-
-          
+          <div class="row">
+            
 <!-- #1 -->
 
-    <div class="row">
-      <div class="col-md-5 col-md-offset-0 col-xs-6 text-right">
+    <div class="col-md-3 col-md-offset-2 col-xs-4 text-right">
+      <h5 class="">Only <span class="">$</span> 9.00</h5>
+    </div>
+    <div class="col-md-2 col-md-offset-0 col-xs-6 text-right">
           <form action="https://stoqe.herokuapp.com/" method="POST">
           <script
               src="https://checkout.stripe.com/checkout.js"
@@ -106,7 +108,7 @@
               data-zip-code="true">
           </script>
           <input name="amount" value="900" type="hidden">
-          <input name="description" value="PAYMENT SUCCESS x 1" type="hidden">
+          <input name="description" value="SHIPPING x 1" type="hidden">
         </form>
       </div>
       <div class="col-md-1 col-md-offset-0 hidden-xs text-center">
@@ -147,19 +149,20 @@
         <hr>
       </div>
     </div>
-
+          </div>
 
           <div class="row">
-            <div class="col-md-8 col-md-offset-3">
-              <div class="text-block">
+            <div class="col-md-12 col-md-offset-0">
+              <div class="text-block text-center">
                 <br>
                 <h5>
-                    Or <a href="/delivery/">click here to use free Standard Delivery</a>.
+                    Or <a href="https://twitter.com/STOQE">click here to use free Standard Delivery</a> and finish your purchase.
                 </h5>
               </div>
             </div>
           </div><!--end of row-->
 
+        </div>
 
       </section>
 
