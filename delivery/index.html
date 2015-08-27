@@ -4,7 +4,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>STOQE Deliver</title>
+        <title>STOQE Delivery</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
         <link href="../css/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all"/>
@@ -20,11 +20,44 @@
 
         <link rel="dns-prefetch" href="https://www.stoqe.com/">
         <link rel="dns-prefetch" href="https://www.stoqe.com/roll-recovery/">
-        <link rel="dns-prefetch" href="https://www.stoqe.com/goodwell-toothbrush/">
-        <link rel="dns-prefetch" href="https://www.stoqe.com/local/">
+        <link rel="dns-prefetch" href="https://www.stoqe.com/goodwell/">
+        <link rel="dns-prefetch" href="https://www.stoqe.com/delivery/">
         <link rel="dns-prefetch" href="https://twitter.com/STOQE">
     </head>
-    <body class="delivery">
+    <body class="delivery">    <div class="nav-container">
+      <nav class="nav-1">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <a href="/" class="home-link">
+                <img alt="Logo" class="logo" src="../img/logo-square-light.png">
+              </a>
+              <ul class="menu">
+                <li><a href="/">STOQE Delivery</a></li>
+              </ul>
+
+              <!--div class="nav-functions">
+                <div class="search-bar">
+                  <a href="#buy-now">
+                      <button id="customButton" class="stripe-button-el">
+                          <span style="display: block; min-height: 30px;">Buy Now</span>
+                      </button>
+                  </a>
+                </div>
+              </div-->
+            </div>
+          </div>
+        </div>
+
+        <!--div class="mobile-toggle">
+          <a href="#buy-now">
+              <button id="customButton" class="stripe-button-el">
+                  <span style="display: block; min-height: 30px;">Buy Now</span>
+              </button>
+          </a>
+        </div-->
+      </nav>
+    </div>
 
 		<div class="main-container">
 
@@ -34,7 +67,7 @@
             <div class="row">
               <div class="col-md-12 col-md-offset-0 col-sm-12">
                 <h1 class="text-white">DELIVERY</h1>
-                <h2 class="super-lead text-white">Thanks for making payment. All that's left now are your delivery details (and product options where applicable).</h2>
+                <h2 class="super-lead text-white">Payment's done and your shipping decided. Now, where should we send it?</h2>
               </div>
             </div><!--end of row-->
           </div><!--end of container-->
@@ -42,11 +75,12 @@
 
       <section>
         <div class="container">
+
           <div class="row">
           <div class="col-md-8 col-md-offset-3">
             <div class="text-block">
               <h4>
-                  * Fill in all boxes<br>
+                  * Fill in all the boxes<br>
                   * Use the same email address you used for payment<br>
                   * Click the button at the bottom to finish<br>
                   * Follow us on Twitter for updates and communication<br>
@@ -57,7 +91,6 @@
 
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
-                    <hr>
 
                     <form class="" action="//formspree.io/stoqe@maily.pro" method="POST">
 
@@ -132,7 +165,7 @@
 
               <div class="row">
                   <div class="col-sm-12 col-md-6 col-md-offset-3">
-                      <textarea class="validate-required" name="deliveryInstructions" rows="4" placeholder="If you have any special delivery instructions, type them here."></textarea>
+                      <textarea class="validate-required" name="deliveryInstructions" rows="4" placeholder="If you chose Standard Delivery and have any special delivery instructions, type them here. (Express Post doesn't offer special delivery instructions.)"></textarea>
                       <hr>
                   </div>
               </div>
@@ -200,12 +233,12 @@
         </div><!--end of container-->
       </section>
 
-
+      
 <footer class="footer-2">
   <div class="container">
     <div class="row">
       <div class="col-sm-6">
-        <a href="index.html">
+        <a href="/">
           <img alt="logo" class="logo" src="../img/logo-square-dark.png">
         </a>
         <span class="tagline">STOQE<br>Smarter. Faster. Local.</span>
@@ -228,13 +261,13 @@
     </div>
   </div>
 </footer>
-
+      
     </div>
 
 
     <script src="../js/jquery.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
         <script src="../js/skrollr.min.js"></script>
         <script src="../js/flexslider.min.js"></script>
@@ -260,5 +293,6 @@
           s.parentNode.insertBefore(t, s);
         })();
       </script>
+
     </body>
 </html>
