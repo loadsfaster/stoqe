@@ -43,3 +43,5 @@ config.codekit
 _*/*
 css/.sass_cache/*
 *.codekit
+
+*.codekit
