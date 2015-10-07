@@ -1314,6 +1314,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/i\/people\/angelique-mcewen.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 291727,
+		"inputAbbreviatedPath": "\/i\/people\/angelique-mcewen.jpg",
+		"outputAbbreviatedPath": "\/i\/people\/angelique-mcewen.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/people\/angelique-mcwen-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67012,
+		"inputAbbreviatedPath": "\/i\/people\/angelique-mcwen-1.jpg",
+		"outputAbbreviatedPath": "\/i\/people\/angelique-mcwen-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/people\/angelique-mcwen-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117365,
+		"inputAbbreviatedPath": "\/i\/people\/angelique-mcwen-3.jpg",
+		"outputAbbreviatedPath": "\/i\/people\/angelique-mcwen-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/i\/people\/blurbsmith.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1332,6 +1365,17 @@
 		"initialSize": 32796,
 		"inputAbbreviatedPath": "\/i\/people\/brad-beer.jpg",
 		"outputAbbreviatedPath": "\/i\/people\/brad-beer.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/i\/people\/brad-beven.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47728,
+		"inputAbbreviatedPath": "\/i\/people\/brad-beven.jpg",
+		"outputAbbreviatedPath": "\/i\/people\/brad-beven.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2873,15 +2917,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/roll-recovery\/index.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/roll-recovery\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/shipping\/index.html": {
 		"fileType": 8192,
