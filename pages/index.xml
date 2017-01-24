@@ -9,55 +9,57 @@
     <atom:link href="https://stoqe.com/pages/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Copywriting</title>
+      <link>https://stoqe.com/copywriting</link>
+      <pubDate>Tue, 18 Oct 2016 00:00:00 +1100</pubDate>
+      
+      <guid>https://stoqe.com/copywriting</guid>
+      <description>&lt;p&gt;&lt;strong&gt;We make words work.&lt;/strong&gt;
+&lt;br&gt;&lt;br&gt;
+Ad writing.&lt;br&gt;Copy writing.&lt;br&gt;Creative writing.&lt;br&gt;Rewriting.&lt;br&gt;Proofing.&lt;br&gt;Editing.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Consultations</title>
+      <link>https://stoqe.com/consultations</link>
+      <pubDate>Tue, 18 Oct 2016 00:00:00 +1100</pubDate>
+      
+      <guid>https://stoqe.com/consultations</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Our knowledge is your power&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;We consult quickly, concisely, and confidentially at $200 per hour (AUD).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Website Optimisation</title>
+      <link>https://stoqe.com/website-optimisation</link>
+      <pubDate>Tue, 18 Oct 2016 00:00:00 +1100</pubDate>
+      
+      <guid>https://stoqe.com/website-optimisation</guid>
+      <description>&lt;p&gt;&lt;strong&gt;We optimise because we care&lt;/strong&gt;.
+&lt;br&gt;&lt;br&gt;
+A: Accessibility&lt;br&gt;
+UX: User Experience&lt;br&gt;
+CO: Content Optimisation&lt;br&gt;
+SO: Strategy Optimisation&lt;br&gt;
+SEO: Search Engine Optimisation&lt;br&gt;
+WCO: Website Cost Optimisation&lt;br&gt;
+WMO: Website Management Optimisation&lt;br&gt;
+WPO: Web Performance Optimisation&lt;br&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Websites</title>
       <link>https://stoqe.com/websites</link>
       <pubDate>Tue, 18 Oct 2016 00:00:00 +1100</pubDate>
       
       <guid>https://stoqe.com/websites</guid>
-      <description>&lt;p&gt;Fast.&lt;br&gt;Smart.&lt;br&gt;Secure.&lt;br&gt;Performant.&lt;br&gt;Mobile-friendly.
+      <description>&lt;p&gt;&lt;strong&gt;We deliver world-class websites&lt;/strong&gt; (for much less money).
 &lt;br&gt;&lt;br&gt;
-&lt;strong&gt;We deliver world-class websites for less [money].&lt;/strong&gt;&lt;br&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Writing</title>
-      <link>https://stoqe.com/writing</link>
-      <pubDate>Tue, 18 Oct 2016 00:00:00 +1100</pubDate>
-      
-      <guid>https://stoqe.com/writing</guid>
-      <description>&lt;p&gt;Ad writing.&lt;br&gt;Copy writing.&lt;br&gt;Creative writing.&lt;br&gt;Rewriting.&lt;br&gt;Proofing.&lt;br&gt;Editing.
-&lt;br&gt;&lt;br&gt;
-&lt;strong&gt;We make words work.&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Advertising</title>
-      <link>https://stoqe.com/advertising</link>
-      <pubDate>Tue, 18 Oct 2016 00:00:00 +1100</pubDate>
-      
-      <guid>https://stoqe.com/advertising</guid>
-      <description>&lt;p&gt;Digital.&lt;br&gt;
-Traditional.&lt;br&gt;
-&lt;br&gt;&lt;br&gt;
-&lt;strong&gt;We advertise.&lt;/strong&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Optimisation</title>
-      <link>https://stoqe.com/optimisation</link>
-      <pubDate>Tue, 18 Oct 2016 00:00:00 +1100</pubDate>
-      
-      <guid>https://stoqe.com/optimisation</guid>
-      <description>&lt;p&gt;SO: Strategy Optimisation.&lt;br&gt;
-CO: Content Optimisation.&lt;br&gt;
-SEO: Search Engine Optimisation.&lt;br&gt;
-WPO: Web Performance Optimisation.&lt;br&gt;
-WTO: [Whatever The] Optimisation.&lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;We optimise.&lt;/strong&gt;&lt;/p&gt;
+Fast.&lt;br&gt;Smart.&lt;br&gt;Secure.&lt;br&gt;Performant.&lt;br&gt;Mobile-friendly.&lt;/p&gt;
 </description>
     </item>
     
@@ -69,7 +71,7 @@ WTO: [Whatever The] Optimisation.&lt;br&gt;&lt;/p&gt;
       <guid>https://stoqe.com/contact</guid>
       <description>&lt;p&gt;Twitter — &lt;a href=&#34;https://twitter.com/STOQE&#34; target=&#34;_blank&#34;&gt;@STOQE&lt;/a&gt;&lt;br&gt;
 Phone — &lt;a href=&#34;tel:+61280060049&#34;&gt;02 800 600 49&lt;/a&gt;&lt;br&gt;
-Email — &lt;a href=&#34;mailto:help@stoqe.com&#34;&gt;lets@stoqe.com&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+Email — &lt;a href=&#34;mailto:lets@stoqe.com&#34;&gt;lets@stoqe.com&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
 </description>
     </item>
     
