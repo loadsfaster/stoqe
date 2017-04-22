@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://www.amta.org.au/ -->
+<html><script id="twitter-wjs" src="index_files/widgets.js"></script><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Basic Page Needs -->
+
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>AMTA - Latest News</title>
+
+
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="index_files/bootstrap.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="index_files/style.css">
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="index_files/color2.css" id="colors">
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="index_files/animate.css">
+
+
+
+    <script src="index_files/jquery-2.2.0.js"></script>
+<script src="index_files/jquery-ui-1.11.4.js"></script>
+
+
+    <script src="index_files/bootstrap.js"></script>
+
+    <link href="index_files/bootstrap(1).css" rel="stylesheet">
+
+
+
+    <!-- Google Fonts -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Favicon and touch icons Nige -->
+    <!-- <link href="icon/MA_logo_144.ico" rel="apple-touch-icon-precomposed" sizes="144x144">-->
+    <!-- <link href="icon/MA_logo_114.ico" rel="apple-touch-icon-precomposed" sizes="114x114">-->
+    <!-- <link href="icon/MA_logo_72.ico" rel="apple-touch-icon-precomposed" sizes="72x72">-->
+    <!-- <link href="icon/MA_logo.ico" rel="apple-touch-icon-precomposed">
+    <link rel="shortcut icon" href="icon/favicon.ico"> -->
+    <!-- Favicon and touch icons  -->
+    <link href="http://www.amta.org.au/icon/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144">
+    <link href="http://www.amta.org.au/icon/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114">
+    <link href="http://www.amta.org.au/icon/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72">
+    <link href="http://www.amta.org.au/icon/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
+    <link rel="shortcut icon" href="http://www.amta.org.au/Content/AMTA/imagesAMTA/icon/favicon.png">
+    <!--[if lt IE 9]>
+        <script src="/Content/amta/javascript/html5shiv.js"></script>
+        <script src="/Content/amta/javascript/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        //jQuery.noConflict();
+
+        function rta(p) {
+            return window.location.origin + p;
+        }
+
+        jQuery(function () {
+            jQuery("article", "div.featured-posts,div.editors-posts").each(function () {
+                var el = jQuery(this);
+                var el_anchor = el.find("h3 a");
+                var el_excerpt = el.find("p.excerpt-entry");
+
+                if (el_anchor.length) {
+                    var el_social = jQuery('<div class="social-share-links" data-easyshare data-easyshare-title="' + el_anchor.text() + '" data-easyshare-url="' + rta(el_anchor.attr('href')) + '">' +
+                                            '<!-- Facebook -->' +
+                                            '<button data-easyshare-button="facebook">' +
+                                            '    <span class="fa fa-facebook"></span>' +
+                                            '    <span></span>' +
+                                            '</button>' +
+                                            '<!--<span data-easyshare-button-count="facebook">0</span>-->' +
+                                            '<!-- Twitter -->' +
+                                            '<button data-easyshare-button="twitter" data-easyshare-tweet-text="">' +
+                                            '    <span class="fa fa-twitter"></span>' +
+                                            '    <!--<span></span>-->' +
+                                            '</button>' +
+                                            '<!--<span data-easyshare-button-count="twitter">0</span>-->' +
+                                            '<!-- Google+ -->' +
+                                            '<button data-easyshare-button="google">' +
+                                            '    <span class="fa fa-google"></span>' +
+                                            '    <!--<span></span>-->' +
+                                            '</button>' +
+                                            '<!--<span data-easyshare-button-count="google">0</span>-->' +
+                                            '<!-- Email -->' +
+                                            '<button data-easyshare-button="email">' +
+                                            '    <span class="fa fa-envelope-o"></span>' +
+                                            '    <!--<span></span>-->' +
+                                            '</button>' +
+                                            '<!--<span data-easyshare-button-count="google">0</span>-->' +
+                                            '<div data-easyshare-loader>Loading...</div>' +
+                                        '</div>');
+
+                    el_excerpt.after(el_social);
+                }
+            });
+
+            jQuery("article p.excerpt-entry", "div.featured-posts,div.medium-posts,div.small-posts,div.editors-posts").each(function () {
+                var el = jQuery(this);
+                var full_content = el.text();
+                if (full_content.length < 100)
+                    return;
+
+                el.data("fullContent", full_content);
+                el.text(reduce_content(full_content));
+                el.data("isContentReduced", true);
+
+                var url = el.parent("article").attr("data-article-url");
+
+                var el_more = jQuery("<a href='" + url + "' class='read-more'>Read More</a>");
+                el.after(el_more);
+
+                //This is the code to do the expanding "Read More" functionality. Keep in case it's required again.
+                //var el_more = jQuery("<span class='read-more'>Read More</span>");
+                //el.after(el_more);
+                //el_more.on("click", { content_element: el }, function (e) {
+                //    var el_more = jQuery(this);
+                //    var el_content = e.data.content_element;
+                //    if (el_content.data("isContentReduced")) {
+                //        el_more.text("Read Less");
+                //        el_content.text(el_content.data("fullContent"));
+                //        el.data("isContentReduced", false);
+                //    }
+                //    else {
+                //        el_more.text("Read More");
+                //        el_content.text(reduce_content(el_content.data("fullContent")));
+                //        el.data("isContentReduced", true);
+                //    }
+                //});
+            });
+
+        });
+
+        function reduce_content(full_content) {
+            return full_content.substring(0, 140) + "...";
+        }
+
+    </script>
+
+    <link href="index_files/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index_files/jquery.kyco.easyshare.css">
+<script type="text/javascript" charset="utf-8" async="" src="index_files/timeline.ac0eda816760ec16e32960c9e57cff7e.js"></script></head>
+<body>
+    <header id="header-1" class="header-1">
+        <!-- Navbar -->
+
+
+    </header>
+    <header id="header" class="header">
+        <div class="top-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div id="logo" class="logo">
+                            <a href="http://www.amta.org.au/" rel="home" title="home">
+                                <img src="index_files/MA_logo.png" alt="AMTA">
+                            </a>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/mobilesAus/?fref=ts"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/MobilesAus?ref_src=twsrc%5Etfw"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/amta-australian-mobile-telecommunications-association-?trk=mini-profile"><i class="fa fa-linkedin"></i></a>
+
+
+                          <p>  </p><div style="vertical-align:bottom; display:inline; " class="amta-title">The official website of the <br>Australian Mobile Telecommunications Association <img style="vertical-align:bottom; margin-left:15px" src="index_files/AMTA_Logo.svg" margin="10px" width="30px" height="30px" alt="AMTA"></div> <p></p>
+                        </div>
+                      </div>
+                      <!-- /.col-md-6 -->
+                      <div class="col-md-6">
+                      	<a style="float:right; text-align: right; display:inline; color: ##eaeaea;" class="amta-contact">Call: + 61 (02)  6239 6555 </a> <br> <a href="mailto:amta.comms@amta.org.au">amta.comms@amta.org.au</a>
+                      </div>
+                          <div class="btn-menu"></div>
+                          <!-- //mobile menu button -->
+                      </div>
+
+
+
+                    <!-- /.col-md-6 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+
+        <div class="header-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <nav id="mainnav" class="mainnav">
+                            <ul class="menu">
+                                <li class="has-children">
+                                    <a class="active" href="http://www.amta.org.au/#">Topics</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="http://www.amta.org.au/amta/news?Categories=Industry">Industry</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.amta.org.au/amta/news?Categories=policy">policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.amta.org.au/amta/news?Categories=Health%20%26%20Safety">Health &amp; Safety</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.amta.org.au/amta/news?Categories=Consumer">Consumer</a>
+                                        </li>
+
+
+                                    </ul>
+                                    <!-- /.submenu -->
+                                </li>
+
+                                <!-- mega Menu -->
+
+                                <li class="gn-mega-menu">
+                                    <a href="http://www.amta.org.au/#">AMTA Programs</a>
+                                    <div class="sub-menu" style="width: 1366px; margin-left: -189.016px;">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="mega-item-wrap">
+                                                        <div class="mega-item">
+                                                            <a href="http://www.amta.org.au/pages/About.AMTA">
+                                                                <img src="index_files/AMTA_Logo_crop.png" alt="image">
+                                                            </a>
+                                                            <h5><a href="http://www.amta.org.au/pages/About.AMTA">About AMTA</a></h5>
+                                                        </div>
+                                                        <div class="mega-item">
+                                                            <a href="http://www.mcf.amta.org.au/" target="_blank">
+                                                                <img src="index_files/MCF_logo_crop.png" alt="image">
+                                                            </a>
+                                                            <h5><a href="http://www.mcf.amta.org.au/" target="_blank">MCF Mobile Carriers Forum</a></h5>
+                                                            <!--<p> <style>.community-text</style> The Mobile Carriers Forum (MCF) is an industry group representing the three...</p>-->
+                                                        </div>
+                                                        <div class="mega-item">
+                                                            <a href="http://www.amta.org.au/pages/Policy">
+                                                                <img src="index_files/feature-policy.jpg" alt="policy" width="100%">
+                                                            </a>
+                                                            <h5><a href="http://www.amta.org.au/pages/Policy">Policy</a></h5>
+                                                            <!--<p>Policy issues are managed through AMTAâ€™s Policy and Strategy Steering Committee (PSSC).</p>-->
+                                                        </div>
+                                                        <div class="mega-item">
+                                                            <a href="http://www.mobilemuster.com.au/">
+                                                                <img src="index_files/MMLogo_AMTAwebsite.jpg" alt="mobilemuster" width="100%">
+                                                            </a>
+                                                            <h5><a href="http://www.mobilemuster.com.au/">Recycling</a></h5>
+                                                            <!--<p>MobileMuster is the Australian mobile phone industry's official recycling program.</p>-->
+                                                        </div>
+                                                        <div class="mega-item">
+                                                            <a href="http://www.amta.org.au/pages/Health.Safety">
+                                                                <img src="index_files/feature-health-doctor.jpg" alt="health and safety" width="100%">
+                                                            </a>
+                                                            <h5><a href="http://www.amta.org.au/pages/Health.Safety">Health &amp; Safety</a></h5>
+                                                            <!--<p>The safe &amp; responsible use of mobile phones.</p>-->
+                                                        </div>
+                                                        <div class="mega-item">
+                                                            <a href="http://www.lost.amta.org.au/" target="_blank">
+                                                                <img src="index_files/feature-lost.jpg" alt="image">
+                                                            </a>
+                                                            <h5><a href="http://www.lost.amta.org.au/" target="_blank">Lost &amp; Stolen</a></h5>
+                                                            <!--<p>You can't afford to have your mobile lost or stolen.</p>-->
+                                                        </div>
+                                                        <div class="mega-item">
+                                                            <a href="http://www.mobiletips.org.au/" target="_blank">
+                                                                <img src="index_files/feature-mobiletips.jpg" alt="image">
+                                                            </a>
+                                                            <h5><a href="http://www.mobiletips.org.au/" target="_blank">Mobile Tips</a></h5>
+                                                            <!--<p>A site that provides mobile users with practical tips and answers to everyday questions about mobile telecommunications.</p>-->
+                                                        </div>
+                                                        <div class="mega-item">
+                                                            <a href="http://www.keepyoureyesontheroad.org.au/" target="_blank">
+                                                                <img src="index_files/feature-health.jpg" alt="image">
+                                                            </a>
+                                                            <h5><a href="http://www.keepyoureyesontheroad.org.au/" target="_blank">Driving Safety</a></h5>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.submenu -->
+                                </div></div></li>
+                                <li class="has-children">
+                                    <a href="http://www.amta.org.au/#">Membership</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="http://www.amta.org.au/join">Join AMTA</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.amta.org.au/members">Members Area</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.amta.org.au/pages/Contact.Us">Contact AMTA</a>
+                                        </li>
+                                        <li>
+                                            <a href="http://www.amta.org.au/pages/amta/AMTA.Board">AMTA Board</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.submenu -->
+                                </li>
+
+                            </ul>
+                            <!-- /.menu -->
+                        </nav>
+                        <!-- /nav -->
+                    </div>
+                    <div class="col-md-3">
+                        <div class="search-wrap">
+                            <div class="search-icon"></div>
+                            <!-- //mobile search button -->
+<form action="http://www.amta.org.au/amta/sitesearch" class="search-form" id="searchform" method="get" role="search">                                <input class="search-field" type="text" name="Keyword" size="24" placeholder="Search AMTA site" align="bottom">
+                                <input type="submit" value="" id="searchsubmit" class="search-submit">
+                                <a class="search-close" href="http://www.amta.org.au/#"><i class="fa fa-times-circle"></i></a>
+</form>                        </div>
+                        <!-- /.search-wrap -->
+                    </div>
+                    <!-- /.col-md-9 -->
+                    <!-- /.col-md-3 -->
+                </div>
+                <div class="col-md-12" data-pg-name="AMTA Main Slider">
+                    <div class="gnSlider gn-animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0" data-animation-offset="75%">
+                        <div class="flex-container">
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0.945361; display: block; z-index: 2;">
+                                        <div class="item-wrap">
+                                            <img src="index_files/banner-homeAMTA250-A.jpg" alt="image" width="100%" class="img-responsive" draggable="false">
+                                            <p class="item" data-bottomtext="0" style="bottom: 0px; left: -100%; opacity: 0;">The voice for the mobile telecommunications industry in Australia</p>
+                                        </div>
+                                    </li>
+                                    <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+                                        <div class="item-wrap">
+                                        <a href="http://www.amta.org.au/#">
+                                            <img src="index_files/banner-homeAMTA250-B.jpg" alt="image" width="100%" class="img-responsive" draggable="false"> </a>
+                                            <p class="item" data-bottomtext="0" style="left: -100%; opacity: 0; bottom: 0px;">Mobile Is the dominant telecommunications technology driving productivity benefits of $11.8 billion over the period to 2025</p>
+                                        </div>
+                                    </li>
+                                    <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0.0546391; display: block; z-index: 1;" class="">
+                                        <div class="item-wrap">
+                                            <img src="index_files/banner-homeAMTA250-C.jpg" alt="image" width="100%" class="img-responsive" draggable="false">
+                                            <p class="item" data-bottomtext="0" style="left: -100%; opacity: 0; bottom: 0px; transition: left 1000ms ease, opacity 1000ms ease;">Promoting an economically successful and sustainable industry that Is socially responsible and in step with community needs And expectations</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.gnSlider -->
+                </div>
+
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.top-wrap -->
+        <!-- /.header-wrap -->
+    </header>
+
+
+
+
+<section id="main">
+    <div class="container">
+        <div class="row" data-pg-name="Endless List">
+
+
+            <div class="col-md-9">
+
+                <div class="featured-posts gn-animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0" data-animation-offset="75%">
+                    <div class="content-left">
+
+
+
+
+
+
+
+<article class="post" data-article-url="/amta/news/52376.future-of-all-things-and-the-creation-of-time">
+        <div class="thumb">
+            <img src="index_files/dsc-5894-jpg" class="img-responsive img-rounded" alt="DSC_5894.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=featured-posts">featured-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=Industry%2CPolicy">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52376.future-of-all-things-and-the-creation-of-time">Future of All Things and the Creation of Time</a>
+    </h3>
+    <p class="excerpt-entry">
+        The ongoing evolution of mobile telecommunications heralds a new era in which 5G mobile technology will significantly augment and e...</p><a href="http://www.amta.org.au/amta/news/52376.future-of-all-things-and-the-creation-of-time" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Future of All Things and the Creation of Time" data-easyshare-url="http://www.amta.org.au/amta/news/52376.future-of-all-things-and-the-creation-of-time"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52371.realizing-the-5g-vision-at-the-network-edge">
+        <div class="thumb">
+            <img src="index_files/5g-vision-768x867-png" class="img-responsive img-rounded" alt="5g-vision-768x867.png">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=featured-posts">featured-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=Industry%2CPolicy">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52371.realizing-the-5g-vision-at-the-network-edge">Realizing the 5G Vision at the Network Edge</a>
+    </h3>
+    <p class="excerpt-entry">
+        5G is much more than a faster radio access technology. It represents a fundamental change in communication network architectures th...</p><a href="http://www.amta.org.au/amta/news/52371.realizing-the-5g-vision-at-the-network-edge" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Realizing the 5G Vision at the Network Edge" data-easyshare-url="http://www.amta.org.au/amta/news/52371.realizing-the-5g-vision-at-the-network-edge"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52359.annual-industry-survey-report-2017">
+        <div class="thumb">
+            <img src="index_files/annual-survey-cover-727x1024-jpeg" class="img-responsive img-rounded" alt="annual-survey-cover-727x1024.jpeg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=featured-posts">featured-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry%2CPolicy">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52359.annual-industry-survey-report-2017">Annual Industry Survey Report 2017</a>
+    </h3>
+    <p class="excerpt-entry">
+        There are great expectations for and of the mobile industry according to the 2017 Annual Industry Survey Report published by Mobile...</p><a href="http://www.amta.org.au/amta/news/52359.annual-industry-survey-report-2017" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Annual Industry Survey Report 2017" data-easyshare-url="http://www.amta.org.au/amta/news/52359.annual-industry-survey-report-2017"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52355.cyclone-debbie-being-mobile-prepared-for-emergencies">
+        <div class="thumb">
+            <img src="index_files/cyclone-abc-pic-jpeg" class="img-responsive img-rounded" alt="Cyclone ABC pic.jpeg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=featured-posts">featured-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CHealth%20%26%20Safety">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52355.cyclone-debbie-being-mobile-prepared-for-emergencies">Cyclone Debbie - Being Mobile Prepared for Emergencies</a>
+    </h3>
+    <p class="excerpt-entry">
+        Tips and advice that can help you to be mobile-prepared during an emergency situation
+    </p><div class="social-share-links" data-easyshare="" data-easyshare-title="Cyclone Debbie - Being Mobile Prepared for Emergencies" data-easyshare-url="http://www.amta.org.au/amta/news/52355.cyclone-debbie-being-mobile-prepared-for-emergencies"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52351.drones-phones-and-automobiles">
+        <div class="thumb">
+            <img src="index_files/drones-gsma-png" class="img-responsive img-rounded" alt="drones GSMA.png">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=featured-posts">featured-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry%2CPolicy">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52351.drones-phones-and-automobiles">Drones, Phones and Automobiles</a>
+    </h3>
+    <p class="excerpt-entry">
+        How to reap the benefits of innovative technology AND foster trust
+    </p><div class="social-share-links" data-easyshare="" data-easyshare-title="Drones, Phones and Automobiles" data-easyshare-url="http://www.amta.org.au/amta/news/52351.drones-phones-and-automobiles"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52295.australia-leads-on-global-mobile-connectivity">
+        <div class="thumb">
+            <img src="index_files/index-png" class="img-responsive img-rounded" alt="index.PNG">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=featured-posts">featured-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=Industry">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52295.australia-leads-on-global-mobile-connectivity">Australia Leads on Global Mobile Connectivity</a>
+    </h3>
+    <p class="excerpt-entry">
+        The inaugural GSMA Mobile Connectivity Index shows that Australia performs exceptionally well and consistently as the top ranked na...</p><a href="http://www.amta.org.au/amta/news/52295.australia-leads-on-global-mobile-connectivity" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Australia Leads on Global Mobile Connectivity" data-easyshare-url="http://www.amta.org.au/amta/news/52295.australia-leads-on-global-mobile-connectivity"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            Renae White
+        </span>
+    </div>
+
+</article>
+
+
+
+
+
+
+
+                    </div>
+                    <!-- /.content-left -->
+                    <div class="content-right">
+
+
+
+
+
+
+
+<article class="post" data-article-url="/amta/news/52374.new-prepaid-regulations-2017">
+        <div class="thumb">
+            <img src="index_files/d-rendering-pink-piggy-bank-smartphone-isolated-82164958-jpg_52373" class="img-responsive img-rounded" alt="d-rendering-pink-piggy-bank-smartphone-isolated-82164958.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=medium-posts">medium-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry%2CPolicy">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52374.new-prepaid-regulations-2017">New Prepaid Regulations 2017</a>
+    </h3>
+    <p class="excerpt-entry">
+        The Australian Communications and Media Authority (ACMA) has made the Telecommunciations (Service Provider – Identity Checks for Pr...</p><a href="http://www.amta.org.au/amta/news/52374.new-prepaid-regulations-2017" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="New Prepaid Regulations 2017" data-easyshare-url="http://www.amta.org.au/amta/news/52374.new-prepaid-regulations-2017"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            Lisa Brown
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52367.connected-cars-from-here-to-autonomy">
+        <div class="thumb">
+            <img src="index_files/connected-car-survey-feb-2017-725x1024-png" class="img-responsive img-rounded" alt="Connected-car-survey-Feb-2017-725x1024.png">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=medium-posts">medium-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=Industry%2CPolicy%2CHealth%20%26%20Safety">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52367.connected-cars-from-here-to-autonomy">Connected Cars: from Here to Autonomy</a>
+    </h3>
+    <p class="excerpt-entry">
+        GSMA's global survey, conducted in November and December 2016 with nearly 1,000 respondents, uncovered significant understanding of...</p><a href="http://www.amta.org.au/amta/news/52367.connected-cars-from-here-to-autonomy" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Connected Cars: from Here to Autonomy" data-easyshare-url="http://www.amta.org.au/amta/news/52367.connected-cars-from-here-to-autonomy"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52365.the-top-five-things-people-regret-leaving-behind-in-an-emergency">
+        <div class="thumb">
+            <img src="index_files/000-smart-phone-pic-jpeg" class="img-responsive img-rounded" alt="000 Smart phone pic.jpeg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=medium-posts">medium-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CHealth%20%26%20Safety">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52365.the-top-five-things-people-regret-leaving-behind-in-an-emergency">The top five things people regret leaving behind in an emergency</a>
+    </h3>
+    <p class="excerpt-entry">
+        Red Cross research has found that 80 per cent of Australians believe it’s important to prepare for a disaster but in fact only 20 p...</p><a href="http://www.amta.org.au/amta/news/52365.the-top-five-things-people-regret-leaving-behind-in-an-emergency" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="The top five things people regret leaving behind in an emergency" data-easyshare-url="http://www.amta.org.au/amta/news/52365.the-top-five-things-people-regret-leaving-behind-in-an-emergency"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52363.revealed-top-local-council-recyclers">
+        <div class="thumb">
+            <img src="index_files/recycling-stations-in-surry-hills-library-7-copy-jpg" class="img-responsive img-rounded" alt="Recycling Stations in Surry Hills Library (7) copy.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=medium-posts">medium-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52363.revealed-top-local-council-recyclers">Revealed: Top Local Council Recyclers</a>
+    </h3>
+    <p class="excerpt-entry">
+        From the northern coast of East Arnhem land to Burnie in Tasmania, over thirty local councils from around Australia are in the runn...</p><a href="http://www.amta.org.au/amta/news/52363.revealed-top-local-council-recyclers" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Revealed: Top Local Council Recyclers" data-easyshare-url="http://www.amta.org.au/amta/news/52363.revealed-top-local-council-recyclers"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52361.mobile-phone-battery-and-charger-safety">
+        <div class="thumb">
+            <img src="index_files/istock-504821714-jpg" class="img-responsive img-rounded" alt="iStock-504821714.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=medium-posts">medium-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CHealth%20%26%20Safety">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52361.mobile-phone-battery-and-charger-safety">Mobile Phone Battery and Charger Safety</a>
+    </h3>
+    <p class="excerpt-entry">
+        Battery and charger safety is a key issue for the mobile phone industry and also needs to be taken seriously by all mobile phone us...</p><a href="http://www.amta.org.au/amta/news/52361.mobile-phone-battery-and-charger-safety" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Mobile Phone Battery and Charger Safety" data-easyshare-url="http://www.amta.org.au/amta/news/52361.mobile-phone-battery-and-charger-safety"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52357.the-future-of-mobile-video">
+        <div class="thumb">
+            <img src="index_files/cartesian-future-of-mobile-video-768x545-jpeg" class="img-responsive img-rounded" alt="Cartesian-Future-of-mobile-video-768x545.jpeg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=medium-posts">medium-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52357.the-future-of-mobile-video">The Future of Mobile Video</a>
+    </h3>
+    <p class="excerpt-entry">
+        Cartesian’s mobile video report, in collaboration with Mobile World Live, provides an in-depth analysis into current and future tre...</p><a href="http://www.amta.org.au/amta/news/52357.the-future-of-mobile-video" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="The Future of Mobile Video" data-easyshare-url="http://www.amta.org.au/amta/news/52357.the-future-of-mobile-video"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52353.open-iot-ecosystems-for-australian-organisations">
+        <div class="thumb">
+            <img src="index_files/istock-612622938-jpg" class="img-responsive img-rounded" alt="iStock-612622938.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=medium-posts">medium-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=Industry">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52353.open-iot-ecosystems-for-australian-organisations">Open IoT Ecosystems for Australian Organisations?</a>
+    </h3>
+    <p class="excerpt-entry">
+        IoT decision makers are putting a high priority on open standards for data and connectivity and on open source software standards
+ ...</p><a href="http://www.amta.org.au/amta/news/52353.open-iot-ecosystems-for-australian-organisations" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Open IoT Ecosystems for Australian Organisations?" data-easyshare-url="http://www.amta.org.au/amta/news/52353.open-iot-ecosystems-for-australian-organisations"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52347.recycling-old-phones-creates-60-000-meals">
+        <div class="thumb">
+            <img src="index_files/stuart-henrietta-final-jpg" class="img-responsive img-rounded" alt="Stuart+Henrietta-final.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=medium-posts">medium-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52347.recycling-old-phones-creates-60-000-meals">Recycling Old Phones Creates 60,000 Meals</a>
+    </h3>
+    <p class="excerpt-entry">
+        Australians have rallied together for a worthy cause, decluttering their homes and donating 60,000 old phones to recycle, which wil...</p><a href="http://www.amta.org.au/amta/news/52347.recycling-old-phones-creates-60-000-meals" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Recycling Old Phones Creates 60,000 Meals" data-easyshare-url="http://www.amta.org.au/amta/news/52347.recycling-old-phones-creates-60-000-meals"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52343.why-mobile-phone-jammers-are-prohibited">
+        <div class="thumb">
+            <img src="index_files/jammers-png" class="img-responsive img-rounded" alt="Jammers.png">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=medium-posts">medium-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry%2CPolicy%2CHealth%20%26%20Safety">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52343.why-mobile-phone-jammers-are-prohibited">Why Mobile Phone Jammers are Prohibited</a>
+    </h3>
+    <p class="excerpt-entry">
+        The supply, possession and operation of mobile phone jammers in Australia is prohibited by the Australian Communications and Media ...</p><a href="http://www.amta.org.au/amta/news/52343.why-mobile-phone-jammers-are-prohibited" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Why Mobile Phone Jammers are Prohibited" data-easyshare-url="http://www.amta.org.au/amta/news/52343.why-mobile-phone-jammers-are-prohibited"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52337.a-super-connected-mobile-world">
+        <div class="thumb">
+            <img src="index_files/79d9081-web-jpg" class="img-responsive img-rounded" alt="_79D9081_web.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=medium-posts">medium-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry%2CPolicy">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52337.a-super-connected-mobile-world">A Super Connected Mobile World</a>
+    </h3>
+    <p class="excerpt-entry">
+        Mobile World Congress 2017 is the largest international gathering for the mobile industry and provides an exceptional forum for net...</p><a href="http://www.amta.org.au/amta/news/52337.a-super-connected-mobile-world" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="A Super Connected Mobile World" data-easyshare-url="http://www.amta.org.au/amta/news/52337.a-super-connected-mobile-world"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/51135.2g-networks-are-switching-off">
+        <div class="thumb">
+            <img src="index_files/2gnokialandscape-jpg" class="img-responsive img-rounded" alt="2Gnokialandscape.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=medium-posts">medium-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry%2CPolicy">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/51135.2g-networks-are-switching-off">2G Networks are Switching Off</a>
+    </h3>
+    <p class="excerpt-entry">
+        Optus will start switching off its 2G mobile network from April 2017 and Vodafone's 2G network will shut down on 30 September 2017....</p><a href="http://www.amta.org.au/amta/news/51135.2g-networks-are-switching-off" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="2G Networks are Switching Off" data-easyshare-url="http://www.amta.org.au/amta/news/51135.2g-networks-are-switching-off"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            Renae White
+        </span>
+    </div>
+
+</article>
+
+
+
+
+
+
+
+                    </div>
+                    <!-- /.content-right -->
+                </div>
+            </div>
+
+
+            <!-- Nige add in sidebar -->
+            <div class="col-md-3">
+                <div class="sidebar-widget-1">
+
+                    <div class="widget widget-most-popular gn-animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0" data-animation-offset="75%">
+                        <h5 class="widget-title">Topics</h5>
+                        <i>Quickly find related stories</i><br>
+                        <br>
+                        <ul>
+                            <li>
+                                <a href="http://www.amta.org.au/amta/news?Categories=Industry">Industry</a>
+                            </li>
+                            <li>
+                                <a href="http://www.amta.org.au/amta/news?Categories=Policy">Policy</a>
+                            </li>
+                            <li>
+                                <a href="http://www.amta.org.au/amta/news?Categories=Health%20%26%20Safety">Health &amp; Safety</a>
+                            </li>
+                            <li>
+                                <a href="http://www.amta.org.au/amta/news?Categories=Consumer%20Interest">Consumer Interest</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+
+
+                    <div class="widget widget-most-popular gn-animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0" data-animation-offset="75%">
+                        <h5 class="widget-title">Quick Links</h5>
+                        <ul>
+                            <li>
+                                <div class="order"></div>
+                                <p>
+                                    <a href="http://www.amta.org.au/pages/Media.Releases.Archive">Media Releases</a>
+                                </p>
+                            </li>
+                            <!--<li>
+                                <div class="order"></div>
+                                <p>
+                                    <a href="#">Health and Safety Info.</a>
+                                </p>
+                            </li>-->
+                            <li>
+                                <div class="order"></div>
+                                <p>
+                                    <a href="http://www.emfexplained.info/">EME</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="order"></div>
+                                <p>
+                                    <a href="http://www.amta.org.au/newsletters/Snapshot-June-2016">Snapshot Newsletters</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="order"></div>
+                                <p>
+                                    <a href="http://www.amta.org.au/pages/State.of.the.Industry.Reports">Publications &amp; Reports</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="order"></div>
+                                <p>
+                                    <a href="http://www.amta.org.au/pages/New-Prepaid-Regulations-2013">Pre-paid regulations</a>
+                                </p>
+                            </li>
+                            <li>
+                                <div class="order"></div>
+                                <p>
+                                    <a href="http://www.amta.org.au/pages/Cybersafety">Cybersafety</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <!-- Nige add in Ad banner -->
+                    <div class="sidebar-widget-1">
+                        <div class="gn-line"></div>
+                        <div class="gnSlider gn-animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0" data-animation-offset="75%">
+                            <div class="flex-container">
+                                <div class="flexslider">
+                                    <ul class="slides">
+                                        <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;">
+                                            <div class="item-wrap">
+                                                <img src="index_files/AMTA_Logo.svg" alt="image" width="100%" class="img-responsive" draggable="false">
+                                                <!--<p class="item" data-bottomtext="0">AMTA â€" The voice for the mobile telecommunications industry in Australia</p>-->
+                                            </div>
+                                        </li>
+                                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+                                            <div class="item-wrap">
+                                                <img src="index_files/MA_logo.svg" alt="image" width="100%" class="img-responsive" draggable="false">
+                                                <!--<p class="item" data-bottomtext="0">AMTA â€" The voice for the mobile telecommunications industry in Australia</p>-->
+                                            </div>
+                                        </li>
+                                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;" class="flex-active-slide">
+                                            <div class="item-wrap">
+                                                <a href="http://www.mcf.amta.org.au/">
+                                                    <img src="index_files/MCF_Logo.svg" alt="image" width="100%" class="img-responsive" draggable="false"></a>
+                                                <!--<p class="item" data-bottomtext="0">Mobile Carriers Forum</p>-->
+                                            </div>
+                                        </li>
+                                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+                                            <div class="item-wrap">
+                                                <a href="http://www.mobiletips.org.au/">
+                                                <img src="index_files/feature-mobiletips.jpg" alt="image" width="100%" class="img-responsive" draggable="false"></a>
+                                                <!--<p class="item" data-bottomtext="0">AMTA â€" Mobile Tips</p>-->
+                                            </div>
+                                        </li>
+                                        <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+                                            <div class="item-wrap">
+                                                <a href="http://www.amta.org.au/pages/Policy">
+                                                <img src="index_files/feature-policy.jpg" alt="image" width="100%" class="img-responsive" draggable="false"></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- End Nige add in Ad banner -->
+                    </div>
+                    <!-- /.sidebar -->
+                </div>
+
+
+                <div class="col-md-12">
+                    <!-- /.editors-posts -->
+                    <div class="editors-posts gn-animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0" data-animation-offset="75%">
+                        <div class="gn-line"></div>
+                        <div class="section-title">
+                            <!--<h4><a href="#scroll-target">More AMTA news...</a></h4>-->
+                            <div>
+                        </div>
+                              <a name="scroll-target"></a>
+                          <div class="content-right">
+
+
+
+
+
+
+
+<article class="post" data-article-url="/amta/news/52382.going-away-for-easter-remember-to-check-mobile-coverage">
+        <div class="thumb">
+            <img src="index_files/easter-egg-jpg" class="img-responsive img-rounded" alt="easter egg.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=small-posts">small-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52382.going-away-for-easter-remember-to-check-mobile-coverage">Going away for Easter? Remember to check mobile coverage!</a>
+    </h3>
+    <p class="excerpt-entry">
+        With many of us heading off to holiday destinations, don't forget to check your mobile coverage before you leave.
+    ...</p><a href="http://www.amta.org.au/amta/news/52382.going-away-for-easter-remember-to-check-mobile-coverage" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Going away for Easter? Remember to check mobile coverage!" data-easyshare-url="http://www.amta.org.au/amta/news/52382.going-away-for-easter-remember-to-check-mobile-coverage"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            Lisa Brown
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/48951.drive-safely-over-the-easter-and-anzac-holidays">
+        <div class="thumb">
+            <img src="index_files/easter-bunny2-jpg" class="img-responsive img-rounded" alt="easter bunny2.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=small-posts">small-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CHealth%20%26%20Safety">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/48951.drive-safely-over-the-easter-and-anzac-holidays">Drive safely over the Easter and ANZAC holidays</a>
+    </h3>
+    <p class="excerpt-entry">
+        Heading off in the car over the Easter or ANZAC day weekend? Remember to keep your eyes on the road and read our tips on driving sa...</p><a href="http://www.amta.org.au/amta/news/48951.drive-safely-over-the-easter-and-anzac-holidays" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Drive safely over the Easter and ANZAC holidays" data-easyshare-url="http://www.amta.org.au/amta/news/48951.drive-safely-over-the-easter-and-anzac-holidays"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            Renae White
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52349.science-minister-talks-fourth-industrial-revolution">
+        <div class="thumb">
+            <img src="index_files/science-statement-jpeg" class="img-responsive img-rounded" alt="SCience Statement.jpeg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=small-posts">small-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=Industry%2CPolicy">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52349.science-minister-talks-fourth-industrial-revolution">Science Minister Talks Fourth Industrial Revolution</a>
+    </h3>
+    <p class="excerpt-entry">
+        The new Minister for Industry, Innovation and Science, Senator the Hon Arthur Sinodinos AO, has acknowledged the Fourth Industrial ...</p><a href="http://www.amta.org.au/amta/news/52349.science-minister-talks-fourth-industrial-revolution" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Science Minister Talks Fourth Industrial Revolution" data-easyshare-url="http://www.amta.org.au/amta/news/52349.science-minister-talks-fourth-industrial-revolution"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52345.digital-disruption-brings-new-challenges-for-consumer-regulator">
+        <div class="thumb">
+            <img src="index_files/d16-133476-rod-sims-corporate-photo-1-september-2016-copy-jpeg" class="img-responsive img-rounded" alt="D16 133476  Rod Sims Corporate Photo (1) - September 2016 copy.jpeg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=small-posts">small-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52345.digital-disruption-brings-new-challenges-for-consumer-regulator">Digital Disruption Brings New Challenges for Consumer Regulator</a>
+    </h3>
+    <p class="excerpt-entry">
+        In his address to the annual National Consumer Congress, ACCC Chairman Rod Sims highlights the importance of consumer advocacy, the...</p><a href="http://www.amta.org.au/amta/news/52345.digital-disruption-brings-new-challenges-for-consumer-regulator" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Digital Disruption Brings New Challenges for Consumer Regulator" data-easyshare-url="http://www.amta.org.au/amta/news/52345.digital-disruption-brings-new-challenges-for-consumer-regulator"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52341.can-social-causes-motivate-us-to-recycle-more">
+        <div class="thumb">
+            <img src="index_files/mobilemuster-ozharvest-3-jpeg" class="img-responsive img-rounded" alt="mobilemuster-ozharvest-3.jpeg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=small-posts">small-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry%2CPolicy">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52341.can-social-causes-motivate-us-to-recycle-more">Can Social Causes Motivate us to Recycle More?</a>
+    </h3>
+    <p class="excerpt-entry">
+        Can partnering with social causes and charities help to incentivise people and give them another reason why they should declutter a...</p><a href="http://www.amta.org.au/amta/news/52341.can-social-causes-motivate-us-to-recycle-more" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Can Social Causes Motivate us to Recycle More?" data-easyshare-url="http://www.amta.org.au/amta/news/52341.can-social-causes-motivate-us-to-recycle-more"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52339.improving-digital-and-financial-inclusion-for-women">
+        <div class="thumb">
+            <img src="index_files/feature-image-3-women-jpeg" class="img-responsive img-rounded" alt="feature-image-3 women.jpeg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=small-posts">small-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry%2CPolicy">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52339.improving-digital-and-financial-inclusion-for-women">Improving Digital and Financial Inclusion for Women</a>
+    </h3>
+    <p class="excerpt-entry">
+        On International Women’s Day, it is important to acknowledge that much can be done to improve digital and financial inclusion for w...</p><a href="http://www.amta.org.au/amta/news/52339.improving-digital-and-financial-inclusion-for-women" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="Improving Digital and Financial Inclusion for Women" data-easyshare-url="http://www.amta.org.au/amta/news/52339.improving-digital-and-financial-inclusion-for-women"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            John gertsakis
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/52328.accan-funding-secured-consumer-representation">
+        <div class="thumb">
+            <img src="index_files/couple-with-phone-jpg" class="img-responsive img-rounded" alt="couple with phone.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=small-posts">small-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer%2CIndustry">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/52328.accan-funding-secured-consumer-representation">ACCAN funding secured – consumer representation </a>
+    </h3>
+    <p class="excerpt-entry">
+        In a Report on Consumer representation: Review of section 593 of the Telecommunications Act 1997 released 27 Feb 2017, the Governme...</p><a href="http://www.amta.org.au/amta/news/52328.accan-funding-secured-consumer-representation" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="ACCAN funding secured – consumer representation " data-easyshare-url="http://www.amta.org.au/amta/news/52328.accan-funding-secured-consumer-representation"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            Renae White
+        </span>
+    </div>
+
+</article>
+
+
+
+
+<article class="post" data-article-url="/amta/news/49963.school-holidays-tips-for-watching-data-usage">
+        <div class="thumb">
+            <img src="index_files/teens-on-mobiles.jpg" class="img-responsive img-rounded" alt="teens on mobiles.jpg">
+        </div>
+
+        <div class="cat">
+            <a href="http://www.amta.org.au/amta/news?Section=small-posts">small-posts</a>
+        </div>
+    <div class="segments">
+        <a href="http://www.amta.org.au/amta/news?Categories=consumer">related articles</a>
+    </div>
+    <h3>
+        <a href="http://www.amta.org.au/amta/news/49963.school-holidays-tips-for-watching-data-usage">School holidays – tips for watching data usage</a>
+    </h3>
+    <p class="excerpt-entry">
+        Teenagers love to stay in touch with their friends and during school holidays it can be even more important for them to use social ...</p><a href="http://www.amta.org.au/amta/news/49963.school-holidays-tips-for-watching-data-usage" class="read-more">Read More</a><div class="social-share-links" data-easyshare="" data-easyshare-title="School holidays – tips for watching data usage" data-easyshare-url="http://www.amta.org.au/amta/news/49963.school-holidays-tips-for-watching-data-usage"><!-- Facebook --><button data-easyshare-button="facebook">    <span class="fa fa-facebook"></span>    <span></span></button><!--<span data-easyshare-button-count="facebook">0</span>--><!-- Twitter --><button data-easyshare-button="twitter" data-easyshare-tweet-text="">    <span class="fa fa-twitter"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="twitter">0</span>--><!-- Google+ --><button data-easyshare-button="google">    <span class="fa fa-google"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><!-- Email --><button data-easyshare-button="email">    <span class="fa fa-envelope-o"></span>    <!--<span></span>--></button><!--<span data-easyshare-button-count="google">0</span>--><div data-easyshare-loader="" style="display: none;">Loading...</div></div>
+    <div class="post-meta">
+        <span class="author">
+            By
+            Renae White
+        </span>
+    </div>
+
+</article>
+
+
+
+
+
+
+
+                        </div>
+                        <!-- /.content-right -->
+                    </div>
+                    <!-- /.small-posts -->
+                </div>
+            </div>
+
+        </div>
+        <!-- END /.row -->
+
+
+    </div>
+    <!-- END /.containter -->
+
+
+</div></section>
+
+
+
+    <footer id="footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 gn-animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0" data-animation-offset="75%">
+                        <div class="widget widget-brand">
+                            <div class="logo logo-footer">
+                                <a href="http://www.amta.org.au/#">
+                                    <img src="index_files/AMTA_Logo(1).svg" alt="AMTA" width="150px">
+                                </a>
+                            </div>
+                            <p style="display: block;">AMTA. The voice of the mobile telecommunications industry.</p>
+                        </div>
+                        <!-- /.widget-brand -->
+                        <div class="widget widget-social">
+                            <h5 class="widget-title">Follow Us</h5>
+                            <div class="social-list">
+
+
+                                <a href="https://www.facebook.com/mobilesAus/?fref=ts"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/MobilesAus?ref_src=twsrc%5Etfw"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/amta-australian-mobile-telecommunications-association-?trk=mini-profile"><i class="fa fa-linkedin"></i></a>
+
+
+                            </div>
+                            <a class="email" href="mailto:amta.comms@amta.org.au">amta.comms@amta.org.au</a>
+                        </div>
+                        <!-- /.widget-social -->
+                    </div>
+                    <!-- /.col-md-4 -->
+                    <div class="col-md-4 gn-animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.2s" data-animation-offset="75%" style="animation-delay: 0.2s;">
+                        <div class="widget widget-twitter">
+                            <h5 class="widget-title">AMTA Twitter</h5>
+                            <!-- TWITTER FEED START -->
+                            <!-- Eugene had commented out? -->
+                            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered" style="position: static; visibility: visible; display: inline-block; width: 520px; height: 300px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;" data-widget-id="505135421722873856" title="Twitter Timeline" src="index_files/saved_resource.html"></iframe>
+                            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                            <!-- TWITTER FEED END -->
+                            <!--<div class="latest-tweets" data-number="3" data-username="envato" tweets by @austmobiles data-modpath="./twitter/index.php"></div>-->
+                        </div>
+                        <!-- /.widget-twitter -->
+                    </div>
+                    <!-- /.col-md-4 -->
+                    <div class="col-md-2 gn-animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.4s" data-animation-offset="75%" style="animation-delay: 0.4s;">
+                        <div class="widget widget-list">
+                            <h5 class="widget-title">Main Topics</h5>
+                            <ul class="links-list">
+                                <!--<li>
+                                    <a href="#">Mustreads</a>
+                                </li>-->
+                                <li>
+                                    <a href="http://www.amta.org.au/amta/news?Categories=Industry">Industry</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.amta.org.au/amta/news?Categories=policy">policy</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.amta.org.au/amta/news?Categories=Health%20%26%20Safety">Health &amp; Safety</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.amta.org.au/amta/news?Categories=Consumer">Consumer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.widget-list -->
+                    </div>
+                    <!-- /.col-md-2 -->
+                    <div class="col-md-2 gn-animation animated fadeInUp" data-animation="fadeInUp" data-animation-delay="0.6s" data-animation-offset="75%" style="animation-delay: 0.6s;">
+                        <div class="widget widget-list">
+                            <h5 class="widget-title">AMTA Programs</h5>
+                            <ul class="links-list">
+                                <li><a href="http://www.mcf.amta.org.au/" target="_blank">MCF Mobile Carriers Forum</a></li>
+                                <li><a href="http://www.amta.org.au/pages/Policy">Policy</a></li>
+                                <li><a href="http://www.mobilemuster.com.au/">Recycling</a></li>
+                                <li><a href="http://www.amta.org.au/pages/Health.Safety">Health &amp; Safety</a></li>
+                                <li><a href="http://www.lost.amta.org.au/" target="_blank">Lost&amp;Stolen</a></li>
+                                <li><a href="http://www.mobiletips.org.au/" target="_blank">Mobile Tips</a></li>
+                                <li><a href="http://www.keepyoureyesontheroad.org.au/" target="_blank">Driving Safety</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.widget-list -->
+                    </div>
+                    <!-- /.col-md-2 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.footer-widgets -->
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        © 2017 AMTA
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Login and Signup Form -->
+    <!-- Go Top -->
+    <a class="go-top"><i class="fa fa-chevron-up"></i></a>
+    <!-- Javascript -->
+    <script type="text/javascript" src="index_files/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index_files/jquery.easing.js"></script>
+    <script type="text/javascript" src="index_files/matchMedia.js"></script>
+    <script type="text/javascript" src="index_files/jquery-waypoints.js"></script>
+    <script type="text/javascript" src="index_files/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="index_files/jquery.transit.js"></script>
+    <script type="text/javascript" src="index_files/jquery.leanModal.min.js"></script>
+    <script type="text/javascript" src="index_files/jquery.tweet.min.js"></script>
+    <script type="text/javascript" src="index_files/jquery.doubletaptogo.js"></script>
+    <script type="text/javascript" src="index_files/smoothscroll.js"></script>
+    <script type="text/javascript" src="index_files/main.js"></script>
+    <script src="index_files/jquery.kyco.easyshare.es5.min.js"></script>
+
+    <!--GOOGLE-->
+    <script src="index_files/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        _uacct =
+        "UA-2063454-3";
+        urchinTracker();
+    </script>
+
+
+<div id="lean_overlay"></div><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="index_files/saved_resource(1).html"></iframe><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(1)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(2)" async=""></script><script src="index_files/505135421722873856(3)" async=""></script><script src="index_files/505135421722873856(3)" async=""></script><script src="index_files/505135421722873856(3)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(4)" async=""></script><script src="index_files/505135421722873856(5)" async=""></script><script src="index_files/505135421722873856(6)" async=""></script><script src="index_files/505135421722873856(6)" async=""></script><script src="index_files/505135421722873856(6)" async=""></script><script src="index_files/505135421722873856(6)" async=""></script><script src="index_files/505135421722873856(7)" async=""></script></body></html>
