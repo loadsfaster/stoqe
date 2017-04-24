@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-.logo,
-.page-header .heading,
-.post .heading {
-  font-family: "Playfair Display", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif !important ;
-  }
-.fa {font-size: 28px;}
-#footer p {font-size: 14px;}
-
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -4386,3 +4378,10 @@ input[type="button"].btn-block {
   }
 }
 
+.logo,
+.page-header .heading,
+.post .heading {
+  font-family: "Playfair Display", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif !important ;
+  }
+.fa {font-size: 28px; }
+#footer p {font-size: 14px; }
