@@ -641,20 +641,6 @@
                                             See the source data
                                           </span>
                                         </a>
-                                        <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="organic-traffic">
-                                          <div class="boxed boxed--border border--round box-shadow bg--dark">
-                                              Click 'X' top right to close
-                                              <object data="reports/1.pdf" width="100%" height="600" type='application/pdf'>
-                                              <p>Sorry, the PDF couldn't be displayed :(</p>
-                                              </object>
-
-                                              <div class="text-block">
-                                                  <p>
-                                                      Click to close
-                                                  </p>
-                                              </div>
-                                          </div>
-                                        </div><!--end of notification-->
                                     </div>
                                     <!--end boxed-->
                                 </div>
@@ -671,7 +657,7 @@
                                         — Google
                                         <br>Mobile Speed Score = 31/100</span>
                                         <br><br>
-                                        <a class="" href="#" data-notification-link="mobile-score">
+                                        <a class="" href="#" data-notification-link="mobile-speed">
                                           <span class="btn__text">
                                             See the source data
                                           </span>
@@ -693,7 +679,7 @@
                                         — Google
                                         <br>Desktop Speed Score = 23/100</span>
                                         <br><br>
-                                        <a class="" href="#" data-notification-link="desktop-score">
+                                        <a class="" href="#" data-notification-link="desktop-speed">
                                           <span class="btn__text">
                                             See the source data
                                           </span>
@@ -905,7 +891,7 @@
                           <span class="h3">
                               The AMTA website has significantly declined in all major performance metrics over the last 12 months. Benchmarch industry-standard testing tools validate amta.org.au as a very low quality website with critical performance, content, and accessibility issues. Such issues are negatively impacting usability, engagement, Google search results, website traffic volumes and, ultimately, AMTA.
                               <br><br>
-                              The current AMTA website does not meet modern performance standards and does not present as a professional-level website. As of this report the current state of amta.org.au is very poor.
+                              The current AMTA website does not meet modern performance standards and does not present performance expectation of a professional website. As of this report the current state of amta.org.au is very poor.
                               <br><br>
                               In conclusion amta.org.au is not working effectively for any primary stakeholders: critically, the current state of amta.org.au is working against all primary stakeholders and the decreasing KPI's are expected to continue.
                           </span>
@@ -924,10 +910,10 @@
             <section id="recommendations" class="imageblock switchable switchable--switch feature-large bg--dark space--lg">
                 <div class="imageblock__content col-md-6 col-sm-4 pos-right">
                     <div class="background-image-holder">
-                        <img alt="image" src="img/cowork-11.jpg" />
+                        <img alt="image" src="" />
                     </div>
                     <div class="modal-instance">
-                        <div class="video-play-icon modal-trigger"></div>
+
                         <div class="modal-container">
                             <div class="modal-content bg-dark" data-width="60%" data-height="60%">
 
@@ -944,7 +930,7 @@
                             <h2>Recommendations
                                 <br class="hidden-xs hidden-sm"></h2>
                             <p class="lead">
-                                Multiple font and colour scheme options mean that dramatically altering the look of your site is just clicks away &mdash; Customizing your site in the included Variant Page Builder makes experimenting with styles and content arrangements dead simple.
+                                Forthcoming
                             </p>
                         </div>
                     </div>
@@ -1136,10 +1122,13 @@
     </div>
   </div><!--end of notification-->
 
-  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="social-traffic-total">
-    <div class="boxed boxed--border border--round box-shadow bg--dark">
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="mobile-speed">
+    <div class="boxed boxed--border border--round box-shadow">
         Click 'X' top right to close
-        <iframe src="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.amta.org.au%2F&tab=mobile" width="90%" height="90%">
+        <a href="img/fullsize.jpg" data-lightbox="true">
+          <img alt="Thumb" src="img/thumb.jpg" />
+        </a>
+        <iframe src="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.amta.org.au%2F&tab=mobile" width="90%" height="500"></iframe>
         <div class="text-block">
             <p>
                 Click to close
@@ -1148,6 +1137,32 @@
     </div>
   </div><!--end of notification-->
 
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="desktop-speed">
+    <div class="boxed boxed--border border--round box-shadow">
+        Click 'X' top right to close
+        <iframe src="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.amta.org.au%2F&tab=desktop" width="90%" height="500"></iframe>
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="social-traffic-total">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <object data="reports/social-traffic-total.pdf" width="100%" height="600" type='application/pdf'>
+        <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
 
   <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="social-traffic-new">
     <div class="boxed boxed--border border--round box-shadow bg--dark">
@@ -1168,21 +1183,6 @@
     <div class="boxed boxed--border border--round box-shadow bg--dark">
         Click 'X' top right to close
         <object data="reports/facebook-traffic.pdf" width="100%" height="600" type='application/pdf'>
-        <p>Sorry, the PDF couldn't be displayed :(</p>
-        </object>
-
-        <div class="text-block">
-            <p>
-                Click to close
-            </p>
-        </div>
-    </div>
-  </div><!--end of notification-->
-
-  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="organic">
-    <div class="boxed boxed--border border--round box-shadow bg--dark">
-        Click 'X' top right to close
-        <object data="reports/1.pdf" width="100%" height="600" type='application/pdf'>
         <p>Sorry, the PDF couldn't be displayed :(</p>
         </object>
 
