@@ -21,6 +21,9 @@
             color: red;
           }
           .width--100 {min-width: 100%}
+          a[data-notification-link] {
+              text-decoration: underline;
+          }
         </style>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i%7CMaterial+Icons" rel="stylesheet">
     </head>
@@ -69,7 +72,7 @@
                             <hr class="short">
                             <div class="modal-instance block">
                                 <span>
-                                  Published April 26, 2017<br><span class="type--fade">by STOQE</span></span>
+                                  Published May 1, 2017<br><span class="type--fade">by STOQE</span></span>
                                 <!--end of modal-container-->
                             </div>
                             <!--end of modal instance-->
@@ -366,7 +369,7 @@
                         </div>
                         <div class="col-sm-11 col-md-11">
                             <span class="h3">
-                                <strong>Data provided by Google</strong>. Google Analytics is the benchmark industry-standard tool for website traffic reports. Google Analytics has been recording data in amta.org.au since June 2007.
+                                <strong>Data source by Google</strong>. <a target="_blank" href="https://www.google.com/analytics/analytics/">Google Analytics</a> is the benchmark industry-standard tool for website traffic reports. Google Analytics has been recording amta.org.au's data since June 2007 making it the most comprehensive and reliable data set.
                             <br><br>
                             </span>
                         </div>
@@ -378,7 +381,7 @@
                         </div>
                         <div class="col-sm-11 col-md-11">
                             <span class="h3">
-                                <strong>Performance tested by Google</strong>. Google provides a suite of testing tools for web developers to measure website performance and improvements.
+                                <strong>Performance test by Google</strong>. Google provides a suite of free testing tools for web developers to accurately gauge website performance. <a target="_blank" href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insight</a> is one such tool which scores website performance and advises improvements.
                             <br><br>
                             </span>
                         </div>
@@ -390,7 +393,7 @@
                         </div>
                         <div class="col-sm-11 col-md-11">
                             <span class="h3">
-                                <strong>Performance tested by webpagetest.org</strong>. Google Analytics is the benchmark industry-standard service for reporting website traffic metrics. Google Analytics has been recording data on amta.org.au since June 2007.
+                                <strong>Simulation test by WebPagetest</strong>. <a target="_blank" href="https://www.webpagetest.org/">WebPagetest</a> is an open source project that simulates a real visitor using your website and provides rich diagnostic reports in return.
                             <br><br>
                             </span>
                         </div>
@@ -402,7 +405,7 @@
                         </div>
                         <div class="col-sm-11 col-md-11">
                             <span class="h3">
-                                <strong>Comparative Analysis Period = 12 months</strong>. All relative numbers compare the 12 month data period ending March 31, 2017 to the 12 month data period ending March 31, 2016. The absolute dates are 01/04/2106-31/03/2017 v's 01/04/2015-31/03/2016.
+                                <strong>Comparative Analysis Period = 12 months</strong>. All relative numbers in this report compare the 12 month data period ending March 31, 2017 to the 12 month data period ending March 31, 2016. The absolute dates are 01/04/2016-31/03/2017 v's 01/04/2015-31/03/2016.
                             <br><br>
                             </span>
                         </div>
@@ -445,46 +448,67 @@
                         <div class="col-sm-10 col-md-11 col-md-offset-1">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                    <div class="feature boxed boxed--lg boxed--border">
                                         <div class="radial" data-value="70" data-timing="1000" data-color="#f00" data-size="200" data-bar-width="10">
                                             <span class="h3 h1 h1--large radial__label">-30%</span>
                                         </div>
                                         <!--span class="h1 h1--large">-31%</span-->
                                         <h4>Total Visitors</h4>
                                         <p>
-                                            Total visitors to amta.org.au have <strong>decreased 30.93%</strong> in 12 months from 533,283 to 368,314.
-                                            <br><br>
-                                            <a href="">See the source data</a>
+                                            Total visitors to amta.org.au have <strong>decreased 30.93%</strong>
                                         </p>
+                                        <span class="type--fade type--fine-print">*In 12 months
+                                        <br>Down from 533,283 to 368,314</span>
+                                        <br><br>
+                                        <a class="" href="#" data-notification-link="traffic-total">
+                                          <span class="btn__text">
+                                            See the source data
+                                          </span>
+                                        </a>
                                     </div>
+
                                     <!--end boxed-->
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                    <div class="feature boxed boxed--lg boxed--border">
                                         <div class="radial" data-value="71" data-timing="1000" data-color="#f00" data-size="200" data-bar-width="10">
                                             <span class="h3 h1 h1--large radial__label">-29%</span>
                                         </div>
                                         <h4>New Visitors</h4>
                                         <p>
-                                            New visitors to amta.org.au have <strong>decreased 29.22%</strong> in 12 months from 402,068 to 284,600.
-                                            <br><br>
-                                            <a href="">See the source data</a>
+                                            New visitors to amta.org.au have <strong>decreased 29.22%</strong>
                                         </p>
+                                          <span class="type--fade type--fine-print">*In 12 months
+                                          <br>Down from 402,068 to 284,600</span>
+                                          <br><br>
+                                          <a class="" href="#" data-notification-link="traffic-new">
+                                            <span class="btn__text">
+                                              See the source data
+                                            </span>
+                                          </a>
                                     </div>
+
                                     <!--end boxed-->
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                    <div class="feature boxed boxed--lg boxed--border">
                                         <div class="radial" data-value="64" data-timing="1000" data-color="#f00" data-size="200" data-bar-width="10">
                                           <span class="h3 h1 h1--large radial__label">-36%</span>
                                       </div>
                                       <h4>Return Visitors</h4>
                                       <p>
-                                          Return visitors to amta.org.au have <strong>decreased 36.2%</strong> in 12 months from 131,215 to 83,714.
-                                            <br><br>
-                                            <a href="">See the source data</a>
+                                          Return visitors to amta.org.au have <strong>decreased 36.2%</strong> in 12 months from .
                                       </p>
+                                      <span class="type--fade type--fine-print">*In 12 months
+                                      <br>*Down from 131,215 to 83,714</span>
+                                      <br><br>
+                                      <a class="" href="#" data-notification-link="traffic-return">
+                                        <span class="btn__text">
+                                          See the source data
+                                        </span>
+                                      </a>
                                     </div>
+
                                     <!--end boxed-->
                                 </div>
                             </div>
@@ -513,46 +537,67 @@
                         <div class="col-sm-10 col-md-11 col-md-offset-1">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                    <div class="feature boxed boxed--lg boxed--border">
                                         <div class="radial" data-value="92" data-timing="1000" data-color="#f00" data-size="200" data-bar-width="10">
                                             <span class="h3 h1 h1--large radial__label">-7.6%</span>
                                         </div>
                                         <!--span class="h1 h1--large">-31%</span-->
                                         <h4>Time on Site</h4>
                                         <p>
-                                            The average time visitors spends on amta.org.au has decreased 7.62% in 12 months from 46secs to 42secs.
-                                            <br><br>
-                                            <a href="">See the source data</a>
+                                            The average time visitors spend on amta.org.au has <strong>decreased 7.62%</strong>
                                         </p>
+                                        <span class="type--fade type--fine-print">*In 12 months
+                                        <br>Down from 46secs to 42secs</span>
+                                        <br><br>
+                                        <a class="" href="#" data-notification-link="time-on-site">
+                                          <span class="btn__text">
+                                            See the source data
+                                          </span>
+                                        </a>
                                     </div>
+
                                     <!--end boxed-->
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                    <div class="feature boxed boxed--lg boxed--border">
                                         <div class="radial" data-value="90" data-timing="1000" data-color="#f00" data-size="200" data-bar-width="10">
                                             <span class="h3 h1 h1--large radial__label">-9.9%</span>
                                         </div>
                                         <h4>Time on Page</h4>
                                         <p>
-                                            The average time visitors spends on a page has decreased 9.91% in 12 months from 3:27secs to 3:06secs.
-                                        <br><br>
-                                        <a href="">See the source data</a>
+                                            The average time visitors spend on a page has <strong>decreased 9.91%</strong>
                                         </p>
+                                        <span class="type--fade type--fine-print">*In 12 months
+                                        <br>*Down from 3:27secs to 3:06secs</span>
+                                        <br><br>
+                                        <a class="" href="#" data-notification-link="time-on-page">
+                                          <span class="btn__text">
+                                            See the source data
+                                          </span>
+                                        </a>
                                     </div>
+
                                     <!--end boxed-->
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                    <div class="feature boxed boxed--lg boxed--border">
                                         <div class="radial" data-value="88" data-timing="1000" data-color="#f00" data-size="200" data-bar-width="10">
                                           <span class="h3 h1 h1--large radial__label">88%</span>
                                       </div>
                                       <h4>Bounce Rate</h4>
                                       <p>
-                                          The % of visitors who leave amta.org.au without any interaction (without clicking anything) is 88%.
-                                            <br><br>
-                                            <a href="">See the source data</a>
+                                          The % of visitors who do not engage with amta.org.au <strong>is 88%</strong>.
                                       </p>
+                                      <span class="type--fade type--fine-print">*In last 12 months
+                                      <br>*Leaves without viewing any other page</span>
+                                      <br><br>
+                                      <a class="" href="#" data-notification-link="bounce-rate">
+                                        <span class="btn__text">
+                                          See the source data
+                                        </span>
+                                      </a>
                                     </div>
+
                                     <!--end boxed-->
                                 </div>
                             </div>
@@ -562,6 +607,7 @@
                     <!--end of row-->
                 </div>
                 <!--end of container-->          </section>
+
 
             <section id="3.3.Google" class="">
                 <div class="container">
@@ -582,22 +628,20 @@
                                 <div class="col-sm-4">
                                     <div class="feature feature-3 boxed boxed--lg boxed--border">
                                         <div class="radial" data-value="38" data-timing="1000" data-color="#f00" data-size="200" data-bar-width="10">
-                                            <span class="h3 h1 h1--large radial__label">-62%</span>
+                                          <span class="h3 h1 h1--large radial__label">-62%</span>
                                         </div>
                                         <!--span class="h1 h1--large">-31%</span-->
                                         <h4>Organic Traffic</h4>
-                                        <p>
-                                            Organic traffic — free traffic from search engines like Google et. al — has decreased 62.16%.
-                                        </p>
+                                        <p>Organic traffic — free traffic from search engines like Google et. al — has decreased 62.16%.</p>
                                         <span class="type--fade type--fine-print">*In 12 months
                                         <br>Down from 82,144 to 31,086</span>
                                         <br><br>
-                                        <a class="" href="#" data-notification-link="organic">
+                                        <a class="" href="#" data-notification-link="organic-search-traffic">
                                           <span class="btn__text">
                                             See the source data
                                           </span>
                                         </a>
-                                        <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="organic">
+                                        <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="organic-traffic">
                                           <div class="boxed boxed--border border--round box-shadow bg--dark">
                                               Click 'X' top right to close
                                               <object data="reports/1.pdf" width="100%" height="600" type='application/pdf'>
@@ -615,36 +659,25 @@
                                     <!--end boxed-->
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                    <div class="feature boxed boxed--lg boxed--border">
                                         <div class="radial" data-value="31" data-timing="1000" data-color="#f00" data-size="200" data-bar-width="10">
                                             <span class="h3 h1 h1--large radial__label">31%</span>
                                         </div>
                                         <h4>Google Mobile Score</h4>
                                         <p><span class="type--italic">
                                             "www.amta.org.au is slow on mobile phones. Most people won’t wait very long before leaving a slow-loading website."</span>
-                                            <br><br><span class="type--fade">— Google
-                                            <br>Mobile Speed Score = 31/100</span>
                                         </p>
-                                        <a class="" href="#" data-notification-link="trigger">
+                                        <span class="type--fade type--fine-print">
+                                        — Google
+                                        <br>Mobile Speed Score = 31/100</span>
+                                        <br><br>
+                                        <a class="" href="#" data-notification-link="mobile-score">
                                           <span class="btn__text">
                                             See the source data
                                           </span>
                                         </a>
-                                        <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="trigger">
-                                          <div class="boxed boxed--border border--round box-shadow bg--dark">
-                                              Click 'X' top right to close
-                                              <object data="reports/1.pdf" width="100%" height="600" type='application/pdf'>
-                                              <p>Sorry, the PDF couldn't be displayed :(</p>
-                                              </object>
-
-                                              <div class="text-block">
-                                                  <p>
-                                                      Click to close
-                                                  </p>
-                                              </div>
-                                          </div>
-                                        </div><!--end of notification-->
                                     </div>
+
                                     <!--end boxed-->
                                 </div>
                                 <div class="col-sm-4">
@@ -655,31 +688,18 @@
                                       <h4>Google Desktop Score</h4>
                                       <p><span class="type--italic">
                                           "www.amta.org.au is slow on laptops and desktop computers. People expect instant loading – any delay can cause them to leave."</span>
-                                          <br><br><span class="type--fade">— Google
-                                          <br>Desktop Speed Score = 23/100</span>
                                         </p>
-                                        <a class="" href="#" data-notification-link="t2">
+                                        <span class="type--fade type--fine-print">
+                                        — Google
+                                        <br>Desktop Speed Score = 23/100</span>
+                                        <br><br>
+                                        <a class="" href="#" data-notification-link="desktop-score">
                                           <span class="btn__text">
                                             See the source data
                                           </span>
                                         </a>
-                                        <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="t2">
-                                          <div class="boxed boxed--border border--round box-shadow bg--dark">
-                                              <div class="text-block">
-                                                  <h5>Well Triggered!</h5>
-                                                  <span class="h2">
-                                                      The Google performance test on amta.org.au indicates significant variances in the AMTA website server response and delivery speed.
-                                                  </span>
-                                              </div>
-
-                                              <div class="text-block">
-                                                  <p>
-                                                      Click to close
-                                                  </p>
-                                              </div>
-                                          </div>
-                                        </div><!--end of notification-->
                                     </div>
+
                                     <!--end boxed-->
                                 </div>
                             </div>
@@ -689,6 +709,7 @@
                     <!--end of row-->
                 </div>
                 <!--end of container-->          </section>
+
 
             <section id="3.4.Social" class="">
                 <div class="container">
@@ -707,54 +728,65 @@
                         <div class="col-sm-10 col-md-11 col-md-offset-1">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                    <div class="feature boxed boxed--lg boxed--border">
                                         <div class="radial" data-value="66" data-timing="1000" data-color="#f00" data-size="200" data-bar-width="10">
                                             <span class="h3 h1 h1--large radial__label">-33%</span>
                                         </div>
                                         <!--span class="h1 h1--large">-31%</span-->
                                         <h4>Social Traffic</h4>
-                                        <p>
-                                            Total visitors from social networks to amta.org.au have <strong>decreased 33.71%</strong>
-                                            <br><br><span class="type--fade">*In 12 months
-                                            <br>*Down from 6,911 to 4,581</span>
-                                            <br><br>
-                                            <a href="">See the source data</a>
-                                        </p>
+                                        <p>Total visitors from social networks to amta.org.au have <strong>decreased 33.71%</strong></p>
+                                        <span class="type--fade type--fine-print">*In 12 months
+                                        <br>Down from 6,911 to 4,581</span>
+                                        <br><br>
+                                        <a class="" href="#" data-notification-link="social-traffic-total">
+                                          <span class="btn__text">
+                                            See the source data
+                                          </span>
+                                        </a>
                                     </div>
+
                                     <!--end boxed-->
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                    <div class="feature boxed boxed--lg boxed--border">
                                         <div class="radial" data-value="61" data-timing="1000" data-color="#f00" data-size="200" data-bar-width="10">
                                             <span class="h3 h1 h1--large radial__label">-38%</span>
                                         </div>
                                         <h4>New Social Traffic</h4>
                                         <p>
                                             New visitors from social networks to amta.org.au have <strong>decreased 38.46%</strong>
+                                            </p>
+                                            <span class="type--fade type--fine-print">*In 12 months
+                                            <br>Down from XXX to XXX</span>
                                             <br><br>
-                                            <span class="type--fade">*In 12 months
-                                            <br>*Down from 6,415 to 3,948</span>
-                                            <br><br>
-                                            <a href="">See the source data</a>
-                                        </p>
+                                            <a class="" href="#" data-notification-link="social-traffic-new">
+                                              <span class="btn__text">
+                                                See the source data
+                                              </span>
+                                            </a>
                                     </div>
+
                                     <!--end boxed-->
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="feature feature-3 boxed boxed--lg boxed--border">
+                                    <div class="feature boxed boxed--lg boxed--border">
                                         <div class="radial" data-value="54" data-timing="1000" data-color="#f00" data-size="200" data-bar-width="10">
                                           <span class="h3 h1 h1--large radial__label">-46%</span>
                                       </div>
                                       <h4>Facebook Visitors</h4>
                                       <p>
-                                          Visitors from Facebook to amta.org.au have <strong>decreased 46.97%</strong>
-                                          <br><br>
-                                          <span class="type--fade">*In 12 months
-                                          <br>Down from 6,306 to 3,344</span>
-                                            <br><br>
-                                            <a href="">See the source data</a>
+                                          Visitors from Facebook to amta.org.au have <strong>decreased 48.86%</strong>
                                       </p>
+                                      <span class="type--fade type--fine-print">*In 12 months
+                                      <br>Down from 5,937 to 3,036</span>
+                                      <br><br>
+                                      <a class="" href="#" data-notification-link="facebook-traffic">
+                                        <span class="btn__text">
+                                          See the source data
+                                        </span>
+                                      </a>
                                     </div>
+
                                     <!--end boxed-->
                                 </div>
                             </div>
@@ -954,13 +986,13 @@
                             <ul class="list-inline list--hover">
                                 <li class="h4">STOQE</li>
                                 <li>
-                                    <a href="#">
-                                        <span class="type--fine-print">Get Started</span>
+                                    <a href="https://twitter.com/STOQE">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <span class="type--fine-print">help@stack.io</span>
+                                        <span class="type--fine-print">stoqe@stoqe.com</span>
                                     </a>
                                 </li>
                             </ul>
@@ -995,6 +1027,179 @@
             </footer>
 
         </div>
+
+
+<!--  -->
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="traffic-total">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <object data="reports/traffic-total.pdf" width="100%" height="600" type='application/pdf'>
+        <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="traffic-new">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <object data="reports/visitors-new-returning.pdf" width="100%" height="600" type='application/pdf'>
+        <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="traffic-return">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <object data="reports/visitors-new-returning.pdf" width="100%" height="600" type='application/pdf'>
+        <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="time-on-site">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <object data="reports/time-on-site.pdf" width="100%" height="600" type='application/pdf'>
+        <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="time-on-page">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <object data="reports/time-on-page.pdf" width="100%" height="600" type='application/pdf'>
+        <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="bounce-rate">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <object data="reports/bounce-rate.pdf" width="100%" height="600" type='application/pdf'>
+        <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="organic-search-traffic">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <object data="reports/organic-search-traffic.pdf" width="100%" height="600" type='application/pdf'>
+        <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="social-traffic-total">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <iframe src="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.amta.org.au%2F&tab=mobile" width="90%" height="90%">
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="social-traffic-new">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <object data="reports/social-traffic-new.pdf" width="100%" height="600" type='application/pdf'>
+        <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="facebook-traffic">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <object data="reports/facebook-traffic.pdf" width="100%" height="600" type='application/pdf'>
+        <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+  <div class="notification pos-left pos-top col-sm-12 col-md-11 col-md-offset-1" data-animation="from-top" data-notification-link="organic">
+    <div class="boxed boxed--border border--round box-shadow bg--dark">
+        Click 'X' top right to close
+        <object data="reports/1.pdf" width="100%" height="600" type='application/pdf'>
+        <p>Sorry, the PDF couldn't be displayed :(</p>
+        </object>
+
+        <div class="text-block">
+            <p>
+                Click to close
+            </p>
+        </div>
+    </div>
+  </div><!--end of notification-->
+
+
+
+<!--  -->
+
+
+
         <!--<div class="loader"></div>-->
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
             <i class="stack-interface stack-up-open-big"></i>
