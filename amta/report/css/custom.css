@@ -1,1 +1,9 @@
-/*! Place your custom styles here */
+.notification .notification-close-cross {
+  opacity: 1;
+  font-size: 1.5em;
+  color: red;
+}
+.width--100 {min-width: 100%}
+a[data-notification-link] {
+    text-decoration: underline;
+}/*! Place your custom styles here */
