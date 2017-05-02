@@ -18876,3 +18876,14 @@ footer.footer-7 {
 a[data-notification-link] {
     text-decoration: underline;
 }
+a:visited {
+  color:#23527c; text-decoration:none; border-bottom: 1px dotted grey;
+}
+.red {color:#f00;}
+.label:not([class*='bg--']) {
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    min-width: 0;
+}
