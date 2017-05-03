@@ -18880,6 +18880,7 @@ a:visited {
   color:#23527c; text-decoration:none; border-bottom: 1px dotted grey;
 }
 .red {color:#f00;}
+.green {color: green;}
 .label:not([class*='bg--']) {
     background-color: red;
     color: white;
