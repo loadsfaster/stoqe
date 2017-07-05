@@ -1,0 +1,65 @@
+**BACKGROUND**
+
+Several minor adjustments and updates are required to the AMTA website (www.amat.org.au) with a view to further enhancing the user interface and user experience for site visitors. We also wish to use the site proactively to gather contact details of interested stakeholders. Some of the proposed changes are functional improvements, while others are chiefly visual in nature and will enhance the site’s look and feel.
+
+The response to this Request for Quote will determine the extent of adjustments implemented.
+
+**SPECIFIC REQUIREMENTS** 
+
+Where relevant, any material created needs to reflect AMTA and its vision and mission, as well as the products/services supplied by AMTA members. It needs to be contemporary and ‘of the moment’ without being too populist, or looking cliched and tired. Note that the target audience groups for AMTA covers industry, policy-makers, consumers and the general public.
+
+1. Newsletter Subscription Pop-Up
+
+Creation a pop-up on home pages inviting site visitors to subscribe to future AMTA updates and bulletins. Make it easy for visitor to delete if they’re not interested in subscribing etc. The following code, generated through Mailchimp,would be embedded into each AMTA website. Call me if you need more detail or clarification.
+
+http://www.amta.org.au/ 
+
+http://www.mcf.amta.org.au/ 
+
+http://www.mobiletips.org.au/ 
+
+http://www.lost.amta.org.au/
+
+http://www.keepyoureyesontheroad.org.au/
+
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us15.list-manage.com","uuid":"5f2d94516536da3be03118da7","lid":"93c32647b1"}) })</script>
+
+2. Creation of an AMTA Favicon for the URL bar for AMTA.org.au
+
+3. Creation of a header on every page containing:
+
+
+	- Social media icons (Twitter, Linkedin, Facebook)
+
+	- Telephone number
+
+	- Email address
+
+
+4. Homepage banners or carousel on the top half of the home page look old, tired and don’t connect to any page or program area. Can we have three new ones created with more contemporary images representing the industry, its products/services and consumers? And can they link to a specific page or program area? Possible? This one might need some discussion so we get it right. It’s where most site visitors first arrive and it’s currently underwhelming.
+
+Some sites relevant to AMTA’s membership and stakeholders are listed below and are worth looking at in terms ‘look and feel’. They’re not provided as templates to copy but as current examples in the sector.
+
+http://www.gsma.com/
+
+https://www.mobileworldcongress.com/
+
+https://www.telstra.com.au/
+
+http://www.vodafone.com.au/
+
+http://www.optus.com.au/
+
+http://www.ztemobiles.com.au/ 
+
+http://consumer.huawei.com/au/index.htm
+
+http://www.samsung.com/au/
+
+http://www.acma.gov.au/ 
+
+5. Can we upload videos to the AMTA site?
+
+**Quotes to be received by COB 7.5.17 and addressed to:** john.gertsakis@amta.org.au 
+Queries can be directed to John Gertsakis at M 0409 422 089.
+
