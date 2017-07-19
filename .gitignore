@@ -38,10 +38,8 @@ Thumbs.db
 
 # More #
 ######################
-config.codekit
-.codekit-cache
+node_modules
+amta/i/*
 _*/*
 css/.sass_cache/*
-*.codekit
 
-*.codekit
