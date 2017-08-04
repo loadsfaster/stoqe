@@ -1,0 +1,319 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<style>
+
+body {
+  background: rgba(0, 0, 0, 0.9); margin: auto; padding: 12px;
+  color: #111;
+}
+
+.box {
+  border-radius: 3px;
+}
+
+.lightbox {
+  zoom: 1.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+
+}
+
+div.horizontal {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+div.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+   color: #111;
+   text-align: center;
+}
+
+::-moz-placeholder {
+   color: #111;
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   color: #111;
+   text-align: center;
+}
+
+.ba {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.br2 {
+    border-radius: .25rem;
+}
+
+.bw1 {
+    border-width: .125rem;
+}
+
+.bw2 {
+    border-width: .25rem;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.fw6 {
+    font-weight: 600;
+}
+
+.tracked {
+    letter-spacing: .1em;
+}
+
+.link {
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+
+.link:link, .link:visited {
+    transition: color .15s ease-in;
+}
+
+.link:hover {
+    transition: color .15s ease-in;
+}
+
+.link:active {
+    transition: color .15s ease-in;
+}
+
+.link:focus {
+    transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
+}
+
+.black {
+    color: #000;
+}
+
+.near-black {
+    color: #111;
+}
+
+.dark-gray {
+    color: #333;
+}
+
+.mid-gray {
+    color: #555;
+}
+
+.white {
+    color: #fff;
+}
+
+.purple {
+    color: #5e2ca5;
+}
+
+.light-purple {
+    color: #a463f2;
+}
+
+.dark-pink {
+    color: #d5008f;
+}
+
+.hot-pink {
+    color: #ff41b4;
+}
+
+.dark-green {
+    color: #137752;
+}
+
+.navy {
+    color: #001b44;
+}
+
+.dark-blue {
+    color: #00449e;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-near-black {
+    background-color: #111;
+}
+
+.bg-dark-gray {
+    background-color: #333;
+}
+
+.bg-mid-gray {
+    background-color: #555;
+}
+
+.bg-purple {
+    background-color: #5e2ca5;
+}
+
+.bg-light-purple {
+    background-color: #a463f2;
+}
+
+.bg-dark-pink {
+    background-color: #d5008f;
+}
+
+.bg-hot-pink {
+    background-color: #ea008a;
+}
+
+.bg-dark-green {
+    background-color: #137752;
+}
+
+.bg-navy {
+    background-color: #001b44;
+}
+
+.bg-dark-blue {
+    background-color: #00449e;
+}
+
+.pv2 {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mb2 {
+    margin-bottom: .5rem;
+}
+
+.mb4 {
+    margin-bottom: 2rem;
+}
+
+.mt4 {
+    margin-top: 2rem;
+}
+
+.ttu {
+    text-transform: uppercase;
+}
+
+.f6 {
+    font-size: .875rem;
+}
+
+.dim {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
+.dim:hover, .dim:focus {
+    opacity: .5;
+    transition: opacity .15s ease-in;
+}
+
+.dim:active {
+    opacity: .8;
+    transition: opacity .15s ease-out;
+}
+
+
+</style>
+
+<body>
+
+  <div id="loginbox" class="lightbox" >
+    <div class="horizontal">
+      <div class="vertical">
+        <div class="box">
+          <input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="Password" /> <br />
+          <button class="f6 link dim br2 ph3 pv2 mb2 dib white bg-hot-pink" id="loginbutton" type="button">Enter</button>
+          <p id="wrongPassword" style="display: none">wrong password</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+	 <script type="text/javascript" src="https://cdn.rawgit.com/chrisveness/crypto/master/sha1.js"></script>
+
+	<script type="text/javascript">
+	"use strict";
+
+
+	function loadPage(pwd) {
+
+		var hash= pwd;
+		hash= Sha1.hash(pwd);
+		var url= hash + "/index.html";
+
+		$.ajax({
+			url : url,
+			dataType : "html",
+			success : function(data) {
+
+				window.location= url;
+
+			},
+			error : function(xhr, ajaxOptions, thrownError) {
+
+
+				parent.location.hash= hash;
+
+				//$("#wrongPassword").show();
+				$("#password").attr("placeholder","wrong password");
+				$("#password").val("");
+			}
+		});
+	}
+
+
+	$("#loginbutton").on("click", function() {
+		loadPage($("#password").val());
+	});
+	$("#password").keypress(function(e) {
+		if (e.which == 13) {
+
+			loadPage($("#password").val());
+		}
+	});
+	$("#password").focus();
+
+	</script>
+
+</body>
+</html>
