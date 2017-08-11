@@ -1,610 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>STOQE</title>
-    <meta name="author" content="STOQE">
-    <meta name="description" content="Saving Brands.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- third-generation iPad with high-resolution Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
-    <!-- iPhone with high-resolution Retina display: -->
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
-    <!-- first- and second-generation iPad: -->
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
-    <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <link rel="apple-touch-icon-precomposed" href="favicon-57.png">
-    <!-- basic favicon -->
-    <link rel="shortcut icon" href="favicon-32.png">
-    <!--link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/-->
-    <link rel="stylesheet" href="css/tachy.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700|Merriweather:300,300i%7CMaterial+Icons|Karla:400,400i,700,700i|Lora:700|Poppins:300|Playfair+Display" rel="stylesheet">
-    <style media="screen">
-    body {margin: 0;}
-    .brand {
-        font-family: "Playfair Display", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-    .mwsm, .miwsm img {max-width: 150px;}
-    .icon {
-      display: inline-block;
-      width: 1em;
-      height: 1em;
-      stroke-width: 0;
-      stroke: currentColor;
-      fill: currentColor;
-    }
-    .tdw {text-decoration: underline wavy gold;}
-    blockquote {-webkit-margin-end: 0px;}
-
-    .icon {
-      display: inline-block;
-      color: #444444;
-      width: 1em;
-      height: 1em;
-      fill: currentColor;
-    }
-    .blue, bg-blue {color: #0183c7;}
-
-    </style>
-  </head>
-
-  <body class="sans-serif">
 
 
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+	<meta name="generator" content="Hugo 0.18.1" />
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+      <title>STOQE</title>
+      <meta name="author" content="STOQE">
+      <meta name="description" content="Saving Brands.">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <div class="w-100">
-      <header class="bg-blue pv2 pv3-ns ph4 ph6-ns">
-        <nav class="f6">
-          <a class="brand f1 v-mid link dim white dib mr4" href="/" title="Home">STOQE</a>
-          <!--span class="f3-ns v-mid dim near-black dib mr3" title="About">Saving Brands</span-->
-          <!--a class="v-mid link dim green dib mr3" href="#" title="Store">Services</a>
-          <a class="v-mid link dim green dib" href="#" title="Contact">Contact</a-->
-          <div class="v-top f1 fr">
-            <a href="https://twitter.com/STOQE" target="_blank" class="dib link black-20 hover-near-black">🐔
-              <!--svg class="db w2 h2" data-icon="twitter" viewBox="0 0 32 32"
-                fill="currentColor" >
-                <title >twitter icon</title>
-                <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"
-                ></path>
-              </svg-->
-            </a>
-            <a href="mailto:stoqe@stoqe.com?subject=Save Our Brand" class="link dib black-20 hover-near-black">💌
-              <!--svg class="db w2 h2" data-icon="email" viewBox="0 0 32 32"
-                fill="currentColor">
-                <title>email icon</title>
-                <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM8 8h16c0.286 0 0.563 0.061 0.817 0.177l-8.817 10.286-8.817-10.287c0.254-0.116 0.531-0.177 0.817-0.177zM6 22v-12c0-0.042 0.002-0.084 0.004-0.125l5.864 6.842-5.8 5.8c-0.045-0.167-0.069-0.34-0.069-0.517zM24 24h-16c-0.177 0-0.35-0.024-0.517-0.069l5.691-5.691 2.826 3.297 2.826-3.297 5.691 5.691c-0.167 0.045-0.34 0.069-0.517 0.069zM26 22c0 0.177-0.024 0.35-0.069 0.517l-5.8-5.8 5.865-6.842c0.003 0.041 0.004 0.083 0.004 0.125v12z"
-                ></path>
-              </svg-->
-            </a>
+      <meta property="og:type" content="business.business">
+      <meta property="og:title" content="">
+      <meta property="og:url" content="/">
+      <meta property="og:image" content="/og-image.jpg">
+
+
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+      <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+      <link rel="manifest" href="/manifest.json">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff4400">
+      <meta name="theme-color" content="#fff">
+
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon-144.png">
+
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon-114.png">
+
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon-72.png">
+
+      <link rel="apple-touch-icon-precomposed" href="favicon-57.png">
+
+      <link rel="shortcut icon" href="favicon-32.png">
+      <link rel="stylesheet" href="css/tachy.css"/>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700|Merriweather:300,300i%7CMaterial+Icons|Karla:400,400i,700,700i|Lora:700|Poppins:300|Playfair+Display" rel="stylesheet">
+      <style media="screen">
+      body {margin: 0;}
+      .brand {
+          font-family: "Playfair Display", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .mwsm, .miwsm img {max-width: 150px;}
+      .icon {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+      }
+      .tdw {text-decoration: underline wavy gold;}
+      blockquote {-webkit-margin-end: 0px;}
+      </style>
+    </head>
+    <body class="brand pv0 ph4 ph6-ns bg-white near-black sans-serif">
+
+        <article class="brand ph2 ph2-ns mt5 mb6">
+          <f1 class="f1 f-headline-ns mb0">STOQE</f1>
+          <p class="f2 mt2 mb3 db lh-solid">Saving Brands.</p>
+          <p class="mt1 db lh-solid">Minimising Costs and Maximising Returns.</p>
+          <p class="f7 mt4 tc">
+            <div class="mt3">
+              <a href="//twitter.com/STOQE" title="STOQE on Twitter" target="_blank" class="f6 dib pr2 dim">Twitter</a>
+              <a href="mailto:stoqe@stoqe.com" title="Email STOQE" class="f6 dib ph2 dim">Email</a>
+            </div>
+          </p>
+        </article>
+
+        <article class="">
+          <div class="mb4-l cf">
+            <article class="fl w-100 dib-ns w-auto-ns mr4-m mr5-l mb4 br3 pa3 pa4-ns mv3 ba b--black-10">
+              <span class="f7 f6-l db black-70">
+                <img src="i/lorna-jane.png" class="v-mid" alt="Lorna Jane.">
+              </span>
+            </article>
+            <article class="fl w-100 dib-ns w-auto-ns mr4-m mr5-l mb4 br3 pa3 pa4-ns mv3 ba b--black-10">
+              <span class="f7 f6-l db black-70">
+                <img src="i/mm-logo.png" class="v-mid" alt="Mobile Muster.">
+              </span>
+            </article>
+            <article class="fl w-100 dib-ns w-auto-ns mr4-m mr5-l mb4 br3 pa3 pa4-ns mv3 ba b--black-10">
+              <span class="f7 f6-l db black-70">
+                <img src="i/roll-recovery.jpg" class="v-mid" alt="ROLL Recovery.">
+              </span>
+            </article>
+            <article class="fl w-100 dib-ns w-auto-ns mr4-m mr5-l mb4 br3 pa3 pa4-ns mv3 ba b--black-10">
+              <span class="f7 f6-l db black-70">
+                <img src="i/st-ali.jpg" class="v-mid" alt="ST ALi">
+              </span>
+            </article>
+            <article class="fl w-100 dib-ns w-auto-ns mr4-m mr5-l mb4 br3 pa3 pa4-ns mv3 ba b--black-10">
+              <span class="f7 f6-l db black-70">
+                <img src="i/smalls-bar.png" class="v-mid" alt="Smalls Bar">
+              </span>
+            </article>
+            <article class="fl w-100 dib-ns w-auto-ns mr4-m mr5-l mb4 br3 pa3 pa4-ns mv3 ba b--black-10">
+              <span class="f7 f6-l db black-70">
+                <img src="i/amta.png" class="v-mid" alt="AMTA">
+              </span>
+            </article>
           </div>
-        </nav>
-      </header>
-    </div>
-
-
-
-    <div class="w-100 bg-blue white">
-      <article class="w-100 ph4 ph6-ns">
-        <div class="tl tc-ns pt6 pb3">
-            <f2 class="brand f1 f-subheadline-ns">Saving Brands</f2>
-            <hr class="mw5 bb bw1 b--black-10">
-            <f3 class="f3 fw2 mt2 db">Minimising Costs and Maximising Returns</f3>
-            <p class="f-subheadline mv5">🙅🏾🥑</p>
-        </div>
-      </article>
-    </div>
-
-
-
-    <div class="w-100 mv6">
-      <article class="w-100 ph4 ph6-ns">
-          <f2 class="brand f2 tc db near-black mb6 mw8">STOQE is a digital service saving brands time and money.</f2>
-      </article>
-    </div>
-
-
-<!--
-    <div class="w-100 bg-white mv6">
-      <article class="w-100 ph0 ph6-ns">
-        <div class="bg-light-red white tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu">Futureproof</p>
-              <f2 class="f1 f-subheadline-ns">Websites that save you time.</f2>
-              <p class="f4 lh-copy mt4"><span class="b">And tears.</span> STOQE is not your everyday agency with a zillion clients and no time to care: STOQE does digital differently, building working relationships <span class="i">and</span> websites. Because without one the other never works out.<br><br>#HappyWebHappyXXX</p>
-            </div>
-            <div class="blue v-bot fr w-100 w-40-ns ph4 pt6-ns">
-              <span class="f-headline">
-                🙋🏽 👰🏽 🤦🏽‍♀️ <br>
-                </span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-
-    <div class="w-100 bg-white mv6">
-      <article class="w-100 ph0 ph6-ns">
-        <div class="bg-green white tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu">Flat-fee</p>
-              <f2 class="f1 f-subheadline-ns">Websites that save you money.</f2>
-              <p class="f4 lh-copy mt4 black-70"><span class="white">So you can afford avocado</span>. No build costs, update costs, upgrade costs, hosting costs, or hidden costs: just 1 flat, monthly fee which <span class="bb bw1 b--black-10">includes everything</span>.<br><br>#SaveCashForSmash</p>
-            </div>
-            <div class="v-bot fr w-100 w-40-ns ph4 pv5">
-              <span class="f-headline">
-                💰🥑💰<br>
-                🥑💰🥑<br>
-                💰🥑💰<br>
-              </span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-
-    <div class="w-100 bg-white mv6">
-      <article class="w-100 ph0 ph6-ns">
-        <div class="bg-light-purple white tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu">Smart</p>
-              <f2 class="f1 f-subheadline-ns">Websites that work for you.</f2>
-              <p class="f4 lh-copy mt4 black-70">
-                <span class="white">And your future</span>. Web tech evolves so fast that today's websites are tomorrow's tech debt: which is why STOQE continuously <span class="bb bw1 b--black-10">updates all your web technologies</span> for the <span class="bb bw1 b--black-10">lifetime of your website</span> at <span class="bb bw1 b--black-10">no extra cost.</span>
-              <br><br><span class="near-black">#DontInvestInDinosaurs</span></p>
-            </div>
-            <div class="v-mid fr w-100 w-40-ns ph0 pt4-ns">
-              <span class="f-headline">
-                👩🏿‍🚀
-                👩🏾‍🔧 <br> 👩🏽‍🔬️
-                👩‍💻 👩🏽‍🏫 <br>
-                👩🏾‍🏭 🕵🏿‍♀️
-              </span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-
-    <div class="w-100 bg-white mv6">
-      <article class="w-100 ph0 ph6-ns">
-        <div class="bg-black white tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 near-white ttu">Secure</p>
-              <f2 class="f1 f-subheadline-ns">Websites that protect you.</f2>
-              <p class="f4 lh-copy mt4"><span class="near-white">And your visitors.</span> <span class="white-50">Including: Website build, unlimited updates, hosting, maintenance, advice, testing, reports, continuous code and tech improvements: included for the lifetime of your website.</span>
-              <br><br>#SafetyFirst</p>
-            </div>
-            <div class="v-bot fr w-100 w-40-ns ph4">
-              <span class="f-headline">
-                👩🏻‍🚒 🕵🏾‍♀ <br>
-                👱🏿‍♀️🤰🏾👵🏾 <br>
-                👮🏿‍♀👩🏾‍⚖
-              </span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-
-    <div class="w-100 bg-white mv6">
-      <article class="w-100 ph0 ph6-ns">
-        <div class="bg-light-blue near-black tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu">Accessible</p>
-              <f2 class="f1 f-subheadline-ns">Websites for everyone.</f2>
-              <p class="f4 lh-copy mt4 black-70">
-                <span class="near-black">And your visitors</span>. <span class="dark-gray">Including: Website build, unlimited updates, hosting, maintenance, advice, testing, reports, continuous code and tech improvements: included for the lifetime of your website.</span>
-              <br><br>#InclusionMatters</p>
-            </div>
-            <div class="v-mid fr w-100 w-40-ns ph4 pt5">
-              <span class="f-headline">
-                🌈🌓<br>
-                👵🏾🤷‍♂👴🏽<br>
-                ♿️
-              </span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-
-    <div class="w-100 bg-white mv6">
-      <article class="w-100 ph0 ph6-ns">
-        <div class="bg-blue white tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu">High Performance</p>
-              <f2 class="f1 f-subheadline-ns">Websites that perform.</f2>
-              <p class="f4 lh-copy mt4 black-70">
-                <span class="white">Everything Included.</span> Including: Website build, unlimited updates, hosting, maintenance, advice, testing, reports, continuous code and tech improvements: included for the lifetime of your website.
-              <br><br>#InclusionMatters</p>
-            </div>
-            <div class="v-mid fr w-100 w-40-ns ph4 pt5">
-            <span class="f-headline">⛹🏾‍♀️ 🏋🏿‍♀️ 🏃🏾‍♀️ 🚴🏼‍♀️ 🤹🏽‍♀️</span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
--->
-
-
-    <div class="w-100 bg-hot-pink mv0 bb bw1 b--white">
-      <article class="w-100 ph0 ph6-ns pv2 pv6-ns">
-        <div class="bg-white near-black tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu"><span class="bb bw1 b--hot-pink">True love</span></p>
-              <f2 class="f1 f-subheadline-ns">Websites that save you time.</f2>
-            </div>
-            <div class="fr w-100 w-40-ns ph4 pt4 pt6-ns">
-              <span class="f1 f-headline-ns">
-                <!-- 🙋🏿 👰🏿 🤦🏿‍♀️ <br>
-                <hr class="mv2 bb bw1 b--black-05"-->
-                🙋🏾 👰🏾 🤦🏾‍♀️ <!--br>
-                <hr class="mv2 bb bw1 b--black-05">
-                🙋 👰 🤦‍♀️  -->
-                </span>
-            </div>
-            <div class="cf w-100 ph4 pl5-ns">
-              <p class="tl f4 lh-copy measure-wide mt4"><span class="b">And tears.</span> Agency-burn breaks your heart and puts you back at the at start, which is why STOQE does digital differently: STOQE builds <span class="bb bw1 b--black-10">working relationships and world-class websites</span> because one without the other never works out.<br><br>#<span class="bb bw1 b--hot-pink">NoWebsiteAndChill</span></p>
-            </div>
-
-          </article>
-        </div>
-      </article>
-    </div>
-
-
-    <div class="w-100 bg-green mv0 bb bw1 b--white">
-      <article class="w-100 ph0 ph6-ns pv2 pv6-ns">
-        <div class="bg-white near-black tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu"><span class="bb bw1 b--green">Flat-fee</span></p>
-              <f2 class="f1 f-subheadline-ns">Websites that save you money.</f2>
-              <p class="f4 lh-copy mt4">
-                <span class="b">So you can afford avocado</span>. No website build costs, no update costs, no upgrade costs, no hosting costs, no miscellaneous costs, no hidden costs, and no agency tax! With STOQE you pay just one flat, monthly fee which <span class="bb bw1 b--black-10">includes everything</span>.
-                <br><br>
-                #<span class="bb bw1 b--green">SaveCashForSmash</span>
-              </p>
-            </div>
-            <div class="v-bot fr w-100 w-40-ns ph4 pt6-ns">
-              <span class="f1 f-headline-ns">
-                <span class="">💰🥑💰</span>
-                <span class="dn di-ns"><br></span>
-                <span class="dn di-ns">🥑💰🥑</span>
-                <span class="dn di-ns"><br></span>
-                <span class="dn di-ns">💰🥑💰</span>
-              </span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-
-
-    <div class="w-100 bg-gold mv0 bb bw1 b--white">
-      <article class="w-100 ph0 ph6-ns pv2 pv6-ns">
-        <div class="bg-white near-black tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu"><span class="bb bw1 b--gold">Smart</span></p>
-              <f2 class="f1 f-subheadline-ns">Websites that work for you.</f2>
-
-              <p class="f4 lh-copy mt4 black-90">
-                <span class="b">Automatically.</span> Time is precious and technology is impressive so STOQE maximises both with smarter websites that work for you with <span class="bb bw1 b--black-10">automatic back-ups, automatic updates, version control</span>, and more.
-                <br><br>
-                #<span class="bb bw1 b--gold">AutoEverything</span></p>
-            </div>
-            <div class="v-bot fr w-100 w-40-ns ph4 pt6-ns">
-                <span class="f1 f-headline-ns">
-                👩🏿‍🚀
-                👩🏾‍🔧
-                <span class="dn di-ns"><br></span>
-                👩🏽‍🔬️
-                👩‍💻
-                👩🏽‍🏫
-                <span class="dn di-ns"><br></span>
-                👩🏾‍🏭 🕵🏿‍♀️
-              </span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-
-
-    <div class="w-100 bg-light-red mv0 bb bw1 b--white">
-      <article class="w-100 ph0 ph6-ns pv2 pv6-ns">
-        <div class="bg-white near-black tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu"><span class="bb bw1 b--light-red">Futureproof</p>
-              <f2 class="f1 f-subheadline-ns">Websites that evolve with you.</f2>
-              <p class="f4 lh-copy mt4 black-90">
-                <span class="b">Always.</span> Technology evolves so fast that websites turn into tech debt every year or two. STOQE ensures your website doesn't depreciate by continuously <span class="bb bw1 b--black-10">updating all your web technologies</span> for the <span class="bb bw1 b--black-10">lifetime of your website</span> at <span class="bb bw1 b--black-10">no extra cost</span>.
-                <br><br>
-                #<span class="bb bw1 b--light-red">DontInvestInADinosaur</span>
-              </p>
-            </div>
-            <div class="fr w-100 w-40-ns ph4 pt6-ns">
-                <span class="f1 f-headline-ns">
-                👩🏿‍🚀
-                👩🏾‍🔧
-                <span class="dn di-ns"><br></span>
-                👩🏽‍🔬️
-                👩‍💻 👩🏽‍🏫
-                <span class="dn di-ns"><br></span>
-                👩🏾‍🏭 🕵🏿‍♀️
-              </span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-
-
-    <div class="w-100 bg-black mv0 bb bw1 b--white">
-      <article class="w-100 ph0 ph6-ns pv2 pv6-ns">
-        <div class="bg-white near-black tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu"><span class="bb bw1 b--black">Secure</span></p>
-              <f2 class="f1 f-subheadline-ns">Websites that protect you.</f2>
-              <p class="f4 lh-copy mt4"><span class="b">And your visitors.</span>
-              If your website isn't secure it's insecure, and you and every visitors to it are exposed. STOQE delivers <span class="bb bw1 b--black-10">secure websites without compromise</span> protecting you, your business, and everyone around you.
-              <br><br>
-              #<span class="bb bw1 b--black">SafetyFirst</span>
-              </p>
-            </div>
-            <div class="v-bot fr w-100 w-40-ns ph4 pt6-ns">
-                <span class="f1 f-headline-ns">
-                👩🏻‍🚒 🕵🏾‍♀
-                <span class="dn di-ns"><br></span>
-                👱🏿‍♀️🔒👵🏾
-                <span class="dn di-ns"><br></span>
-                👮🏿‍♀👩🏾‍⚖
-              </span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-
-
-
-    <div class="w-100 bg-light-blue mv0 bb bw1 b--white">
-      <article class="w-100 ph0 ph6-ns pv2 pv6-ns">
-        <div class="bg-white near-black tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu"><span class="bb bw1 b--light-blue">Accessible</span></p>
-              <f2 class="f1 f-subheadline-ns">Websites for everyone. 👭👬 </f2>
-              <p class="f4 lh-copy mt4">
-                <span class="b">Inclusion isn't an afterthought.</span> Websites should be  accessible to everyone — to people of all abilities. At STOQE website accessibility is a priority because everyone deserves it.
-              <br><br>#<span class="bb bw1 b--light-blue">EqualAccess</span></p>
-            </div>
-            <div class="v-bot fr w-100 w-40-ns ph4 pt6-ns">
-              <span class="f1 f-headline-ns">
-                🌈🌓
-                <span class="dn di-ns"><br></span>
-                👵🏾🤷‍♂👴🏽
-                <span class="dn di-ns"><br></span>
-                👭 ♿️  👬
-              </span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-
-
-    <div class="w-100 bg-light-purple mv0 bb bw1 b--white">
-      <article class="w-100 ph0 ph6-ns pv2 pv6-ns">
-        <div class="bg-white near-black tl tc-ns">
-          <article class="cf pt5 pb4 ph2 pv5">
-            <div class="v-mid fl w-100 w-60-ns tl ph4 pl5-ns">
-              <p class="f4 ttu"><span class="bb bw1 b--light-purple">Purpose-built</span></p>
-              <f2 class="f1 f-subheadline-ns">Websites that perform.</f2>
-              <p class="f4 lh-copy mt4">
-                <span class="b">Outstandingly.</span> A website that looks good but loads slowly never gets seen, so performance precedes pretty at STOQE. Light-weight websites with high-speed servers load your content to your visitors like lightning.
-              <br><br>
-              #<span class="bb bw1 b--light-purple">NeedForSpeed</span></p>
-            </div>
-            <div class="v-bot fr w-100 w-40-ns ph4 pt6-ns">
-              <span class="f1 f-headline-ns">
-                ⛹🏾‍♀️ 🏋🏿‍♀️ 🏃🏾‍♀️ 🚴🏼‍♀️ 🤹🏽‍♀️
-              </span>
-            </div>
-          </article>
-        </div>
-      </article>
-    </div>
-
-
-    <div class="w-100 mv6">
-      <article class="w-100 ph4 ph6-ns">
-          <f2 class="brand f2 tc db near-black mb6 mw8">STOQE is a digital service saving brands time and money.</f2>
-      </article>
-    </div>
-
-    <div class="w-100">
-      <header class="bg-blue pv2 pv3-ns ph4 ph6-ns">
-        <nav class="f6">
-          <a class="brand f1 v-mid link dim white dib mr4" href="/" title="Home">STOQE</a>
-          <div class="v-top f1 fr">
-            <a href="https://twitter.com/STOQE" target="_blank" class="dib link black-20 hover-near-black">🐔
-            </a>
-            <a href="mailto:stoqe@stoqe.com?subject=Save Our Brand" class="link dib black-20 hover-near-black">💌
-            </a>
-          </div>
-        </nav>
-      </header>
-    </div>
-
-      <!--div class="tl">
-          <article class="vh-100 dt">
-            <div class="dtc v-mid">
-              <section class="">
-                  <div class="f3 f1-ns mb2">STOQE saves brands time and money.</div>
-                  <div class="f4 black-30">STOQE saves big and small brands lots of time and lots of money.</div>
-              </section>
-            </div>
-          </article>
-
-          <article class="vh-100 dt">
-            <div class="dtc v-mid">
-              <section class="">
-                  <div class="f3 f1-ns mb2">STOQE reviews websites.</div>
-                  <div class="f4 black-30 measure-wide lh-copy">How effective is your website? Does it work for visitors and Google? Is it industry standards? A STOQE Performance Report delivers objective facts and improvement points in easy-to-understand language.</div>
-              </section>
-            </div>
-          </article>
-
-          <article class="vh-100 dt">
-            <div class="dtc v-mid">
-              <section class="">
-                  <div class="f3 f1-ns mb2">STOQE improves websites.</div>
-                  <div class="f4 black-30 measure-wide lh-copy">Improvements are easy — you just have to care. STOQE can make your website faster, safer, cheaper, cleaner, easier to use, easier to find, easier to update, more popular, more profitable, more modern, and much more.</div>
-              </section>
-            </div>
-          </article>
-
-          <article class="vh-100 dt">
-            <div class="dtc v-mid">
-              <section class="">
-                  <div class="f3 f1-ns mb2">STOQE builds websites.</div>
-                  <div class="f4 black-30 measure-wide lh-copy">Need a website? Want it to be easy, clean, modern, mobile-friendly, and high-performing? Don't want to deal with agency costs, retainers, and attitudes? Welcome to STOQE...</div>
-              </section>
-              <section class="relative mt4 mt5-ns tl tc-ns">
-                <div class="cf">
-                  <div class="fl w-50 w-25-ns pl0 pa4 pv3-ns pl0-ns">
-                    <img alt="Image" src="img/cloudflare.png" class="mw4-ns">
-                  </div>
-                  <div class="fl w-50 w-25-ns pl0 pa4 pv3-ns pl0-ns">
-                    <img alt="Image" src="img/github.png" class="mw4-ns">
-                  </div>
-                  <div class="fl w-50 w-25-ns pl0 pa4 pv3-ns pl0-ns">
-                    <img alt="Image" src="img/shopify.png" class="mw4-ns">
-                  </div>
-                  <div class="fl w-50 w-25-ns pl0 pa4 pv3-ns pl0-ns">
-                    <img alt="Image" src="img/wordpress.png" class="mw4-ns">
-                  </div>
-                </div>
-                <div class="cf">
-                  <div class="fl w-50 w-25-ns pl0 pa4 pv3-ns pl0-ns">
-                    <img alt="Image" src="img/ghost-pro.png" class="mw4-ns">
-                  </div>
-                  <div class="fl w-50 w-25-ns pl0 pa4 pv3-ns pl0-ns">
-                    <img alt="Image" src="img/digitalocean-logo.png" class="mw4-ns">
-                  </div>
-                  <div class="fl w-50 w-25-ns pl0 pa4 pv3-ns pl0-ns">
-                    <img alt="Image" src="img/discourse.png" class="mw4-ns">
-                  </div>
-                  <div class="fl w-50 w-25-ns pl0 pa4 pv3-ns pl0-ns">
-                    <img alt="Image" src="img/gsuite.png" class="mw4-ns">
-                  </div>
-                </div>
-              </section>
-          </article>
-
-          <article class="vh-100 dt">
-            <div class="dtc v-mid">
-              <section class="">
-                  <div class="f3 f1-ns mb2">STOQE writes more in less.</div>
-                  <div class="f4 black-30">Need a creative brand name, tagline, slogan, or ad? STOQE writes more in less.</div>
-              </section>
-            </div>
-          </article>
-
-          <article class="vh-100 dt">
-            <div class="dtc v-mid">
-              <section class="">
-                  <div class="f3 f1-ns mb2">STOQE presents brands (in Australia).</div>
-                  <div class="f4 black-30 measure-wide lh-copy">Are you an International brand looking for a presence and a point-of-contact in Australia? STOQE represents international brands in Australia with dedicated Australian websites, customer support, local stock, and national delivery.</div>
-              </section>
-            </div>
-          </article>
-      </div>
-
-      <article class="relative vh-100 w-100 w-90-ns dt">
-        <div class="dtc v-mid tl">
-            <blockquote class="f3 f1-ns ml0 mt0 pl3 pl4-ns pr0 pr3-ns bl bw2 b--black-10">
-              <span class="db f4 mb3 black-30">Client Case Study</span>
-              STOQE saved <a href="www.stali.com.au" class="link near-black hover-black-50 tdw pointer" target="_blank">ST ALi</a> $4,000 per year in email costs by optimising their G Suite email system.
-
-            </blockquote>
-        </div>
-      </article>
-
-      <article class="relative vh-100 w-100 w-90-ns dt">
-        <div class="dtc v-mid tl">
-            <blockquote class="f3 f1-ns ml0 mt0 pl3 pl4-ns pr0 pr3-ns bl bw2 b--black-10">
-              <span class="db f4 mb3 black-30">Client Case Study</span>
-              STOQE saved a client $20,000 by cost consulting their WordPress-to-Shopify website migration.
-            </blockquote>
-        </div>
-      </article>
-
-      <article class="relative vh-100 w-100 w-90-ns dt">
-        <div class="dtc v-mid tl">
-            <blockquote class="f3 f1-ns ml0 mt0 pl3 pl4-ns pr0 pr3-ns bl bw2 b--black-10">
-              <span class="db f4 mb3 black-30">Client Case Study</span>
-              STOQE saved <a href="http://smalls.com.au" class="link near-black hover-black-50 tdw pointer" target="_blank">Smalls'</a> hacked and hijacked website in under 48 hours... after their agency said, "It can't be saved. You need a new website".
-            </blockquote>
-        </div>
-      </article>
-
-      <article class="relative vh-100 w-100 w-90-ns dt">
-        <div class="dtc v-mid tl">
-            <blockquote class="f3 f1-ns ml0 mt0 pl3 pl4-ns pr0 pr3-ns bl bw2 b--black-10">
-              <span class="db f4 mb3 black-30">Client Case Study</span>
-              STOQE saved a Melbourne start-up by creating them the most brilliant brand name since STOQE! And in under 24 hours...
-            </blockquote>
-        </div>
-      </article>
-
-      <article class="relative vh-100 w-100 w-90-ns dt">
-        <div class="dtc v-mid tl">
-            <blockquote class="f3 f1-ns ml0 mt0 pl3 pl4-ns pr0 pr3-ns bl bw2 b--black-10">
-              <span class="db f4 mb3 black-30">Client Case Study</span>
-              STOQE represents <a href="https://rollrecovery.com.au" class="link near-black hover-black-50 tdw pointer">ROLL Recovery in Australia</a> with an Australian website selling direct-to-public, local stock on hand, and dedicated customer service.
-            </blockquote>
-        </div>
-      </article>
-
-      <article>
-        <div class="">
-          <section class="tl mw8">
-              <span class="w-100 dib f2-ns">STOQE<br>Saving brands.</span>
-              <span class="dib tr f2 pt2">
-                <a href="https://twitter.com/STOQE" target="_blank" class="link dib dim blue mt4 mr3">
-                  <svg class="db w2 h2" data-icon="twitter" viewBox="0 0 32 32"
-                    fill="currentColor">
-                    <title >twitter icon</title>
-                    <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"
-                    ></path>
-                  </svg>
-                </a>
-                <a href="mailto:stoqe@stoqe.com?subject=Save Our Brand" class="link dib dim blue">
-                  <svg class="db w2 h2" data-icon="email" viewBox="0 0 32 32"
-                    fill="currentColor">
-                    <title>email icon</title>
-                    <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM8 8h16c0.286 0 0.563 0.061 0.817 0.177l-8.817 10.286-8.817-10.287c0.254-0.116 0.531-0.177 0.817-0.177zM6 22v-12c0-0.042 0.002-0.084 0.004-0.125l5.864 6.842-5.8 5.8c-0.045-0.167-0.069-0.34-0.069-0.517zM24 24h-16c-0.177 0-0.35-0.024-0.517-0.069l5.691-5.691 2.826 3.297 2.826-3.297 5.691 5.691c-0.167 0.045-0.34 0.069-0.517 0.069zM26 22c0 0.177-0.024 0.35-0.069 0.517l-5.8-5.8 5.865-6.842c0.003 0.041 0.004 0.083 0.004 0.125v12z"
-                    ></path>
-                  </svg>
-                </a>
-              </span>
-          </section>
-        </div>
-      </article-->
+        </article>
 
       <script type="text/javascript">
         var _gauges = _gauges || [];
@@ -621,6 +117,7 @@
         })();
       </script>
 
+</body>
 
-  </body>
 </html>
+
