@@ -425,7 +425,7 @@
     "website": "abovecategorycycling.com",
     "address": "42 Caledonia St",
     "suburb": "Sausalito",
-    "city": "",
+    "city": "Sausalito",
     "zone": "CA 94965",
     "country": "USA",
     "_geoloc": {
@@ -438,8 +438,8 @@
     "priority": 0,
     "website": "strictlybicycles.com",
     "address": "2347 Hudson Terrace",
-    "suburb": "Fort Lee",
-    "city": "",
+    "suburb": "",
+    "city": "Fort Lee",
     "zone": "NJ 07024",
     "country": "USA",
     "_geoloc": {
@@ -466,8 +466,8 @@
     "priority": 0,
     "website": "metierseattle.com",
     "address": "1017 E Union St",
-    "suburb": "Seattle",
-    "city": "",
+    "suburb": "",
+    "city": "Seattle",
     "zone": "WA 98122",
     "country": "USA",
     "_geoloc": {
