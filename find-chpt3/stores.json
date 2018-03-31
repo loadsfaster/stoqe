@@ -74,10 +74,10 @@
     "priority": 0,
     "website": "pedalpower.org.uk",
     "address": "13 Main St",
-    "suburb": "West Calder",
-    "city": "",
+    "suburb": "",
+    "city": "West Calder",
     "zone": "EH55 8BY",
-    "country": "United Kingdom",
+    "country": "Scotland",
     "_geoloc": {
       "lat": 55.8512996,
       "lng": -3.5743922
