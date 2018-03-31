@@ -65,15 +65,27 @@
 
 <!-- Results -->
 <div class="container-fluid" id="results">
-  <div class="row mt6 ph5-ns">
+  <div class="row mt6 ph4-ns">
     <br>
     <div id="stats" class="red"></div>
   </div>
+
   <div class="row">
-    <ul class="list pl4">
-      <div id="hits" class=""></div>
-    </ul>
+
+    <div class="flex flex-wrap">
+        <div class="w-100 w-40-ns pa0-ns">
+            <ul class="list ph4">
+              <div id="hits" class=""></div>
+            </ul>
+        </div>
+
+        <div class="w-100 w-60-ns pa4 ph4-ns">
+          <div id="map"></div>
+        </div>
+    </div>
+
   </div>
+
   <div class="row">
     <div id="pagination"></div>
   </div>
@@ -106,9 +118,7 @@
         </div-->
       <!--/div-->
 
-      <div class="row">
-        <div id="map"></div>
-      </div>
+
     </div>
 
     <!--div class="col-sm-12">
