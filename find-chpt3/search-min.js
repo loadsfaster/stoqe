@@ -26,7 +26,7 @@ window.addEventListener('load', function() {
   );
 
   var hitTemplate =
-    '<li class="pv2 ph0 ph4-ns bb b--black-10 f3"><details><summary><b class="mb1">{{{_highlightResult.shopName.value}}}</b>  &middot; {{{_highlightResult.city.value}}} &middot; <a target="_blank" href="http://{{website}}"><span class="dn-m dn-l">www</span><span class="di-m di-l dn">{{website}}</span></a></summary><span class="pl4-ns">{{{_highlightResult.address.value}}}, {{{_highlightResult.suburb.value}}}, {{{_highlightResult.city.value}}} {{{_highlightResult.country.value}}}</span></details></li>';
+    '<li class="pv2 ph0 ph4-ns bb b--black-10 f3"><details><summary><b class="mb1">{{{_highlightResult.shopName.value}}}</b>  &middot; {{{_highlightResult.city.value}}} &middot; <a target="_blank" href="http://{{website}}"><span class="dn-m dn-l">www</span><span class="di-m di-l dn">{{website}}</span></a></summary><span class="pl3 pl4-ns">{{{_highlightResult.address.value}}}, {{{_highlightResult.suburb.value}}}, {{{_highlightResult.city.value}}} {{{_highlightResult.country.value}}}</span></details></li>';
 
   var noResultsTemplate = '<div class="">CHPT3 isn\'t in <strong class="ttc">{{query}}</strong> yet. You can <a href="https://www.chpt3.com">buy from our online store</a>.<br></div>';
 
