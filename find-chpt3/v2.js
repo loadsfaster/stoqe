@@ -46,39 +46,39 @@ window.addEventListener('load', function() {
     '<a class="f3 link hover-dark-blue b no-underline black dib ph2 pv1" href="">{{value}} ({{count}})</a>';
 
   // initialize RefinementList
-    search.addWidget(
-      instantsearch.widgets.menu({
-        container: '#menu',
-        sortBy: ['count:desc', 'isRefined', 'name:asc'],
-        attributeName: 'country',
-        templates: {
-          item: menuTemplate
-        }
-      })
-    );
+    //search.addWidget(
+      //instantsearch.widgets.menu({
+        //container: '#menu',
+        //sortBy: ['count:desc', 'isRefined', 'name:asc'],
+        //attributeName: 'country',
+        //templates: {
+          //item: menuTemplate
+        //}
+      //})
+    //);
 
 
 
   // initialize currentRefinedValues
-    search.addWidget(
-      instantsearch.widgets.currentRefinedValues({
-        container: '#current-refined-values',
+    //search.addWidget(
+      //instantsearch.widgets.currentRefinedValues({
+        //container: '#current-refined-values',
         // This widget can also contain a clear all link to remove all filters,
         // we disable it in this example since we use `clearAll` widget on its own.
-        clearAll: false
-      })
-    );
+        //clearAll: false
+      //})
+    //);
 
     // initialize clearAll
-    search.addWidget(
-      instantsearch.widgets.clearAll({
-        container: '#clear-all',
-        templates: {
-          link: 'Worldwide'
-        },
-        autoHideContainer: false
-      })
-    );
+    //search.addWidget(
+      //instantsearch.widgets.clearAll({
+        //container: '#clear-all',
+        //templates: {
+          //link: 'Worldwide'
+        //},
+        //autoHideContainer: false
+      //})
+    //);
 
   //search.addWidget(
     //instantsearch.widgets.pagination({

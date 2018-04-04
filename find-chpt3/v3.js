@@ -11,7 +11,7 @@ window.addEventListener('load', function() {
   search.addWidget(
     instantsearch.widgets.searchBox({
       container: '#q',
-      placeholder: 'Find CHPT3 (version II)',
+      placeholder: 'Find CHPT3 (Version III)',
       magnifier: false
     })
   );
@@ -20,7 +20,7 @@ window.addEventListener('load', function() {
     instantsearch.widgets.stats({
       container: '#stats',
       templates: {
-            body: "{{nbHits}} store{{#hasManyResults}}s {{/hasManyResults}}{{#hasOneResult}} {{/hasOneResult}}{{#hasNoResults}}{{/hasNoResults}}"
+            body: "{{nbHits}} Store{{#hasManyResults}}s {{/hasManyResults}}{{#hasOneResult}} {{/hasOneResult}}{{#hasNoResults}}*{{/hasNoResults}}"
           }
     })
   );
@@ -42,43 +42,71 @@ window.addEventListener('load', function() {
     })
   );
 
-  var menuTemplate =
-    '<a class="f3 link hover-dark-blue b no-underline black dib ph2 pv1" href="">{{value}} ({{count}})</a>';
+  //var regionTemplate =
+    //'<a class="f3 link hover-dark-blue b no-underline black dib ph2 pv1" href="">{{value}} ({{count}})</a>';
 
   // initialize RefinementList
-    search.addWidget(
-      instantsearch.widgets.menu({
-        container: '#menu',
-        sortBy: ['count:desc', 'isRefined', 'name:asc'],
-        attributeName: 'country',
-        templates: {
-          item: menuTemplate
-        }
-      })
-    );
+    //search.addWidget(
+      //instantsearch.widgets.menu({
+        //container: '#regionMenu',
+        //sortBy: ['count:desc'],
+        //attributeName: 'region',
+        //templates: {
+          //item: regionTemplate
+        //}
+      //})
+    //);
+
+    var countryTemplate =
+      '<li class="dib mr3 mb2"><a href="#" class="f4 f3-ns b db pa2 link dim dark-gray ba b--black-20">{{value}}</a></li>';
+
+    // initialize RefinementList
+      search.addWidget(
+        instantsearch.widgets.menu({
+          container: '#countryMenu',
+          sortBy: ['count:desc'],
+          attributeName: 'country',
+          templates: {
+            item: countryTemplate
+          }
+        })
+      );
 
 
 
-  // initialize currentRefinedValues
-    search.addWidget(
-      instantsearch.widgets.currentRefinedValues({
-        container: '#current-refined-values',
-        // This widget can also contain a clear all link to remove all filters,
-        // we disable it in this example since we use `clearAll` widget on its own.
-        clearAll: false
-      })
-    );
+   //search.addWidget(
+     //instantsearch.widgets.currentRefinedValues({
+       //container: '#current-refined-values',
+       //clearAll: 'after',
+       //clearsQuery: true,
+       //attributes: [
+         //{name: 'free_shipping', label: 'Free shipping'},
+         //{name: 'price', label: 'Price'},
+         //{name: 'brand', label: 'Brand'},
+         //{name: 'category', label: 'Category'},
+       //],
+       //onlyListedAttributes: false,
+     //})
+   //);
+
+
+
+    var allstoresTemplate =
+      '<li class="dib mr3 mb2"><a href="#" class="activeRed f3 fw7 dib pa2 no-underline bg-animate bg-white hover-bg-light-blue">Worldwide</a></li>';
 
     // initialize clearAll
     search.addWidget(
       instantsearch.widgets.clearAll({
         container: '#clear-all',
         templates: {
-          link: 'Worldwide'
+          link: allstoresTemplate
         },
         autoHideContainer: false
       })
     );
+
+
+
 
   //search.addWidget(
     //instantsearch.widgets.pagination({

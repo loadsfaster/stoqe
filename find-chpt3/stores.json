@@ -8,6 +8,7 @@
     "city": "London",
     "zone": "E14 5AR",
     "country": "United Kingdom",
+    "region": "uk",
     "_geoloc": {
       "lat": 51.5060677,
       "lng": -0.0184396
@@ -22,6 +23,7 @@
     "city": "London",
     "zone": "EC2V 7PG",
     "country": "United Kingdom",
+    "region": "uk",
     "_geoloc": {
       "lat": 51.5146578,
       "lng": -0.0958647
@@ -36,6 +38,7 @@
     "city": "London",
     "zone": "SW1Y 6LX",
     "country": "United Kingdom",
+    "region": "uk",
     "_geoloc": {
       "lat": 51.507751,
       "lng": -0.1406013
@@ -50,6 +53,7 @@
     "city": "London",
     "zone": "KT10 9RT",
     "country": "United Kingdom",
+    "region": "uk",
     "_geoloc": {
       "lat": 51.3711607,
       "lng": -0.3654069
@@ -64,6 +68,7 @@
     "city": "Ambleside",
     "zone": "LA22 9AN",
     "country": "United Kingdom",
+    "region": "uk",
     "_geoloc": {
       "lat": 54.4066643,
       "lng": -2.9432693
@@ -78,6 +83,7 @@
     "city": "West Calder",
     "zone": "EH55 8BY",
     "country": "Scotland",
+    "region": "uk",
     "_geoloc": {
       "lat": 55.8512996,
       "lng": -3.5743922
@@ -92,6 +98,7 @@
     "city": "",
     "zone": "SL4 1DE",
     "country": "United Kingdom",
+    "region": "uk",
     "_geoloc": {
       "lat": 51.4802152,
       "lng": -0.6141481
@@ -106,6 +113,7 @@
     "city": "",
     "zone": "DN31 1JQ",
     "country": "United Kingdom",
+    "region": "uk",
     "_geoloc": {
       "lat": 53.5642933,
       "lng": -0.0890323
@@ -120,6 +128,7 @@
     "city": "",
     "zone": "HG2 0NA",
     "country": "United Kingdom",
+    "region": "uk",
     "_geoloc": {
       "lat": 53.9915451,
       "lng": -1.5490967
@@ -134,6 +143,7 @@
     "city": "",
     "zone": "35135",
     "country": "France",
+    "region": "Europe",
     "_geoloc": {
       "lat": 48.0890699,
       "lng": -1.6298899
@@ -148,6 +158,7 @@
     "city": "",
     "zone": "31400",
     "country": "France",
+    "region": "Europe",
     "_geoloc": {
       "lat": 43.6001824,
       "lng": 1.4319694
@@ -162,6 +173,7 @@
     "city": "",
     "zone": "81160",
     "country": "France",
+    "region": "Europe",
     "_geoloc": {
       "lat": 43.9475868,
       "lng": 2.205093
@@ -176,6 +188,7 @@
     "city": "",
     "zone": "61100",
     "country": "France",
+    "region": "Europe",
     "_geoloc": {
       "lat": 48.736516,
       "lng": -0.5767145
@@ -190,6 +203,7 @@
     "city": "",
     "zone": "56600",
     "country": "France",
+    "region": "Europe",
     "_geoloc": {
       "lat": 47.7752566,
       "lng": -3.3583717
@@ -204,6 +218,7 @@
     "city": "",
     "zone": "85000",
     "country": "France",
+    "region": "Europe",
     "_geoloc": {
       "lat": 46.7069607,
       "lng": -1.4326087
@@ -218,6 +233,7 @@
     "city": "Barcelona",
     "zone": "08023",
     "country": "Spain",
+    "region": "Europe",
     "_geoloc": {
       "lat": 41.4223211,
       "lng": 2.1304909
@@ -232,6 +248,7 @@
     "city": "",
     "zone": "47004",
     "country": "Spain",
+    "region": "Europe",
     "_geoloc": {
       "lat": 41.6478738,
       "lng": -4.7235421
@@ -246,6 +263,7 @@
     "city": "Girona",
     "zone": "17001",
     "country": "Spain",
+    "region": "Europe",
     "_geoloc": {
       "lat": 41.985059,
       "lng": 2.820556
@@ -260,6 +278,7 @@
     "city": "Madrid",
     "zone": "28803",
     "country": "Spain",
+    "region": "Europe",
     "_geoloc": {
       "lat": 40.4404198,
       "lng": -3.6154781
@@ -274,6 +293,7 @@
     "city": "Illes Balears",
     "zone": "07458",
     "country": "Spain",
+    "region": "Europe",
     "_geoloc": {
       "lat": 39.8062679,
       "lng": 3.1145942
@@ -288,6 +308,7 @@
     "city": "Las Palmas",
     "zone": "35010",
     "country": "Spain",
+    "region": "Europe",
     "_geoloc": {
       "lat": 28.1291778,
       "lng": -15.445731
@@ -302,6 +323,7 @@
     "city": "",
     "zone": "3800-356",
     "country": "Portugal",
+    "region": "Europe",
     "_geoloc": {
       "lat": 40.6459229,
       "lng": -8.6452357
@@ -316,6 +338,7 @@
     "city": "",
     "zone": "81541",
     "country": "Germany",
+    "region": "Europe",
     "_geoloc": {
       "lat": 48.1260719,
       "lng": 11.5767695
@@ -330,6 +353,7 @@
     "city": "Wien",
     "zone": "1020",
     "country": "Austria",
+    "region": "Europe",
     "_geoloc": {
       "lat": 48.2133098,
       "lng": 16.3792969
@@ -344,6 +368,7 @@
     "city": "Salzburg",
     "zone": "",
     "country": "Austria",
+    "region": "Europe",
     "_geoloc": {
       "lat": 47.8008633,
       "lng": 13.0452642
@@ -358,6 +383,7 @@
     "city": "",
     "zone": "5232 BT",
     "country": "Netherlands",
+    "region": "Europe",
     "_geoloc": {
       "lat": 51.7096617,
       "lng": 5.3313931
@@ -372,6 +398,7 @@
     "city": "",
     "zone": "6831 AJ",
     "country": "Netherlands",
+    "region": "Europe",
     "_geoloc": {
       "lat": 51.9710011,
       "lng": 5.8793903
@@ -386,6 +413,7 @@
     "city": "",
     "zone": "1531 HA ",
     "country": "Netherlands",
+    "region": "Europe",
     "_geoloc": {
       "lat": 52.4981728,
       "lng": 4.8086848
@@ -400,6 +428,7 @@
     "city": "",
     "zone": "5731 JK",
     "country": "Netherlands",
+    "region": "Europe",
     "_geoloc": {
       "lat": 51.44308,
       "lng": 5.6101595
@@ -414,6 +443,7 @@
     "city": "",
     "zone": "9581 AD",
     "country": "Netherlands",
+    "region": "Europe",
     "_geoloc": {
       "lat": 52.9288134,
       "lng": 7.0133442
@@ -428,6 +458,7 @@
     "city": "Sausalito",
     "zone": "CA 94965",
     "country": "USA",
+    "region": "North America",
     "_geoloc": {
       "lat": 37.8586472,
       "lng": -122.4870887
@@ -442,6 +473,7 @@
     "city": "Fort Lee",
     "zone": "NJ 07024",
     "country": "USA",
+    "region": "North America",
     "_geoloc": {
       "lat": 40.8612094,
       "lng": -73.9616199
@@ -456,6 +488,7 @@
     "city": "Texas",
     "zone": "75205",
     "country": "USA",
+    "region": "North America",
     "_geoloc": {
       "lat": 32.8505735,
       "lng": -96.7904607
@@ -470,6 +503,7 @@
     "city": "Seattle",
     "zone": "WA 98122",
     "country": "USA",
+    "region": "North America",
     "_geoloc": {
       "lat": 47.6127054,
       "lng": -122.3208384
@@ -484,6 +518,7 @@
     "city": "Vancouver",
     "zone": "BC V5Y 1P5",
     "country": "Canada",
+    "region": "North America",
     "_geoloc": {
       "lat": 49.2633309,
       "lng": -123.1125066
@@ -498,6 +533,7 @@
     "city": "Toronto",
     "zone": "ON M3C 0E8",
     "country": "Canada",
+    "region": "North America",
     "_geoloc": {
       "lat": 43.7357349,
       "lng": -79.3470337
@@ -512,6 +548,7 @@
     "city": "Montreal",
     "zone": "QC H4C 2G9",
     "country": "Canada",
+    "region": "North America",
     "_geoloc": {
       "lat": 45.484881,
       "lng": -73.582639
@@ -526,6 +563,7 @@
     "city": "Edmonton",
     "zone": "AB T6C 0Z9",
     "country": "Canada",
+    "region": "North America",
     "_geoloc": {
       "lat": 53.5178961,
       "lng": -113.4806179
@@ -540,6 +578,7 @@
     "city": "Montreal",
     "zone": "QC H2T 1S5",
     "country": "Canada",
+    "region": "North America",
     "_geoloc": {
       "lat": 45.5250018,
       "lng": -73.5988131
@@ -554,6 +593,7 @@
     "city": "",
     "zone": "",
     "country": "Guatemala",
+    "region": "South America",
     "_geoloc": {
       "lat": 14.5969689,
       "lng": -90.5096915
@@ -568,6 +608,7 @@
     "city": "Jakarta",
     "zone": "12190",
     "country": "Indonesia",
+    "region": "Asia",
     "_geoloc": {
       "lat": -6.230036,
       "lng": 106.811924
@@ -579,7 +620,8 @@
     "suburb": "",
     "city": "Fu Zhou",
     "zone": "",
-    "country": "China"
+    "country": "China",
+    "region": "Asia"
   },
   {
     "shopName": "SILVER LIGHT BIKE",
@@ -587,7 +629,8 @@
     "suburb": "",
     "city": "Shen Zhen",
     "zone": "",
-    "country": "China"
+    "country": "China",
+    "region": "Asia"
   },
   {
     "shopName": "ARTBIKE",
@@ -597,6 +640,7 @@
     "suburb": "",
     "city": "Shanghai",
     "zone": "",
-    "country": "China"
+    "country": "China",
+    "region": "Asia"
   }
 ]
