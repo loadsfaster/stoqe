@@ -1,0 +1,242 @@
+[
+    {
+        "shopName": "RIDE SHOP",
+        "address": "Shop 2, 4 Lonsdale St",
+        "suburb": "Braddon",
+        "city": "Canberra",
+        "state": "ACT",
+        "postcode": "2612",
+        "phone": "02 6162 1299",
+        "_geoloc":
+        {
+            "lat": -35.2754957,
+            "lng": 149.1304529
+        },
+        "email": "shop@rideshop.com.au"
+    },
+    {
+        "shopName": "ONYA BIKE BELCONNEN",
+        "address": "61 Lathlain St",
+        "suburb": "Belconnen",
+        "city": "Canberra",
+        "state": "ACT",
+        "postcode": "2617",
+        "phone": "02 6251 4260",
+        "_geoloc":
+        {
+            "lat": -35.2396559,
+            "lng": 149.0611047
+        },
+        "email": "belco@onyabikecanberra.com.au"
+    },
+    {
+        "shopName": "BIKE SHED PHILLIP",
+        "address": "14 Hindmarsh Dr",
+        "suburb": "Phillip",
+        "city": "Canberra",
+        "state": "ACT",
+        "postcode": "2606",
+        "phone": "02 6285 2000",
+        "_geoloc":
+        {
+            "lat": -35.3494191,
+            "lng": 149.0842795
+        },
+        "email": "bikeshed.phillip@velocitynet.com.au"
+    },
+    {
+        "shopName": "THE CYCLERY",
+        "address": "28 Pirie St",
+        "suburb": "Fyshwick",
+        "city": "Canberra",
+        "state": "ACT",
+        "postcode": "2609",
+        "phone": "02 6173 5100",
+        "email": "fyshwick@thecyclery.net.au",
+        "_geoloc":
+        {
+            "lat": -35.3252569,
+            "lng": 149.1685312
+        }
+    },
+    {
+        "shopName": "CHAINSMITH",
+        "address": "242 Cleveland St",
+        "suburb": "Surry Hills",
+        "city": "Sydney",
+        "state": "NSW",
+        "postcode": "2010",
+        "phone": "02 8068 2859",
+        "_geoloc":
+        {
+            "lat": -33.8888707,
+            "lng": 151.2004515
+        },
+        "email": "info.chainsmith@gmail.com"
+    },
+    {
+        "shopName": "CLARENCE ST CYCLERY",
+        "address": "104 Clarence St",
+        "suburb": "Sydney",
+        "city": "Sydney",
+        "state": "NSW",
+        "postcode": "2000",
+        "phone": "02 9295 0000",
+        "_geoloc":
+        {
+            "lat": -33.8682744,
+            "lng": 151.2032603
+        },
+        "email": "info@cyclery.com.au"
+    },
+    {
+        "shopName": "CYCLING PROJECTS",
+        "address": "86/88 King St",
+        "suburb": "Ashbury",
+        "city": "Sydney",
+        "state": "NSW",
+        "postcode": "2193",
+        "phone": "02 9799 2407",
+        "_geoloc":
+        {
+            "lat": -33.9027879,
+            "lng": 151.1163947
+        },
+        "email": "info@cyclingprojects.com.au"
+    },
+    {
+        "shopName": "THE ODD SPOKE",
+        "address": "23/286 New Line Rd",
+        "suburb": "Dural",
+        "city": "Sydney",
+        "state": "NSW",
+        "postcode": "2158",
+        "phone": "02 9653 9388",
+        "email": "theoddspoke@gmail.com",
+        "_geoloc":
+        {
+            "lat": -33.6964086,
+            "lng": 151.0305711
+        }
+    },
+    {
+        "shopName": "SEMI-RACER",
+        "address": "4/289-297 Sandgate Road",
+        "suburb": "Albion",
+        "city": "Brisbane",
+        "state": "QLD",
+        "postcode": "4010",
+        "phone": "07 3262 9779",
+        "_geoloc":
+        {
+            "lat": -27.4301447,
+            "lng": 153.0397834
+        },
+        "email": "connect@semi-racer.com"
+    },
+    {
+        "shopName": "RT CYCLES",
+        "address": "50 Middle Street",
+        "suburb": "Cleveland",
+        "city": "Brisbane",
+        "state": "QLD",
+        "postcode": "4163",
+        "phone": "07 3134 0516",
+        "email": "info@rtcycles.com.au",
+        "_geoloc":
+        {
+            "lat": -27.5256282,
+            "lng": 153.2642373
+        }
+    },
+    {
+        "shopName": "CORSA CYCLE CENTRE",
+        "address": "182 Gouger St",
+        "suburb": "Adelaide",
+        "city": "Adelaide",
+        "state": "SA",
+        "postcode": "5000",
+        "phone": "08 8221 5068",
+        "_geoloc":
+        {
+            "lat": -34.9302931,
+            "lng": 138.5901618
+        },
+        "email": "corsacyclecentre@bigpond.com"
+    },
+    {
+        "shopName": "BICYCLE CENTRE SOUTH MORANG",
+        "address": "2 Murdoch Rd",
+        "suburb": "South Morang",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3762",
+        "phone": "03 8418 8550",
+        "_geoloc":
+        {
+            "lat": -37.6508125,
+            "lng": 145.0844525
+        },
+        "email": "info@bicyclecentresouthmorang.com.au"
+    },
+    {
+        "shopName": "BORSARI CYCLES",
+        "address": "193 Lygon St",
+        "suburb": "Carlton",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3053",
+        "phone": "03 9347 4100",
+        "_geoloc":
+        {
+            "lat": -37.8010981,
+            "lng": 144.9644237
+        },
+        "email": "admin@borsaricycles.com.au"
+    },
+    {
+        "shopName": "CAMPIONE CYCLES",
+        "address": "350 Pakington St",
+        "suburb": "Newtown",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3220",
+        "phone": "03 5221 1914",
+        "_geoloc":
+        {
+            "lat": -38.1581313,
+            "lng": 144.343032
+        },
+        "email": "campicyc@aol.com"
+    },
+    {
+        "shopName": "SAINT CLOUD",
+        "address": "73 Gertrude St",
+        "suburb": "Fitzroy",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3065",
+        "phone": "03 8415 0727",
+        "_geoloc":
+        {
+            "lat": -37.8055207,
+            "lng": 144.9742943
+        },
+        "email": "nick@saintcloud.com.au"
+    },
+    {
+        "shopName": "URBAN VELOCITY",
+        "address": "148 Arthurton Rd",
+        "suburb": "Northcote",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3070",
+        "phone": "03 9481 3213",
+        "email": "urbanvelocitybikeco@gmail.com",
+        "_geoloc":
+        {
+            "lat": -37.7674217,
+            "lng": 144.9845913
+        }
+    }
+]
