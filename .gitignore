@@ -42,4 +42,4 @@ node_modules
 amta/i/*
 _*/*
 css/.sass_cache/*
-
+prepros-6.config
