@@ -1,2 +1,6 @@
 # redirects for Netlify - https://www.netlify.com/docs/redirects/
 /dns/  https://www.whatsmydns.net/  302
+/mail/  https://www.google.com/a/stoqe.com/  302
+/email/  https://mail.google.com/mail/#inbox  302
+/gsuite/  https://www.google.com/a/alwayslane.com/  302
+/domains/  https://www.uniregistry.com/  302
