@@ -40,6 +40,6 @@ Thumbs.db
 ######################
 node_modules
 amta/i/*
-_*/*
+_gi/*
 css/.sass_cache/*
 prepros-6.config
