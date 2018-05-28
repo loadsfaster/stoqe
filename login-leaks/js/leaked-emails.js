@@ -115,7 +115,7 @@ $(document).ready(function() {
                 $('#sites').html(html);
             },
             error: function(data) {
-                var html = '<div class="brt0 notification is-success is-size-5"><strong>GOOD NEWS</strong><br><span class="icon"><i class="fas fa-shield-check"></i></span>&nbsp; This email has never <span class="is-italic">knowingly</span> leaked online<strong><br><span class="icon"><i class="fas fa-bell"></i></span>&nbsp; Want <strong>STOQE Leaks Alert</strong> to notify you if your account logins are leaked online?<div>';
+                var html = '<div class="brt0 notification is-success is-size-5"><strong>GOOD NEWS</strong><br><span class="icon"><i class="fas fa-shield-check"></i></span>&nbsp; This email address has <strong>never <span class="is-italic">knowingly</span> leaked online</strong><br><span class="icon"><i class="fas fa-bell"></i></span>&nbsp; <strong>STOQE Leaks Alert</strong> will notify you if it does get leaked online<div>';
                 //var html = '<h4>Yes this email address has been leaked and published online — along with account usernames, passwords, and login addresses.</h4>';
                 for(i=0;i<data.length;i++) {
                     var breachName = data[i].Title;
