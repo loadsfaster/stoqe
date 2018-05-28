@@ -94,7 +94,7 @@ $(document).ready(function() {
     }
 
     function getInfo(email) {
-        var count = 1;
+        var count = 0;
         $.ajax({
             url: 'https://haveibeenpwned.com/api/v2/breachedaccount/'+email+'?includeUnverified=true',
             type: 'GET',
