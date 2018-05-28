@@ -4,3 +4,6 @@
 /email/  https://mail.google.com/mail/#inbox  302
 /gsuite/  https://www.google.com/a/alwayslane.com/  302
 /domains/  https://www.uniregistry.com/  302
+/login-leaks/ /leaked-logins/ 302
+/leaks/ /leaked-logins/ 302
+/logins/ /leaked-logins/ 302
