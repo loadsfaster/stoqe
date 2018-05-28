@@ -97,33 +97,7 @@
                 <strong>Do you know if any of yours are?</strong> <!--If you're a business, company, school, university, non-profit, government, or citizen, you You definitely should know... -->
               </p>
 
-              <br>
-
-              <p class="subtitle is-4 has-text-black">
-                <strong>Has your password been leaked online?</strong>
-                <br>
-                <span class="subtitle is-5 has-text-grey">
-                Type any password to see if it is leaked online
-              </span>
-              </p>
-
-              <!--h2 style="">Type your password below to learn if it's been leaked online:</h2-->
-              <p class="control has-icons-left has-icons-right">
-                <input autofocus id="password-box" type="password" class="input is-large" onkeyup="passwordmodified()" placeholder="Type any password here..." />
-                <span class="icon is-medium is-left has-text-grey-light is-4">
-                  <i class="fas fa-lock"></i>
-                </span>
-                <span class="icon is-medium is-right has-text-grey-light is-4">
-                  <i class="fas fa-eye-slash"></i>
-                </span>
-              </p>
-              <!--p class="">This is a secure input on a secure (https) website. Text typed into the box below is never known or seen.</p-->
-              <!--p style="">It would take&nbsp;<strong id="password-time">0 seconds</strong> to crack this password</p-->
-              <ul style="" class="hsimp-checks">
-                <h2 id="iscompromised"></h2>
-              </ul>
-
-              <br><br><br>
+              <br><br>
 
               <p class="subtitle is-4 has-text-black">
                 <strong>Has your email been leaked online?</strong>
@@ -134,7 +108,7 @@
               </p>
               <p class="field has-addons control has-icons-left has-icons-right">
 
-                  <input type="text" name="email" id="email" class="form-control is-light input is-large" placeholder="Type any email address here...">
+                  <input autofocus type="text" name="email" id="email" class="form-control is-light input is-large" placeholder="Type any email address here...">
                   <span class="icon is-medium is-left has-text-grey-light is-4">
                     <i class="fas fa-lock"></i>
                   </span>
@@ -146,6 +120,35 @@
                   <div id="sites"></div>
                   <div id="results"></div>
               </p>
+
+
+              <br><br><br>
+
+
+              <p class="subtitle is-4 has-text-black">
+                <strong>Has your password been leaked online?</strong>
+                <br>
+                <span class="subtitle is-5 has-text-grey">
+                Type any password to see if it is leaked online
+              </span>
+              </p>
+
+              <!--h2 style="">Type your password below to learn if it's been leaked online:</h2-->
+              <p class="control has-icons-left has-icons-right">
+                <input id="password-box" type="password" class="input is-large" onkeyup="passwordmodified()" placeholder="Type any password here..." />
+                <span class="icon is-medium is-left has-text-grey-light is-4">
+                  <i class="fas fa-lock"></i>
+                </span>
+                <span class="icon is-medium is-right has-text-grey-light is-4">
+                  <i class="fas fa-eye-slash"></i>
+                </span>
+              </p>
+
+              <!--p class="">This is a secure input on a secure (https) website. Text typed into the box below is never known or seen.</p-->
+              <!--p style="">It would take&nbsp;<strong id="password-time">0 seconds</strong> to crack this password</p-->
+              <ul style="" class="hsimp-checks">
+                <h2 id="iscompromised"></h2>
+              </ul>
 
             </div>
           </div>
