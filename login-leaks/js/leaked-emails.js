@@ -94,22 +94,24 @@ $(document).ready(function() {
     }
 
     function getInfo(email) {
+        var count = 1;
         $.ajax({
             url: 'https://haveibeenpwned.com/api/v2/breachedaccount/'+email+'?includeUnverified=true',
             type: 'GET',
             dataType: 'json',
             success: function(data) {
-                var html = '<div class="mb0 brv0 notification is-danger is-size-5"><strong>BAD NEWS</strong><br><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>&nbsp; This email address <strong>has been leaked online</strong><br><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>&nbsp; <strong>Nb:</strong> This email address might have leaked for <strong>multiple account logins</strong> <!-- leaked accounts--><br><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>&nbsp; This email address has been leaked <strong>with passwords + login addresses</strong><br><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>&nbsp; <strong>Full access to accounts</strong> using this email address have leaked online<br><span class="icon"><i class="fas fa-question-circle"></i></span>&nbsp; Are you using <strong>the same email address + password for different accounts?</strong> <br><span class="icon"><i class="fas fa-question-circle"></i></span>&nbsp; If so, <strong>how many accounts does this email address + password login to?</strong><br><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>&nbsp; <strong>All accounts </strong>using this same email adddress and password <strong> are vulnerable</strong><!--br><span class="icon"><i class="fas fa-question-circle"></i></span>&nbsp; And <strong>how many of these leaked accounts could belong to you?</strong--><!--br><span class="icon"><i class="fas fa-question-circle"></i></span>&nbsp; <strong>Can this password login to</strong> your banking, email, website, social media, etc.?--></div><div class="brt0 notification is-warning is-size-5"><span class="icon"><i class="fas fa-exclamation-circle"></i></span>&nbsp; <strong>STATUS</strong>: This email address is <strong>LEACKED and COMPROMISED</strong><!-- Want help? STOQE can save you.--><div>';
-                //var html = '<h4>Yes this email address has been leaked and published online — along with account usernames, passwords, and login addresses.</h4>';
-                //for(i=0;i<data.length;i++) {
-                    //var breachName = data[i].Title;
+                //var html = '';
+                for(i=0;i<data.length;i++) {
+                    count++;
+                    var breachName = data[i].Title;
                     //var breachDesc = data[i].Description
                     //var breachCount = data[i].PwnCount
-                    //html += '<span class="">'+breachName+'</span>';
-                    //html += '<span class="label label-danger">'+breachName+'</span></h3>';
-                  //html += '<p>'+breachDesc+'</p>';
-                  //html += '<br>';
-                //}
+                    //html += ''+breachName+', ';
+                    if(count == 1) {
+                        html += '';
+                    }
+                }
+                var html = '<div class="mb0 brv0 notification is-danger is-size-5"><strong>BAD NEWS</strong><br><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>&nbsp; <strong>At least '+count+' account logins</strong> for this email address <strong>have been leaked online</strong><!--br><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>&nbsp; At least <strong>'+count+' account logins</strong> have been compromised--><!--br><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>&nbsp; <strong>Nb:</strong> More <strong>'+count+' account logins</strong> might also have been leaked--><br><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>&nbsp; This email address was leaked online <strong>with passwords + login addresses</strong><br><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>&nbsp; <strong>Full access to accounts</strong> using this email address have leaked online<!--br><span class="icon"><i class="fas fa-question-circle"></i></span>&nbsp; Are you using <strong>the same email address + password for different accounts?</strong> <br><span class="icon"><i class="fas fa-question-circle"></i></span>&nbsp; If so, <strong>how many accounts does this email address + password login to?</strong--><br><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>&nbsp; <strong>All accounts </strong>using this same email adddress + password <strong> are vulnerable</strong><!--br><span class="icon"><i class="fas fa-question-circle"></i></span>&nbsp; And <strong>how many of these leaked accounts could belong to you?</strong--><!--br><span class="icon"><i class="fas fa-question-circle"></i></span>&nbsp; <strong>Can this password login to</strong> your banking, email, website, social media, etc.?--></div><div class="brt0 notification is-warning is-size-5"><span class="icon"><i class="fas fa-exclamation-circle"></i></span>&nbsp; <strong>STATUS</strong>: This email address is <strong>LEACKED and COMPROMISED</strong><!-- Want help? STOQE can save you.--><div>';
                 $('#sites').html(html);
             },
             error: function(data) {
