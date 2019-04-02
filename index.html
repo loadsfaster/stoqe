@@ -1,171 +1,808 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<!doctype html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>STOQE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:700|Playfair+Display" rel="stylesheet">
-    <script defer src="https://pro.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-+1nLPoB0gaUktsZJP+ycZectl3GX7wP8Xf2PE/JHrb7X1u7Emm+v7wJMbAcPr8Ge" crossorigin="anonymous"></script>
-    <meta name="google-site-verification" content="xAJHzn5da_PTOAuDunLJzd6WDBQeRNWOqkwjSJ7fzDc" />
-    <style media="screen">
-      .brand {
-          font-family: "Playfair Display", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-          color: #111;
-      }
-      .brand.title { font-size: 4rem; font-weight: normal; }
-      .navbar { box-shadow: 0 0px 0 0 #f5f5f5; }
-      .fa-twitter {color: #55acee;}
-    </style>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saving Brands.">
+    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="assets/css/theme-software-library.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
 
-  <body>
+<body>
+    <!--div class="loader">
+      <div class="loading-animation"></div>
+    </div-->
 
-  <section class="hero is-fullheight">
+    <div class="navbar-container ">
+        <nav class="navbar navbar-expand-lg justify-content-between navbar-dark bg-primary-3 border-bottom-0" data-sticky="top">
+            <div class="container">
+                <div class="col flex-fill px-0 d-flex justify-content-between">
+                    <a class="navbar-brand mr-0 fade-page" href="index.html">
+                        <!--img src="assets/img/logo.svg" alt="Leap"-->
+                        STOQE
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 17C3 17.5523 3.44772 18 4 18H20C20.5523 18 21 17.5523 21 17V17C21 16.4477 20.5523 16 20 16H4C3.44772 16 3 16.4477 3 17V17ZM3 12C3 12.5523 3.44772 13 4 13H20C20.5523 13 21 12.5523 21 12V12C21 11.4477 20.5523 11 20 11H4C3.44772 11 3 11.4477 3 12V12ZM4 6C3.44772 6 3 6.44772 3 7V7C3 7.55228 3.44772 8 4 8H20C20.5523 8 21 7.55228 21 7V7C21 6.44772 20.5523 6 20 6H4Z"
+                fill="#212529" />
+              </svg>
 
-    <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
+            </button>
+                </div>
+                <div class="collapse navbar-collapse col px-0 px-lg-2 flex-fill">
+                    <div class="py-2 py-lg-0">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a href="#clients" class="nav-link">Clients</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#services" class="nav-link">Services</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#savings" class="nav-link">Savings</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#costs" class="nav-link">Cost</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end col flex-fill px-0"><a href="mailto:stoqe@stoqe.com?subject=Save Us" class="btn btn-primary ml-lg-3">Contact</a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section class="bg-primary-3 text-light pb-0">
+        <div class="container mb-0 mt-lg-6 mb-6">
+            <div class="row">
+                <div class="col-sm-12 col-lg-9">
+                    <h1 class="display-3">Saving Brands</h1>
+                    <div class="my-4">
+                        <p class="lead"><strong>STOQE saves you time, money, & migranes on your websites, domains, & email.</strong></p>
+                        <p>If you need expert advice, a second opinion, a better solution, an easier system, your website unhacked, your domain names restacked, your emails protected, your performance injected — or you just want to spend less money — STOQE can save you.</p>
+                    </div>
+                    <a href="#clients" class="btn btn-lg btn-primary">Learn more...</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="divider mb-0">
+            <svg class="bg-white" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+          <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+        </svg>
+        </div>
+    </section>
+
+    <section id="clients" class="bg-white text-dark">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="h1 mb-1">Clients</h2>
+                    <p class="lead">STOQE saves clients like...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/lorna-jane.png" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">International</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/sparkke.png" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">International</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/mobile-muster.png" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">National Non-Profit</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/sensorylab.png" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">International</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/salvatore-malatesta.jpg" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">Salvatore Malatesta!</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/aslm.png" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">AU & NZ Non-Profit</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/ivyandwood.jpg" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">Local Startup</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/affinity.png" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">International</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/suprag.jpg" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">International</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/st-ali.jpg" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">International</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/smalls-bar.png" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">Melbourne, Australia</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                        <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                            <img src="i/roll-recovery.png" title="Lorna Jane">
+                        </div>
+                        <p class="text-center">Australia</p>
+                    </div>
+                </div>
+
+                <!--div class="col-md-6 col-lg-3 d-flex">
+                    <div class="card card-body">
+                      <div class="mt-lg-3 mb-3 mb-lg-2 flex-grow-1">
+                          <img src="i/amta.png" title="Lorna Jane">
+                      </div>
+                      <p class="text-center">National Non-Profit</p>
+                    </div>
+                  </div-->
+
+
+
+
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="bg-primary-3">
       <div class="container">
-        <div class="columns is-fullheight is-vcentered">
-          <div class="column is-5">
-            <h1 class="brand title">
-              STOQE
-            </h1>
-            <p class="brand subtitle is-size-4">
-              Saving Brands
-            </p>
-            <p class="subtitle is-size-6 has-text-grey-light">
-              Minimising Costs and Maximising Returns.
-            </p>
-            <div class="columns is-mobile">
-              <div class="column is-1-desktop is-2-mobile">
-                <p>
-                  <a href="https://twitter.com/STOQE" target="_blank" class="">
-                    <span class="icon">
-                      <i class="fab fa-2x fa-twitter"></i>
-                    </span>
-                  </a>
-                </p>
+        <div class="row text-light mb-4">
+          <div class="col col-sm-12 col-lg-9">
+            <h3 class="h1">Services</h3>
+            <p class="lead">STOQE is a digital consulting service that saves you more than it costs you. If you want to reduce your website or email costs, improve your website performance, consolidate your domain names or email accounts, learn if any of your accounts/passords have leaked online, or if you simply have a problem, need advice, or a second opinion... STOQE can save you.</p>
+          </div>
+        </div>
+        <div class="row">
+
+            <div class="col-sm-6 col-lg-4">
+                <span class="card card-sm card-body flex-row align-items-center fade-page">
+                  <svg class="icon icon-lg bg-primary-1" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>Icon For Expand-arrows</title>
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                      <path d="M4,4 L11.6314229,2.5691082 C11.8750185,2.52343403 12.1249815,2.52343403 12.3685771,2.5691082 L20,4 L20,13.2830094 C20,16.2173861 18.4883464,18.9447835 16,20.5 L12.5299989,22.6687507 C12.2057287,22.8714196 11.7942713,22.8714196 11.4700011,22.6687507 L8,20.5 C5.51165358,18.9447835 4,16.2173861 4,13.2830094 L4,4 Z" fill="#000000" opacity="0.3"></path>
+                      <path d="M14.5,11 C15.0522847,11 15.5,11.4477153 15.5,12 L15.5,15 C15.5,15.5522847 15.0522847,16 14.5,16 L9.5,16 C8.94771525,16 8.5,15.5522847 8.5,15 L8.5,12 C8.5,11.4477153 8.94771525,11 9.5,11 L9.5,10.5 C9.5,9.11928813 10.6192881,8 12,8 C13.3807119,8 14.5,9.11928813 14.5,10.5 L14.5,11 Z M12,9 C11.1715729,9 10.5,9.67157288 10.5,10.5 L10.5,11 L13.5,11 L13.5,10.5 C13.5,9.67157288 12.8284271,9 12,9 Z" fill="#000000"></path>
+                    </g>
+                  </svg>
+                  <div class="ml-3">
+                    <h5 class="mb-0">Security</h5>
+                    <span>Reports &amp; Improvements</span>
+                  </div>
+                </span>
               </div>
-              <div class="column is-1-desktop is-2-mobile">
-                <p>
-                  <a href="mailto:stoqe@stoqe.com" class="">
-                    <span class="icon has-text-danger">
-                      <i class="fas fa-2x fa-envelope"></i>
-                    </span>
-                  </a>
-                </p>
+
+          <div class="col-sm-6 col-lg-4">
+            <span class="card card-sm card-body flex-row align-items-center fade-page">
+              <svg class="icon icon-lg bg-primary-1" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Icon For Layout-3d</title>
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                  <path d="M5,19 L20,19 C20.5522847,19 21,19.4477153 21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 C4.55228475,3 5,3.44771525 5,4 L5,19 Z" fill="#000000" fill-rule="nonzero"></path>
+                  <path d="M8.7295372,14.6839411 C8.35180695,15.0868534 7.71897114,15.1072675 7.31605887,14.7295372 C6.9131466,14.3518069 6.89273254,13.7189711 7.2704628,13.3160589 L11.0204628,9.31605887 C11.3857725,8.92639521 11.9928179,8.89260288 12.3991193,9.23931335 L15.358855,11.7649545 L19.2151172,6.88035571 C19.5573373,6.44687693 20.1861655,6.37289714 20.6196443,6.71511723 C21.0531231,7.05733733 21.1271029,7.68616551 20.7848828,8.11964429 L16.2848828,13.8196443 C15.9333973,14.2648593 15.2823707,14.3288915 14.8508807,13.9606866 L11.8268294,11.3801628 L8.7295372,14.6839411 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                </g>
+              </svg>
+              <div class="ml-3">
+                <h5 class="mb-0">Performance</h5>
+                <span>Reports &amp; Improvements</span>
+              </div>
+            </span>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+              <span class="card card-sm card-body flex-row align-items-center fade-page">
+                <svg class="icon icon-lg bg-primary-1" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>Icon For Layout-3d</title>
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M5,19 L20,19 C20.5522847,19 21,19.4477153 21,20 C21,20.5522847 20.5522847,21 20,21 L4,21 C3.44771525,21 3,20.5522847 3,20 L3,4 C3,3.44771525 3.44771525,3 4,3 C4.55228475,3 5,3.44771525 5,4 L5,19 Z" fill="#000000" fill-rule="nonzero"></path>
+                    <path d="M8.7295372,14.6839411 C8.35180695,15.0868534 7.71897114,15.1072675 7.31605887,14.7295372 C6.9131466,14.3518069 6.89273254,13.7189711 7.2704628,13.3160589 L11.0204628,9.31605887 C11.3857725,8.92639521 11.9928179,8.89260288 12.3991193,9.23931335 L15.358855,11.7649545 L19.2151172,6.88035571 C19.5573373,6.44687693 20.1861655,6.37289714 20.6196443,6.71511723 C21.0531231,7.05733733 21.1271029,7.68616551 20.7848828,8.11964429 L16.2848828,13.8196443 C15.9333973,14.2648593 15.2823707,14.3288915 14.8508807,13.9606866 L11.8268294,11.3801628 L8.7295372,14.6839411 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                  </g>
+                </svg>
+                <div class="ml-3">
+                  <h5 class="mb-0">SEO</h5>
+                  <span>Reports &amp; Improvements</span>
+                </div>
+              </span>
+            </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <span class="card card-sm card-body flex-row align-items-center fade-page">
+              <svg class="icon icon-lg bg-primary-1" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Icon For Layout-arrange</title>
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                  <path d="M15.9497475,3.80761184 L13.0246125,6.73274681 C12.2435639,7.51379539 12.2435639,8.78012535 13.0246125,9.56117394 L14.4388261,10.9753875 C15.2198746,11.7564361 16.4862046,11.7564361 17.2672532,10.9753875 L20.1923882,8.05025253 C20.7341101,10.0447871 20.2295941,12.2556873 18.674559,13.8107223 C16.8453326,15.6399488 14.1085592,16.0155296 11.8839934,14.9444337 L6.75735931,20.0710678 C5.97631073,20.8521164 4.70998077,20.8521164 3.92893219,20.0710678 C3.1478836,19.2900192 3.1478836,18.0236893 3.92893219,17.2426407 L9.05556629,12.1160066 C7.98447038,9.89144078 8.36005124,7.15466739 10.1892777,5.32544095 C11.7443127,3.77040588 13.9552129,3.26588995 15.9497475,3.80761184 Z" fill="#000000"></path>
+                  <path d="M16.6568542,5.92893219 L18.0710678,7.34314575 C18.4615921,7.73367004 18.4615921,8.36683502 18.0710678,8.75735931 L16.6913928,10.1370344 C16.3008685,10.5275587 15.6677035,10.5275587 15.2771792,10.1370344 L13.8629656,8.7228208 C13.4724413,8.33229651 13.4724413,7.69913153 13.8629656,7.30860724 L15.2426407,5.92893219 C15.633165,5.5384079 16.26633,5.5384079 16.6568542,5.92893219 Z" fill="#000000" opacity="0.3"></path>
+                </g>
+              </svg>
+              <div class="ml-3">
+                <h5 class="mb-0">Maintenance</h5>
+                <span>Updates &amp; Upgrades</span>
+              </div>
+            </span>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+              <span class="card card-sm card-body flex-row align-items-center fade-page">
+                <svg class="icon icon-lg bg-primary-2" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>Icon For Thunder-move</title>
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                      <circle fill="#000000" opacity="0.3" cx="12" cy="12" r="10"></circle>
+                      <path d="M16.7689447,7.81768175 C17.1457787,7.41393107 17.7785676,7.39211077 18.1823183,7.76894473 C18.5860689,8.1457787 18.6078892,8.77856757 18.2310553,9.18231825 L11.2310553,16.6823183 C10.8654446,17.0740439 10.2560456,17.107974 9.84920863,16.7592566 L6.34920863,13.7592566 C5.92988278,13.3998345 5.88132125,12.7685345 6.2407434,12.3492086 C6.60016555,11.9298828 7.23146553,11.8813212 7.65079137,12.2407434 L10.4229928,14.616916 L16.7689447,7.81768175 Z" fill="#000000" fill-rule="nonzero"></path>
+                    </g>
+                </svg>
+                <div class="ml-3">
+                  <h5 class="mb-0">Management</h5>
+                  <span>Accounts & Assets</span>
+                </div>
+              </span>
+            </div>
+
+          <div class="col-sm-6 col-lg-4">
+              <span class="card card-sm card-body flex-row align-items-center fade-page">
+                <svg class="icon icon-lg bg-primary-1" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>Icon For Movie-Lane #2</title>
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M11.1669899,4.49941818 L2.82535718,19.5143571 C2.557144,19.9971408 2.7310878,20.6059441 3.21387153,20.8741573 C3.36242953,20.9566895 3.52957021,21 3.69951446,21 L21.2169432,21 C21.7692279,21 22.2169432,20.5522847 22.2169432,20 C22.2169432,19.8159952 22.1661743,19.6355579 22.070225,19.47855 L12.894429,4.4636111 C12.6064401,3.99235656 11.9909517,3.84379039 11.5196972,4.13177928 C11.3723594,4.22181902 11.2508468,4.34847583 11.1669899,4.49941818 Z" fill="#000000" opacity="0.3"></path>
+                    <rect fill="#000000" x="11" y="9" width="2" height="7" rx="1"></rect>
+                    <rect fill="#000000" x="11" y="17" width="2" height="2" rx="1"></rect>
+                  </g>
+                </svg>
+                <div class="ml-3">
+                  <h5 class="mb-0">Bugs & Breaks</h5>
+                  <span>Find & Fix</span>
+                </div>
+              </span>
+            </div>
+
+          <div class="col-sm-6 col-lg-4">
+            <span class="card card-sm card-body flex-row align-items-center fade-page">
+              <svg class="icon icon-lg bg-primary-1" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Icon For Text-width</title>
+                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                    <rect fill="#000000" opacity="0.3" x="11.5" y="2" width="2" height="4" rx="1"></rect>
+                    <rect fill="#000000" opacity="0.3" x="11.5" y="16" width="2" height="5" rx="1"></rect>
+                    <path d="M15.493,8.044 C15.2143319,7.68933156 14.8501689,7.40750104 14.4005,7.1985 C13.9508311,6.98949895 13.5170021,6.885 13.099,6.885 C12.8836656,6.885 12.6651678,6.90399981 12.4435,6.942 C12.2218322,6.98000019 12.0223342,7.05283279 11.845,7.1605 C11.6676658,7.2681672 11.5188339,7.40749914 11.3985,7.5785 C11.2781661,7.74950085 11.218,7.96799867 11.218,8.234 C11.218,8.46200114 11.2654995,8.65199924 11.3605,8.804 C11.4555005,8.95600076 11.5948324,9.08899943 11.7785,9.203 C11.9621676,9.31700057 12.1806654,9.42149952 12.434,9.5165 C12.6873346,9.61150047 12.9723317,9.70966616 13.289,9.811 C13.7450023,9.96300076 14.2199975,10.1308324 14.714,10.3145 C15.2080025,10.4981676 15.6576646,10.7419985 16.063,11.046 C16.4683354,11.3500015 16.8039987,11.7268311 17.07,12.1765 C17.3360013,12.6261689 17.469,13.1866633 17.469,13.858 C17.469,14.6306705 17.3265014,15.2988305 17.0415,15.8625 C16.7564986,16.4261695 16.3733357,16.8916648 15.892,17.259 C15.4106643,17.6263352 14.8596698,17.8986658 14.239,18.076 C13.6183302,18.2533342 12.97867,18.342 12.32,18.342 C11.3573285,18.342 10.4263378,18.1741683 9.527,17.8385 C8.62766217,17.5028317 7.88033631,17.0246698 7.285,16.404 L9.413,14.238 C9.74233498,14.6433354 10.176164,14.9821653 10.7145,15.2545 C11.252836,15.5268347 11.7879973,15.663 12.32,15.663 C12.5606679,15.663 12.7949989,15.6376669 13.023,15.587 C13.2510011,15.5363331 13.4504991,15.4540006 13.6215,15.34 C13.7925009,15.2259994 13.9286662,15.0740009 14.03,14.884 C14.1313338,14.693999 14.182,14.4660013 14.182,14.2 C14.182,13.9466654 14.1186673,13.7313342 13.992,13.554 C13.8653327,13.3766658 13.6848345,13.2151674 13.4505,13.0695 C13.2161655,12.9238326 12.9248351,12.7908339 12.5765,12.6705 C12.2281649,12.5501661 11.8323355,12.420334 11.389,12.281 C10.9583312,12.141666 10.5371687,11.9770009 10.1255,11.787 C9.71383127,11.596999 9.34650161,11.3531682 9.0235,11.0555 C8.70049838,10.7578318 8.44083431,10.3968355 8.2445,9.9725 C8.04816568,9.54816454 7.95,9.03200304 7.95,8.424 C7.95,7.67666293 8.10199848,7.03700266 8.406,6.505 C8.71000152,5.97299734 9.10899753,5.53600171 9.603,5.194 C10.0970025,4.85199829 10.6543302,4.60183412 11.275,4.4435 C11.8956698,4.28516587 12.5226635,4.206 13.156,4.206 C13.9160038,4.206 14.6918294,4.34533194 15.4835,4.624 C16.2751706,4.90266806 16.9686637,5.31433061 17.564,5.859 L15.493,8.044 Z" fill="#000000"></path>
+                  </g>
+              </svg>
+              <div class="ml-3">
+                <h5 class="mb-0">Cost Reduction</h5>
+                <span>Seek & Save</span>
+              </div>
+            </span>
+          </div>
+
+          <div class="col-sm-6 col-lg-4">
+              <span class="card card-sm card-body flex-row align-items-center fade-page">
+                <svg class="icon icon-lg bg-primary-1" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <title>Icon For Duplicate</title>
+                  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M15.9956071,6 L9,6 C7.34314575,6 6,7.34314575 6,9 L6,15.9956071 C4.70185442,15.9316381 4,15.1706419 4,13.8181818 L4,6.18181818 C4,4.76751186 4.76751186,4 6.18181818,4 L13.8181818,4 C15.1706419,4 15.9316381,4.70185442 15.9956071,6 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                    <path d="M10.1818182,8 L17.8181818,8 C19.2324881,8 20,8.76751186 20,10.1818182 L20,17.8181818 C20,19.2324881 19.2324881,20 17.8181818,20 L10.1818182,20 C8.76751186,20 8,19.2324881 8,17.8181818 L8,10.1818182 C8,8.76751186 8.76751186,8 10.1818182,8 Z" fill="#000000"></path>
+                  </g>
+                </svg>
+                <div class="ml-3">
+                  <h5 class="mb-0">Consolidations</h5>
+                  <span>Combine & Save</span>
+                </div>
+              </span>
+            </div>
+  
+
+            <div class="col-sm-6 col-lg-4">
+                <span class="card card-sm card-body flex-row align-items-center fade-page">
+                  <svg class="icon icon-lg bg-primary-2" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>Icon For Thunder-move</title>
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M19,11 L20,11 C21.6568542,11 23,12.3431458 23,14 C23,15.6568542 21.6568542,17 20,17 L19,17 L19,20 C19,21.1045695 18.1045695,22 17,22 L5,22 C3.8954305,22 3,21.1045695 3,20 L3,17 L5,17 C6.65685425,17 8,15.6568542 8,14 C8,12.3431458 6.65685425,11 5,11 L3,11 L3,8 C3,6.8954305 3.8954305,6 5,6 L8,6 L8,5 C8,3.34314575 9.34314575,2 11,2 C12.6568542,2 14,3.34314575 14,5 L14,6 L17,6 C18.1045695,6 19,6.8954305 19,8 L19,11 Z" fill="#000000" opacity="0.3"></path>
+                      </g>
+                  </svg>
+                  <div class="ml-3">
+                    <h5 class="mb-0">Solutions</h5>
+                    <span>Find. Present. Integrate</span>
+                  </div>
+                </span>
+              </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="savings">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h3 class="h1">Savings</h3>
+                    <p class="lead">STOQE has saved clients...</p>
+                </div>
+            </div>
+            <div class="row mb-5 justify-content-center">
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">$4k</span>
+                    <span class="h6"><b>per year</b> in email operating costs</span>
+                </div>
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">$20k</span>
+                    <span class="h6">on website development costs</span>
+                </div>
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">$25k</span>
+                    <span class="h6"><b>per year</b> in agency retainer fees</span>
+                </div>
+            </div>
+
+
+            <!--div class="row mb-5 justify-content-center">
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">500%</span>
+                    <span class="h6">in increased google traffic</span>
+                </div>
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">2000%</span>
+                    <span class="h6">in website loading time</span>
+                </div>
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">200%</span>
+                    <span class="h6">logins</span>
+                </div>
+            </div-->
+
+            <div class="row mb-5 justify-content-center">
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">$3.5k</span>
+                    <span class="h6"><b>per year</b> in redundant service fees</span>
+                </div>
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">$1k</span>
+                    <span class="h6"><b>per year</b> on website hosting</span>
+                </div>
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">$750</span>
+                    <span class="h6"><b>per year</b> on SSL certificates</span>
+                </div>
+            </div>
+
+            <div class="row mb-5 justify-content-center">
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">a million</span>
+                    <span class="h6">dollars worth of migranes</span>
+                </div>
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">a billion</span>
+                    <span class="h6">dollars worth of bad decisions</span>
+                </div>
+                <div class="col-6 mb-2 col-lg-4 mb-lg-0">
+                    <span class="display-4 text-primary d-block">face &amp;</span>
+                    <span class="h6">reputation (*priceless)</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section id="" class="bg-primary-3 text-light">
+        <!--div class="divider flip-y">
+            <svg class="bg-white" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+              <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+            </svg>
+        </div-->
+        <div class="container pb-md-6 pt-6">
+            <div class="row">
+                <div class="col col-sm-12 col-lg-12 mb-6">
+                    <h2 class="h2 mb-1">"STOQE is brilliant and keeps saving our brand."</h2>
+                    <p class="lead">— Danielle Duell (CEO, People With Purpose)</p>
+                </div>
+                <div class="col col-sm-12 col-lg-12 mb-6">
+                    <h2 class="h2 mb-1">"Expert advice is priceless. STOQE is relatively rediculously cheap."</h2>
+                    <p class="lead">— Jay Stockwell (Director, Affinity)</p>
+                </div>
+                <div class="col col-sm-12 col-lg-12">
+                    <h2 class="h2 mb-1">"STOQE is a net profit cost."</h2>
+                    <p class="lead">— Dr. Ashley Roberts <span class="">(CFO, SupraG)</span></p>
+                </div>
+            </div>
+        </div>
+        <!--div class="divider mb-0">
+            <svg class="bg-white" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+          <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+        </svg>
+        </div-->
+    </section>
+
+    
+
+    <section id="costs">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <h2 class="h1 mb-1">Costs</h2>
+                    <p class="lead">STOQE saves you money every hour. And the more hours you buy, the more money you save...</p>
+                </div>
+            </div>
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <div class="card card-body align-items-center ">
+                <span class="badge badge-top badge-secondary">Postpaid</span>
+                <div class="pt-md-2">
+                  <h4>Ad Hoc</h4>
+                </div>
+                <div class="d-flex align-items-start pb-md-2">
+                  <span class="h3">$</span>
+                  <span class="display-4">190</span>
+                </div>
+                <span class="text-small text-muted">Per hour</span>
+                <ul class="text-center list-unstyled my-2 my-md-4">
+                  <li class="py-1">
+                    <span>Postpaid invoice</span>
+                  </li>
+                  <li class="py-1">
+                    <span>1 hour minimum</span>
+                  </li>
+                  <li class="py-1">
+                    <span class="">No expiry</span>
+                  </li>
+                  <li class="py-1">
+                    <span class="">No recurring</span>
+                  </li>
+                  <li class="py-1">
+                    <span>No commitment</span>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-primary">Get Ad Hoc hours</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-body align-items-center shadow-3d">
+                <span class="badge badge-top badge-success">Prepaid</span>
+                <div class="pt-md-2">
+                  <h4>Bulk Block</h4>
+                </div>
+                <div class="d-flex align-items-start pb-md-2">
+                  <span class="h3">$</span>
+                  <span class="display-4">150</span>
+                </div>
+                <span class="text-small text-muted">Per hour</span>
+                <ul class="text-center list-unstyled my-2 my-md-4">
+                  <li class="py-1">
+                    <span>Prepaid invoice</span>
+                  </li>
+                  <li class="py-1">
+                    <span>6 hours minimum</span>
+                  </li>
+                  <li class="py-1">
+                    <span>Hours expire bimonthly</span>
+                  </li>
+                  <li class="py-1">
+                    <span class="">No recurring</span>
+                  </li>
+                  <li class="py-1">
+                    <span>Mild commitment</span>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-primary">Get a Block</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-body align-items-center ">
+                  <span class="badge badge-top badge-success">Prepaid</span>
+                <div class="pt-md-2">
+                  <h4>Monthly</h4>
+                </div>
+                <div class="d-flex align-items-start pb-md-2">
+                  <span class="h3">$</span>
+                  <span class="display-4">110</span>
+                </div>
+                <span class="text-small text-muted">Per hour</span>
+                <ul class="text-center list-unstyled my-2 my-md-4">
+                    <li class="py-1">
+                        <span>Prepaid invoice</span>
+                      </li>
+                      <li class="py-1">
+                        <span>8 hours minimum per month</span>
+                      </li>
+                      <li class="py-1">
+                        <span>Hours expire monthly</span>
+                      </li>
+                      <li class="py-1">
+                        <span class="">Recurring 3 months minimum</span>
+                      </li>
+                      <li class="py-1">
+                        <span>Medium committment</span>
+                      </li>
+                </ul>
+                <a href="#" class="btn btn-primary">Get Monthly hours</a>
               </div>
             </div>
           </div>
-
-          <div class="column has-text-centered">
-              <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                  <article class="tile is-child hero is-small box">
-                    <div class="hero-body is-paddingless">
-                      <figure class="image">
-                        <img src="i/lorna-jane.png" class="v-mid" alt="Lorna Jane.">
-                      </figure>
-                    </div>
-                    <small class="">International</small>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child hero is-small box">
-                    <div class="hero-body ">
-                      <figure class="image">
-                        <img src="i/sparkke.png" class="v-mid" alt="Sparkke Change">
-                      </figure>
-                    </div>
-                    <small class="">International</small>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child hero is-small box">
-                    <div class="hero-body is-paddingless">
-                      <figure class="image">
-                        <img src="i/suprag.jpg" class="v-mid" alt="Smalls Bar">
-                      </figure>
-                    </div>
-                    <small class="">International</small>
-                  </article>
-                </div>
-              </div>
-
-              <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                  <article class="tile is-child hero is-small box">
-                    <div class="hero-body is-text-centred">
-                      <figure class="image">
-                        <img src="i/affinity-logo.png"  class="v-mid" alt="Affinity Dating.">
-                      </figure>
-                    </div>
-                    <small class="">International</small>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child hero is-small box">
-                    <div class="hero-body is-paddingless">
-                      <figure class="image">
-                        <img src="i/mm-logo.png" class="v-mid" alt="Mobile Muster.">
-                      </figure>
-                    </div>
-                    <small class="">National Non-Profit</small>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child hero is-small box">
-                    <div class="hero-body is-paddingless">
-                      <figure class="image">
-                        <img src="i/amta.png" class="v-mid" alt="AMTA">
-                      </figure>
-                    </div>
-                    <small class="">National Non-Profit</small>
-                  </article>
-                </div>
-              </div>
-
-              <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                  <article class="tile is-child hero is-small box">
-                    <div class="hero-body ">
-                      <figure class="image">
-                        <img src="i/st-ali.jpg" class="v-mid" alt="ST ALi">
-                      </figure>
-                    </div>
-                    <small class="">International</small>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child hero is-small box">
-                    <div class="hero-body is-paddingless">
-                      <figure class="image">
-                        <img src="i/roll-recovery.jpg" class="v-mid" alt="ROLL Recovery.">
-                      </figure>
-                    </div>
-                    <small class="">Australia</small>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child hero is-small box">
-                    <div class="hero-body is-paddingless">
-                      <figure class="image">
-                        <img src="i/smalls-bar.png" class="v-mid" alt="Smalls Bar">
-                      </figure>
-                    </div>
-                    <small class="">Melbourne, AU</small>
-                  </article>
-                </div>
-              </div>
+          <div class="row">
+            <div class="col text-center">
+              <span>Need a ? <a href="#">Get in touch</a>
+              </span>
+            </div>
           </div>
         </div>
+      </section>
 
-      </div>
-    </div>
+    <!--section>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col">
+              <h2>STOQE has saved clients...</h2>
+              <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                  <div class="card card-sm card-body flex-row align-items-center">
+                      <svg class="icon icon-lg" width="48px" height="48px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Icon For Readed-mail</title>
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <rect opacity="0" x="0" y="0" width="48" height="48"></rect>
+                          <path d="M4.875,20.75 C4.63541667,20.75 4.39583333,20.6541667 4.20416667,20.4625 L2.2875,18.5458333 C1.90416667,18.1625 1.90416667,17.5875 2.2875,17.2041667 C2.67083333,16.8208333 3.29375,16.8208333 3.62916667,17.2041667 L4.875,18.45 L8.0375,15.2875 C8.42083333,14.9041667 8.99583333,14.9041667 9.37916667,15.2875 C9.7625,15.6708333 9.7625,16.2458333 9.37916667,16.6291667 L5.54583333,20.4625 C5.35416667,20.6541667 5.11458333,20.75 4.875,20.75 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                          <path d="M12.9835977,18 C12.7263047,14.0909841 9.47412135,11 5.5,11 C4.98630124,11 4.48466491,11.0516454 4,11.1500272 L4,7 C4,5.8954305 4.8954305,5 6,5 L20,5 C21.1045695,5 22,5.8954305 22,7 L22,16 C22,17.1045695 21.1045695,18 20,18 L12.9835977,18 Z M19.1444251,6.83964668 L13,10.1481833 L6.85557487,6.83964668 C6.4908718,6.6432681 6.03602525,6.77972206 5.83964668,7.14442513 C5.6432681,7.5091282 5.77972206,7.96397475 6.14442513,8.16035332 L12.6444251,11.6603533 C12.8664074,11.7798822 13.1335926,11.7798822 13.3555749,11.6603533 L19.8555749,8.16035332 C20.2202779,7.96397475 20.3567319,7.5091282 20.1603533,7.14442513 C19.9639747,6.77972206 19.5091282,6.6432681 19.1444251,6.83964668 Z" fill="#000000"></path>
+                        </g>
+                      </svg>
+                    <div class="ml-3">
+                      <h5 class="mb-0">$4k per year</h5>
+                      <span>in email op' costs</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card card-sm card-body flex-row align-items-center">
+                        <svg class="icon icon-lg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <title>Icon For Wine</title>
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                            <path d="M12.9999711,21.0076775 C14.2768414,21.0908914 15.4225108,21.8450216 16,23 L8,23 C8.57748919,21.8450216 9.72315858,21.0908914 11.0000289,21.0076775 C11.0000096,21.0051206 11,21.0025614 11,21 L11,15.5 L13,15.5 L13,21 C13,21.0025614 12.9999904,21.0051206 12.9999711,21.0076775 Z" fill="#000000" opacity="0.3"></path>
+                            <path d="M8,4 L7.5,8 C13.5,8 16.5,8 16.5,8 C16.4375594,7.20614914 16.2708927,5.87281581 16,4 L8,4 Z M8.28594472,2 L15.7140072,2 C16.9470152,2 17.9721494,2.92839923 18.0667168,4.13070039 L18.5415132,10.1671184 C18.816379,13.6616787 16.142506,16.712495 12.5692506,16.9813073 C12.4036601,16.9937645 12.2376417,17 12.071562,17 L11.9283899,17 C8.34457839,17 5.43932511,14.1587301 5.43932511,10.6538462 C5.43932511,10.4914241 5.44570102,10.329062 5.45843875,10.1671184 L5.9332352,4.13070039 C6.0278026,2.92839923 7.05293673,2 8.28594472,2 Z" fill="#000000" fill-rule="nonzero"></path>
+                          </g>
+                        </svg>
+    
+                      <div class="ml-3">
+                        <h5 class="mb-0">$15k per year</h5>
+                        <span>in agency retainer fees</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card card-sm card-body flex-row align-items-center">
+                        <svg class="icon icon-lg" width="48px" height="48px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <title>Icon For Readed-mail</title>
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <rect opacity="0" x="0" y="0" width="48" height="48"></rect>
+                            <path d="M4.875,20.75 C4.63541667,20.75 4.39583333,20.6541667 4.20416667,20.4625 L2.2875,18.5458333 C1.90416667,18.1625 1.90416667,17.5875 2.2875,17.2041667 C2.67083333,16.8208333 3.29375,16.8208333 3.62916667,17.2041667 L4.875,18.45 L8.0375,15.2875 C8.42083333,14.9041667 8.99583333,14.9041667 9.37916667,15.2875 C9.7625,15.6708333 9.7625,16.2458333 9.37916667,16.6291667 L5.54583333,20.4625 C5.35416667,20.6541667 5.11458333,20.75 4.875,20.75 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                            <path d="M12.9835977,18 C12.7263047,14.0909841 9.47412135,11 5.5,11 C4.98630124,11 4.48466491,11.0516454 4,11.1500272 L4,7 C4,5.8954305 4.8954305,5 6,5 L20,5 C21.1045695,5 22,5.8954305 22,7 L22,16 C22,17.1045695 21.1045695,18 20,18 L12.9835977,18 Z M19.1444251,6.83964668 L13,10.1481833 L6.85557487,6.83964668 C6.4908718,6.6432681 6.03602525,6.77972206 5.83964668,7.14442513 C5.6432681,7.5091282 5.77972206,7.96397475 6.14442513,8.16035332 L12.6444251,11.6603533 C12.8664074,11.7798822 13.1335926,11.7798822 13.3555749,11.6603533 L19.8555749,8.16035332 C20.2202779,7.96397475 20.3567319,7.5091282 20.1603533,7.14442513 C19.9639747,6.77972206 19.5091282,6.6432681 19.1444251,6.83964668 Z" fill="#000000"></path>
+                          </g>
+                        </svg>
+    
+                      <div class="ml-3">
+                        <h5 class="mb-0">$4k per year</h5>
+                        <span>in email op' costs</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="card card-sm card-body flex-row align-items-center">
+                        <svg class="icon icon-lg" width="48px" height="48px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <title>Icon For Readed-mail</title>
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <rect opacity="0" x="0" y="0" width="48" height="48"></rect>
+                            <path d="M4.875,20.75 C4.63541667,20.75 4.39583333,20.6541667 4.20416667,20.4625 L2.2875,18.5458333 C1.90416667,18.1625 1.90416667,17.5875 2.2875,17.2041667 C2.67083333,16.8208333 3.29375,16.8208333 3.62916667,17.2041667 L4.875,18.45 L8.0375,15.2875 C8.42083333,14.9041667 8.99583333,14.9041667 9.37916667,15.2875 C9.7625,15.6708333 9.7625,16.2458333 9.37916667,16.6291667 L5.54583333,20.4625 C5.35416667,20.6541667 5.11458333,20.75 4.875,20.75 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                            <path d="M12.9835977,18 C12.7263047,14.0909841 9.47412135,11 5.5,11 C4.98630124,11 4.48466491,11.0516454 4,11.1500272 L4,7 C4,5.8954305 4.8954305,5 6,5 L20,5 C21.1045695,5 22,5.8954305 22,7 L22,16 C22,17.1045695 21.1045695,18 20,18 L12.9835977,18 Z M19.1444251,6.83964668 L13,10.1481833 L6.85557487,6.83964668 C6.4908718,6.6432681 6.03602525,6.77972206 5.83964668,7.14442513 C5.6432681,7.5091282 5.77972206,7.96397475 6.14442513,8.16035332 L12.6444251,11.6603533 C12.8664074,11.7798822 13.1335926,11.7798822 13.3555749,11.6603533 L19.8555749,8.16035332 C20.2202779,7.96397475 20.3567319,7.5091282 20.1603533,7.14442513 C19.9639747,6.77972206 19.5091282,6.6432681 19.1444251,6.83964668 Z" fill="#000000"></path>
+                          </g>
+                        </svg>
+                      <div class="ml-3">
+                        <h5 class="mb-0">$4k per year</h5>
+                        <span>in email op' costs</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                      <div class="card card-sm card-body flex-row align-items-center">
+                          <svg class="icon icon-lg" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Icon For Wine</title>
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <rect opacity="0" x="0" y="0" width="24" height="24"></rect>
+                              <path d="M12.9999711,21.0076775 C14.2768414,21.0908914 15.4225108,21.8450216 16,23 L8,23 C8.57748919,21.8450216 9.72315858,21.0908914 11.0000289,21.0076775 C11.0000096,21.0051206 11,21.0025614 11,21 L11,15.5 L13,15.5 L13,21 C13,21.0025614 12.9999904,21.0051206 12.9999711,21.0076775 Z" fill="#000000" opacity="0.3"></path>
+                              <path d="M8,4 L7.5,8 C13.5,8 16.5,8 16.5,8 C16.4375594,7.20614914 16.2708927,5.87281581 16,4 L8,4 Z M8.28594472,2 L15.7140072,2 C16.9470152,2 17.9721494,2.92839923 18.0667168,4.13070039 L18.5415132,10.1671184 C18.816379,13.6616787 16.142506,16.712495 12.5692506,16.9813073 C12.4036601,16.9937645 12.2376417,17 12.071562,17 L11.9283899,17 C8.34457839,17 5.43932511,14.1587301 5.43932511,10.6538462 C5.43932511,10.4914241 5.44570102,10.329062 5.45843875,10.1671184 L5.9332352,4.13070039 C6.0278026,2.92839923 7.05293673,2 8.28594472,2 Z" fill="#000000" fill-rule="nonzero"></path>
+                            </g>
+                          </svg>
+      
+                        <div class="ml-3">
+                          <h5 class="mb-0">$15k per year</h5>
+                          <span>in agency retainer fees</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-4">
+                      <div class="card card-sm card-body flex-row align-items-center">
+                          <svg class="icon icon-lg" width="48px" height="48px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <title>Icon For Readed-mail</title>
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                              <rect opacity="0" x="0" y="0" width="48" height="48"></rect>
+                              <path d="M4.875,20.75 C4.63541667,20.75 4.39583333,20.6541667 4.20416667,20.4625 L2.2875,18.5458333 C1.90416667,18.1625 1.90416667,17.5875 2.2875,17.2041667 C2.67083333,16.8208333 3.29375,16.8208333 3.62916667,17.2041667 L4.875,18.45 L8.0375,15.2875 C8.42083333,14.9041667 8.99583333,14.9041667 9.37916667,15.2875 C9.7625,15.6708333 9.7625,16.2458333 9.37916667,16.6291667 L5.54583333,20.4625 C5.35416667,20.6541667 5.11458333,20.75 4.875,20.75 Z" fill="#000000" fill-rule="nonzero" opacity="0.3"></path>
+                              <path d="M12.9835977,18 C12.7263047,14.0909841 9.47412135,11 5.5,11 C4.98630124,11 4.48466491,11.0516454 4,11.1500272 L4,7 C4,5.8954305 4.8954305,5 6,5 L20,5 C21.1045695,5 22,5.8954305 22,7 L22,16 C22,17.1045695 21.1045695,18 20,18 L12.9835977,18 Z M19.1444251,6.83964668 L13,10.1481833 L6.85557487,6.83964668 C6.4908718,6.6432681 6.03602525,6.77972206 5.83964668,7.14442513 C5.6432681,7.5091282 5.77972206,7.96397475 6.14442513,8.16035332 L12.6444251,11.6603533 C12.8664074,11.7798822 13.1335926,11.7798822 13.3555749,11.6603533 L19.8555749,8.16035332 C20.2202779,7.96397475 20.3567319,7.5091282 20.1603533,7.14442513 C19.9639747,6.77972206 19.5091282,6.6432681 19.1444251,6.83964668 Z" fill="#000000"></path>
+                            </g>
+                          </svg>
+      
+                        <div class="ml-3">
+                          <h5 class="mb-0">$4k per year</h5>
+                          <span>in email op' costs</span>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section-->
 
-  </section>
 
+    <footer class="pb-5 pt-0 bg-primary-3 text-light">
+        <div class="divider flip-y pt-0">
+            <svg class="bg-white" width="100%" height="96px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+              <path d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
+            </svg>
+        </div>
+        <div class="container pt-6">
+            <div class="row">
+                <div class="col">
+                    <div class="h1">STOQE can save you...</div>
+                    <div class="my-5">
+                        <a href="mailto:stoqe@stoqe.com?subject=Save Us" class="btn btn-lg btn-primary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="https://twitter.com/STOQE" class="nav-link">
+                  <svg class="icon undefined" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <title>Twitter icon</title>
+                    <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"
+                    />
+                  </svg>
+                </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto">
+                    <small class="text-muted">© 2019 &middot; STOQE</small>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  </body>
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+
+    <!-- Optional Vendor Scripts (Remove the plugin script if current page does not use that feature) -->
+
+   <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+   <script type="text/javascript" src="assets/js/aos.js"></script>
+   <!-- Clipboard (copies content from browser into OS clipboard) -->
+   <script type="text/javascript" src="assets/js/clipboard.js"></script>
+   <!-- Fancybox (handles image and video lightbox and galleries) -->
+   <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
+   <!-- Flickity (handles touch enabled carousels and sliders) -->
+   <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
+   <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
+   <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+   <!-- Isotope (masonry layouts and filtering) -->
+   <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+   <!-- jarallax (parallax effect and video backgrounds) -->
+   <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
+   <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
+   <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
+   <!-- jQuery Countdown (displays countdown text to a specified date) -->
+   <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+   <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+   <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
+   <!-- Prism (displays formatted code boxes) -->
+   <script type="text/javascript" src="assets/js/prism.js"></script>
+   <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+   <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
+   <!-- Smooth scroll (animation to links in-page)-->
+   <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.js"></script>
+   <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
+   <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
+   <!-- Typed text (animated typing effect)-->
+   <script type="text/javascript" src="assets/js/typed.min.js"></script>
+   <!-- Required theme scripts (Do not remove) -->
+   <script type="text/javascript" src="assets/js/theme.js"></script>
+   <!-- Removes page load animation when window is finished loading -->
+   <script type="text/javascript">
+       window.addEventListener("load", function() {
+           document.querySelector('body').classList.add('loaded');
+       });
+   </script>
+
+</body>
+
 </html>
