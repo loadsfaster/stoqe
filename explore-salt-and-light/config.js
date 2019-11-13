@@ -11,7 +11,7 @@ var config = {
     chapters: [
         {
             id: 'glacier-np',
-            image: 'https://www.stoqe.com/i/sandl/logo-plus.jpg',
+            image: 'https://www.stoqe.com/i/sandl/logo.jpg',
             title: '',
             description: '<strong class="text-lg">Scroll down to explore &darr;</strong>',
             location: {
@@ -39,9 +39,9 @@ var config = {
         },
         {
             id: 'harrison1998',
-            title: 'Harrison Glacier, 1998',
-            image: '',
-            description: 'Salt + Light is absolute beachfont property at Palm Beach on the Gold Coast.',
+            title: 'Salt + Light is an absolute beachfont property at Palm Beach on the Gold Coast.',
+            image: 'https://www.stoqe.com/i/sandl/view-sm.jpg',
+            description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
                 center: [153.46465, -28.10502],
                 zoom: 8,
