@@ -46,7 +46,7 @@ var config = {
                 center: [153.46465, -28.10502],
                 zoom: 8.5,
                 pitch: 51.50,
-                bearing: -26.40
+                bearing: -25
             },
             onChapterEnter: [],
             onChapterExit: [
@@ -82,7 +82,7 @@ var config = {
         },
         {
             id: 'blackfoot1998',
-            title: 'Just half an hour to stunning Gold Coast Hinterland.',
+            title: 'Only half an hour to the stunning Gold Coast Hinterland.',
             image: 'https://www.stoqe.com/i/sandl/hinterland-sm.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
@@ -96,14 +96,14 @@ var config = {
         },
         {
             id: 'blackfoot2015',
-            title: 'Only 50mins to Byrnon Bay',
+            title: 'Only 50mins from Byron Bay',
             image: 'https://www.stoqe.com/i/sandl/byron-sm.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
                 center: [153.61405, -28.64106],
-                zoom: 13,
-                pitch: 0,
-                bearing: 90
+                zoom: 10,
+                pitch: 180,
+                bearing: -15
             },
             onChapterEnter: [
                 {
@@ -120,11 +120,11 @@ var config = {
         },
         {
             id: 'agassiz1998',
-            title: 'Agassiz Glacier, 1998',
-            image: '',
-            description: 'Agassiz Glacier is in Glacier National Park in the U.S. state of Montana. It is named after Louis Agassiz, a Swiss-American glaciologist. The glacier is situated in a cirque to the southeast of Kintla Peak west of the Continental Divide. Agassiz Glacier is one of several glaciers that have been selected for monitoring by the U.S. Geological Survey\'s Glacier Monitoring Research program, which is researching changes to the mass balance of glaciers in and surrounding Glacier National Park.',
+            title: 'Only 50mins to Brisbane',
+            image: 'https://www.stoqe.com/i/sandl/brisbane-sm.jpg',
+            description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
-                center: [-114.15881, 48.93439],
+                center: [153.02305, -27.47043],
                 zoom: 13.51,
                 pitch: 41.00,
                 bearing: 78.33
@@ -134,14 +134,14 @@ var config = {
         },
         {
             id: 'agassiz2015',
-            title: 'Agassiz Glacier, 2015',
-            image: '',
-            description: 'Between 1998 and 2015, Agassiz Glacier lost 108 acres of surface area (about 37%).',
+            title: 'Only 50mins from Byron Bay',
+            image: 'https://www.stoqe.com/i/sandl/byron-sm.jpg',
+            description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
                 center: [-114.15881, 48.93439],
-                zoom: 13.51,
-                pitch: 41.00,
-                bearing: 78.33
+                zoom: 8.5,
+                pitch: 51.50,
+                bearing: -26.40
             },
             onChapterEnter: [
                 {
