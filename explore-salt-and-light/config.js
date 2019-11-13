@@ -1,13 +1,13 @@
 var config = {
     style: 'mapbox://styles/branigan/cjz37rcb003ib1cr3s8rnkt2d',
     accessToken: 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNrMm01aG9hdTBlZGwzbXQ1ZXVrNHNmejAifQ.QHQA0N6XPWddCXtvoODHZg',
-    showMarkers: false,
+    showMarkers: true,
     alignment: 'left',
-    theme: 'dark',
-    title: 'Glaciers of Glacier National Park',
-    subtitle: 'Change in coverage from 1998 to 2015',
+    theme: 'light',
+    title: 'Explore Salt + Light',
+    subtitle: 'A working demo by STOQE',
     byline: '',
-    footer: 'Source: Story text from Wikipedia, August 2019. Data from <a href="https://www.usgs.gov/centers/norock/science/retreat-glaciers-glacier-national-park">USGS</a>',
+    footer: 'This is still a work-in-progress but would be a beautiful way to showcase the incredible location of S+L.',
     chapters: [
         {
             id: 'glacier-np',
@@ -15,7 +15,7 @@ var config = {
             image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg/800px-2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg',
             description: 'Glacier National Park is dominated by mountains which were carved into their present shapes by the huge glaciers of the last ice age. These glaciers have largely disappeared over the last 12,000 years. Evidence of widespread glacial action is found throughout the park in the form of U-shaped valleys, cirques, arêtes, and large outflow lakes radiating like fingers from the base of the highest peaks. Since the end of the ice ages, various warming and cooling trends have occurred. The last recent cooling trend was during the Little Ice Age, which took place approximately between 1550 and 1850. During the Little Ice Age, the glaciers in the park expanded and advanced, although to nowhere near as great an extent as they had during the Ice Age.',
             location: {
-                center: [-113.91666, 48.66451],
+                center: [153.46465, -28.10502],
                 zoom: 8,
                 pitch: 0.00,
                 bearing: 0.00
