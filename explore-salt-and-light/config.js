@@ -94,13 +94,13 @@ var config = {
         },
         {
             id: '7',
-            title: 'Salt + Light life is dream come true.',
+            title: 'Salt + Light life is dream come true. Spanning 3 levels of living space and sleeping up to 12 people, Salt + Light is perfect for groups, families, and couples.',
             image: 'https://www.stoqe.com/i/sandl/view-south.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
                 center: [153.46465, -28.10502],
-                zoom: 16,
-                pitch: 180,
+                zoom: 13,
+                pitch: 1,
                 bearing: 250
             },
             onChapterEnter: [],
@@ -108,12 +108,12 @@ var config = {
         },
         {
             id: '8',
-            title: 'At Salt + Light Beach House you\'ll always feel at home.',
+            title: 'At Salt + Light Beach House: where you\'ll always feel at home.',
             image: 'https://www.stoqe.com/i/sandl/view-sm.jpg',
             description: '<h4><a href=\"\">Book Now via Airbnb</a> or <a href=\"\">return to our homepage</a><h4>',
             location: {
                 center: [153.46465, -28.10502],
-                zoom: 12,
+                zoom: 16,
                 pitch: 200,
                 bearing: 67
             },
