@@ -1,22 +1,22 @@
 var config = {
     style: 'mapbox://styles/branigan/cjz37rcb003ib1cr3s8rnkt2d',
-    accessToken: 'pk.eyJ1IjoibWJ4c29sdXRpb25zIiwiYSI6ImNrMm01aG9hdTBlZGwzbXQ1ZXVrNHNmejAifQ.QHQA0N6XPWddCXtvoODHZg',
+    accessToken: 'pk.eyJ1Ijoic3RvcWUiLCJhIjoiY2sydml5YjFpMDVvMTNkbHE3Z21vcmt6diJ9.HEwcTWlpQWl-MmwCQNuWng',
     showMarkers: true,
     alignment: 'left',
     theme: 'light',
-    title: 'Explore Salt + Light',
-    subtitle: 'A working demo by STOQE',
-    byline: '',
+    title: '',
+    subtitle: '',
+    byline: 'Explore Salt + Light (A working demo by STOQE)',
     footer: 'This is still a work-in-progress but would be a beautiful way to showcase the incredible location of S+L.',
     chapters: [
         {
             id: 'glacier-np',
-            title: 'Glacier National Park Glaciers',
-            image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg/800px-2015-06-19_Glacier_National_Park_%28U.S.%29_8633.jpg',
-            description: 'Glacier National Park is dominated by mountains which were carved into their present shapes by the huge glaciers of the last ice age. These glaciers have largely disappeared over the last 12,000 years. Evidence of widespread glacial action is found throughout the park in the form of U-shaped valleys, cirques, arêtes, and large outflow lakes radiating like fingers from the base of the highest peaks. Since the end of the ice ages, various warming and cooling trends have occurred. The last recent cooling trend was during the Little Ice Age, which took place approximately between 1550 and 1850. During the Little Ice Age, the glaciers in the park expanded and advanced, although to nowhere near as great an extent as they had during the Ice Age.',
+            image: 'https://www.stoqe.com/i/sandl/logo-plus.jpg',
+            title: '',
+            description: '<strong class="text-lg">Scroll down to explore &darr;</strong>',
             location: {
                 center: [153.46465, -28.10502],
-                zoom: 8,
+                zoom: 3,
                 pitch: 0.00,
                 bearing: 0.00
             },
@@ -41,12 +41,12 @@ var config = {
             id: 'harrison1998',
             title: 'Harrison Glacier, 1998',
             image: '',
-            description: 'Harrison Glacier is located in the US state of Montana in Glacier National Park. Situated on a southeast facing ridge immediately south of Mount Jackson, Harrison Glacier is the largest glacier in Glacier National Park. Compared to many of the vanishing glaciers in Glacier National Park, Harrison Glacier has a much higher altitude accumulation zone (approximately 9,000 feet (2,700 m)) which has allowed it to maintain some equilibrium in its glacier mass balance.',
+            description: 'Salt + Light is absolute beachfont property at Palm Beach on the Gold Coast.',
             location: {
-                center: [-113.72917, 48.58938],
-                zoom: 12.92,
-                pitch: 39.50,
-                bearing: 36.00
+                center: [153.46465, -28.10502],
+                zoom: 8,
+                pitch: 20,
+                bearing: 0
             },
             onChapterEnter: [],
             onChapterExit: [
@@ -62,10 +62,10 @@ var config = {
             image: '',
             description: 'Between 1998 and 2015, Harrison Glacier lost 169 acres of surface area (about 37%).',
             location: {
-                center: [-113.72917, 48.58938],
-                zoom: 12.92,
-                pitch: 39.50,
-                bearing: 36.00
+                center: [153.46465, -28.10502],
+                zoom: 13.5,
+                pitch: 90,
+                bearing: 45
             },
             onChapterEnter: [
                 {
