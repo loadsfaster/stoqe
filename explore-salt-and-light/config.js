@@ -1,44 +1,29 @@
 var config = {
-    style: 'mapbox://styles/stoqe/ck2vkzzei0trh1cruy6nxv5z9',
-    accessToken: 'pk.eyJ1Ijoic3RvcWUiLCJhIjoiY2sydml5YjFpMDVvMTNkbHE3Z21vcmt6diJ9.HEwcTWlpQWl-MmwCQNuWng',
+    style: 'mapbox://styles/stoqe/ck2wx7eg51hwr1cmuujljq86b',
+    accessToken: 'pk.eyJ1Ijoic3RvcWUiLCJhIjoiY2pjOGtnZWVnMDF1NDJ6cXk3MjJ6cm52byJ9.3GLTr5vNXiWEAYjrr2-_Vg',
     showMarkers: true,
     alignment: 'left',
     theme: 'light',
     title: '',
     subtitle: '',
-    byline: 'Explore Salt + Light (A working demo by STOQE)',
     footer: 'This StoryMap is a work-in-progress but would be a beautiful way to showcase the incredible location of S+L and really engage visitors with emotion. And we all know emotions sell.',
     chapters: [
         {
-            id: 'glacier-np',
+            id: '1',
             image: 'https://www.stoqe.com/i/sandl/logo.jpg',
-            title: '',
-            description: '<strong class="text-lg">Scroll down to Explore &darr;</strong>',
+            title: 'Gold Coast, Austalia',
+            description: '<h3>Scroll down to EXPLORE &darr;</h3>',
             location: {
                 center: [153.46465, -28.10502],
-                zoom: 3,
+                zoom: 1,
                 pitch: 0.00,
                 bearing: 0.00
             },
-            onChapterEnter: [
-                {
-                    layer: 'gnpglaciers-1998',
-                    opacity: 0.25
-                },
-                {
-                    layer: 'glaciernp-boundary',
-                    opacity: 0.25
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'glaciernp-boundary',
-                    opacity: 0
-                }
-            ]
+            onChapterEnter: [],
+            onChapterExit: []
         },
         {
-            id: 'harrison1998',
+            id: '2',
             title: 'Salt + Light is an absolute beachfont property at Palm Beach, Gold Coast. Perfectly positioned between Brisbane and Byron Bay, the best of all worlds are right at your doorstep. Literally...',
             image: 'https://www.stoqe.com/i/sandl/view-sm.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
@@ -49,16 +34,11 @@ var config = {
                 bearing: -25
             },
             onChapterEnter: [],
-            onChapterExit: [
-                // {
-                //     layer: 'gnpglaciers-2015',
-                //     opacity: 0
-                // }
-            ]
+            onChapterExit: []
         },
         {
-            id: 'harrison2015',
-            title: 'Tucked between headlands and nested between creeks, Salt + Light is a sanctuary of serenty with specatacular views North, South, and straight out to the ocean deep. Within walking distance of cafes, restuarants, & shops it\'s also the pefect doorway to explore the the Gold Coast and beyond.',
+            id: '3',
+            title: 'Tucked between two headlands and nestled between two creeks, Salt + Light is a sanctuary of serenty and specatacular views to the North, South, and straight out to the ocean deep. Within walking distance of cafes, restuarants, & shops it\'s also the pefect doorway to explore the greater Gold Coast and beyond.',
             image: 'https://www.stoqe.com/i/sandl/view-north.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
@@ -67,22 +47,12 @@ var config = {
                 pitch: 90,
                 bearing: 25
             },
-            onChapterEnter: [
-                {
-                    layer: 'gnpglaciers-2015',
-                    opacity: 0.25
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'gnpglaciers-2015',
-                    opacity: 0
-                }
-            ]
+            onChapterEnter: [],
+            onChapterExit: []
         },
         {
-            id: 'blackfoot1998',
-            title: 'Only half an hour to the stunning Gold Coast Hinterland.',
+            id: '4',
+            title: 'It\'s only half an hour to the Gold Coast Hinterland...',
             image: 'https://www.stoqe.com/i/sandl/hinterland-sm.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
@@ -95,8 +65,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'agassiz1998',
-            title: 'Only 50mins to Brisbane',
+            id: '5',
+            title: 'Only 50mins to Brisbane...',
             image: 'https://www.stoqe.com/i/sandl/brisbane-sm.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
@@ -109,8 +79,8 @@ var config = {
             onChapterExit: []
         },
         {
-            id: 'blackfoot2015',
-            title: 'Only 50mins from Byron Bay',
+            id: '6',
+            title: 'And only 50mins to Byron Bay.',
             image: 'https://www.stoqe.com/i/sandl/byron-sm.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
@@ -119,42 +89,36 @@ var config = {
                 pitch: 180,
                 bearing: -15
             },
-            onChapterEnter: [
-                {
-                    layer: 'gnpglaciers-2015',
-                    opacity: 0.25
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'gnpglaciers-2015',
-                    opacity: 0
-                }
-            ]
+            onChapterEnter: [],
+            onChapterExit: []
         },
         {
-            id: 'agassiz2015',
+            id: '7',
+            title: 'Salt + Light life is dream come true.',
+            image: 'https://www.stoqe.com/i/sandl/view-south.jpg',
+            description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
+            location: {
+                center: [153.46465, -28.10502],
+                zoom: 16,
+                pitch: 180,
+                bearing: 250
+            },
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: '8',
             title: 'At Salt + Light Beach House you\'ll always feel at home.',
             image: 'https://www.stoqe.com/i/sandl/view-sm.jpg',
-            description: '<span class="text-lg"><a href=\"\">Book Now via Airbnb</a> or <a href=\"\">return to our homepage</a></span>',
+            description: '<h4><a href=\"\">Book Now via Airbnb</a> or <a href=\"\">return to our homepage</a><h4>',
             location: {
                 center: [153.46465, -28.10502],
                 zoom: 12,
                 pitch: 200,
                 bearing: 67
             },
-            onChapterEnter: [
-                {
-                    layer: 'gnpglaciers-2015',
-                    opacity: 0.25
-                }
-            ],
-            onChapterExit: [
-                {
-                    layer: 'gnpglaciers-2015',
-                    opacity: 0
-                }
-            ]
+            onChapterEnter: [],
+            onChapterExit: []
         }
     ]
 };
