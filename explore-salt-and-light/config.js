@@ -58,7 +58,7 @@ var config = {
         },
         {
             id: 'harrison2015',
-            title: 'Tucked between headlands and nested between creeks, Salt + Light is a sanctuary of serenty with specatacular views North, South, and straight out to the ocean deep. Within walking distance of cafes, restuarants, &amp; shops it\'s also the pefect doorway to explore the the Gold Coast and beyond.',
+            title: 'Tucked between headlands and nested between creeks, Salt + Light is a sanctuary of serenty with specatacular views North, South, and straight out to the ocean deep. Within walking distance of cafes, restuarants, & shops it\'s also the pefect doorway to explore the the Gold Coast and beyond.',
             image: 'https://www.stoqe.com/i/sandl/view-north.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
@@ -96,11 +96,11 @@ var config = {
         },
         {
             id: 'blackfoot2015',
-            title: 'Blackfoot Glacier, 2015',
-            image: '',
-            description: 'Between 1998 and 2015, Blackfoot Glacier lost 31 acres of surface area (about 8%).',
+            title: 'Only 50mins to Byrnon Bay',
+            image: 'https://www.stoqe.com/i/sandl/byron-sm.jpg',
+            description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
-                center: [153.46465, -28.10502],
+                center: [153.61405, -28.64106],
                 zoom: 13,
                 pitch: 0,
                 bearing: 90
