@@ -66,7 +66,7 @@ var config = {
         },
         {
             id: '5',
-            title: 'Only 50mins to Brisbane...',
+            title: 'Only 50mins to Brisbane city...',
             image: 'https://www.stoqe.com/i/sandl/brisbane-sm.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
@@ -108,7 +108,7 @@ var config = {
         },
         {
             id: '8',
-            title: 'At Salt + Light Beach House: where you\'ll always feel at home.',
+            title: 'Salt + Light Beach House — where you always feel at home.',
             image: 'https://www.stoqe.com/i/sandl/view-sm.jpg',
             description: '<h4><a href=\"\">Book Now via Airbnb</a> or <a href=\"\">return to our homepage</a><h4>',
             location: {
