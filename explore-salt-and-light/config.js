@@ -65,7 +65,7 @@ var config = {
                 center: [153.46465, -28.10502],
                 zoom: 12.5,
                 pitch: 90,
-                bearing: 0
+                bearing: 25
             },
             onChapterEnter: [
                 {
@@ -82,14 +82,14 @@ var config = {
         },
         {
             id: 'blackfoot1998',
-            title: 'Blackfoot Glacier, 1998',
-            image: '',
-            description: 'Blackfoot Glacier is the second largest of the remaining 25 glaciers in Glacier National Park, Montana. Blackfoot Glacier is just to the north of Blackfoot Mountain and near Jackson Glacier. When first documented in 1850, the glacier also included the now separate Jackson Glacier and together, they covered 1,875 acres (7.59 km2). In 1850, there were an estimated 150 glaciers in the park. Glaciologists have stated that by the year 2030, all the glaciers in the park may disappear.',
+            title: 'Just half an hour to stunning Gold Coast Hinterland.',
+            image: 'https://www.stoqe.com/i/sandl/hinterland-sm.jpg',
+            description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
-                center: [153.46465, -28.10502],
-                zoom: 13,
-                pitch: 120,
-                bearing: 90
+                center: [153.27745, -28.18521],
+                zoom: 12,
+                pitch: 160,
+                bearing: 70
             },
             onChapterEnter: [],
             onChapterExit: []
