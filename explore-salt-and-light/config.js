@@ -39,14 +39,14 @@ var config = {
         },
         {
             id: 'harrison1998',
-            title: 'Salt + Light is an absolute beachfont property at Palm Beach on the Gold Coast.',
+            title: 'Salt + Light is an absolute beachfont property at Palm Beach, Gold Coast. Perfectly positioned between Brisbane and Byron Bay, the best of all worlds are right at your doorstep. Literally...',
             image: 'https://www.stoqe.com/i/sandl/view-sm.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
                 center: [153.46465, -28.10502],
-                zoom: 8,
-                pitch: 20,
-                bearing: 0
+                zoom: 8.5,
+                pitch: 51.50,
+                bearing: -26.40
             },
             onChapterEnter: [],
             onChapterExit: [
@@ -58,14 +58,14 @@ var config = {
         },
         {
             id: 'harrison2015',
-            title: 'Harrison Glacier, 2015',
-            image: '',
-            description: 'Between 1998 and 2015, Harrison Glacier lost 169 acres of surface area (about 37%).',
+            title: 'Tucked between headlands and nested between creeks, Salt + Light is a sanctuary of serenty with specatacular views North, South, and straight out to the ocean deep. Within walking distance of cafes, restuarants, &amp; shops it\'s also the pefect doorway to explore the the Gold Coast and beyond.',
+            image: 'https://www.stoqe.com/i/sandl/view-north.jpg',
+            description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
                 center: [153.46465, -28.10502],
-                zoom: 13.5,
+                zoom: 12.5,
                 pitch: 90,
-                bearing: 45
+                bearing: 0
             },
             onChapterEnter: [
                 {
@@ -86,10 +86,10 @@ var config = {
             image: '',
             description: 'Blackfoot Glacier is the second largest of the remaining 25 glaciers in Glacier National Park, Montana. Blackfoot Glacier is just to the north of Blackfoot Mountain and near Jackson Glacier. When first documented in 1850, the glacier also included the now separate Jackson Glacier and together, they covered 1,875 acres (7.59 km2). In 1850, there were an estimated 150 glaciers in the park. Glaciologists have stated that by the year 2030, all the glaciers in the park may disappear.',
             location: {
-                center: [-113.66573, 48.59181],
-                zoom: 12.92,
-                pitch: 51.50,
-                bearing: -26.40
+                center: [153.46465, -28.10502],
+                zoom: 13,
+                pitch: 120,
+                bearing: 90
             },
             onChapterEnter: [],
             onChapterExit: []
@@ -100,10 +100,10 @@ var config = {
             image: '',
             description: 'Between 1998 and 2015, Blackfoot Glacier lost 31 acres of surface area (about 8%).',
             location: {
-                center: [-113.66573, 48.59181],
-                zoom: 12.92,
-                pitch: 51.50,
-                bearing: -26.40
+                center: [153.46465, -28.10502],
+                zoom: 13,
+                pitch: 0,
+                bearing: 90
             },
             onChapterEnter: [
                 {

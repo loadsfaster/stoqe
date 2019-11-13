@@ -90,6 +90,10 @@
                 margin: 0 auto;
             }
         }
+
+        .font-norm {
+            font-weight: normal;
+        }
         </style>
 </head>
 <body>
@@ -160,16 +164,16 @@ config.chapters.forEach((record, idx) => {
     var container = document.createElement('div');
     var chapter = document.createElement('div');
     
-    if (record.title) {
-        var title = document.createElement('h3');
-        title.innerText = record.title;
-        chapter.appendChild(title);
-    }
-    
     if (record.image) {
         var image = new Image();  
         image.src = record.image;  
         chapter.appendChild(image);
+    }
+
+    if (record.title) {
+        var title = document.createElement('h3');
+        title.innerText = record.title;
+        chapter.appendChild(title);
     }
     
     if (record.description) {
