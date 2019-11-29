@@ -24,7 +24,7 @@ var config = {
         },
         {
             id: '2',
-            title: 'Salt + Light is an absolute beachfont property at Palm Beach, Gold Coast. Perfectly positioned between Brisbane and Byron Bay, the best of all worlds are right at your doorstep. Literally...',
+            title: 'Salt + Light is a prime beachfont property at Palm Beach, Gold Coast. Perfectly positioned between Brisbane and Byron Bay, the best of all worlds are right at your doorstep. Literally...',
             image: 'https://www.stoqe.com/i/sandl/view-sm.jpg',
             description: '<span class="text-lg">Scroll down to keep exploring &darr;</span>',
             location: {
