@@ -10,7 +10,8 @@ $(document).ready(function() {
         var breach_title;
         $('#col-header').html('All Breaches');
         $.ajax({
-            url: 'https://haveibeenpwned.com/api/v2/breaches',
+            //url: 'https://haveibeenpwned.com/api/v2/breaches',
+            url: 'https://haveibeenpwned.com/api/v3/breaches',
             dataType: 'json',
             success: function(data) {
                 data.sort(function(a,b) {
@@ -45,7 +46,8 @@ $(document).ready(function() {
 
     function top_five() {
         $.ajax({
-            url: 'https://haveibeenpwned.com/api/v2/breaches',
+            //url: 'https://haveibeenpwned.com/api/v2/breaches',
+            url: 'https://haveibeenpwned.com/api/v3/breaches',
             dataType: 'json',
             success: function(data) {
                 data.sort(function(a,b) {
@@ -70,7 +72,8 @@ $(document).ready(function() {
 
     function latest() {
         $.ajax({
-            url: 'https://haveibeenpwned.com/api/v2/breaches',
+            //url: 'https://haveibeenpwned.com/api/v2/breaches',
+            url: 'https://haveibeenpwned.com/api/v3/breaches',
             dataType: 'json',
             success: function(data) {
                 data.sort(function(a,b) {
@@ -96,6 +99,7 @@ $(document).ready(function() {
     function getInfo(email) {
         var count = 0;
         $.ajax({
+            //url: 'https://haveibeenpwned.com/api/v2/breachedaccount/'+email+'?includeUnverified=true',
             url: 'https://haveibeenpwned.com/api/v2/breachedaccount/'+email+'?includeUnverified=true',
             type: 'GET',
             dataType: 'json',
