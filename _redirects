@@ -8,4 +8,5 @@
 /leak-alerts/ /leaked-logins/ 302
 /leaks/ /leaked-logins/ 302
 /logins/ /leaked-logins/ 302
-/como/ 206.189.95.50 / 302
+/como/ http://206.189.95.50 / 302
+/dbmm/ http://178.128.52.129 / 302
