@@ -42,7 +42,10 @@
         {% if nextlink %}
           <p class="mt-8 text-xl leading-7 text-white">
             <span class="font-bold">{% if page.url == '/contact/' %}return to homepage:{% else %}next page:{% endif %}</span>
-            <a class="text-yellow font-bold tracking-tight border-b-2 border-solid border-red" {% if orlink %} href="{{ orlink }}" {% else %} href="/{{ nextlink }}/" {% endif %} >{{ nexttext }}</a> 
+            <a class="text-yellow font-bold tracking-tight border-b-2 border-solid border-red" 
+            {% if orlink %} href="{{ orlink }}" {% else %} href="/{{ nextlink }}/" {% endif %} 
+            {% if nextlinkgoal %} onclick="fathom.trackGoal('{{ nextlinkgoal }}', 0);" {% endif %}
+            >{{ nexttext }}</a>  
             
             <!--svg class="inline-block text-white text-xs h-5 w-5 ml-1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg-->
           </p>

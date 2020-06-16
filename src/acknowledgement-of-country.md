@@ -8,6 +8,8 @@ prelink:
 orlink: 
 nextlink: who
 nexttext: who i help
+nextlinkgoal: EQRJAKSJ
+flagbuttongoal: ZTQJ1YKH
 postsHeading: Latest posts
 archiveButtonText: See all posts
 socialImage: ''
