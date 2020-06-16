@@ -10,7 +10,7 @@ prelink: stoqe will save you too
 nextlink: what
 nexttext: see what i do
 nextlinkgoal: abc
-flagbuttongoal: ZTQJ1YKH
+flagbuttongoal: U2LDZUOG
 aoclinkgoal: 6SDBQ0E4
 postsHeading: Latest posts
 archiveButtonText: See all posts
