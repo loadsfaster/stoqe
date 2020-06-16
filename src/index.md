@@ -2,6 +2,8 @@
 layout: 'layouts/base.njk'
 maxwidth: md
 title: stoqe
+metatitle:
+metadesc: stoqe saves big & little brands lots of time & money on websites, domains, & email.
 lead:
 para: 
 prelink: stoqe will save you too

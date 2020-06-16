@@ -1,11 +1,13 @@
 ---
 layout: 'layouts/page.njk'
 title: how i save you
+metatitle: how
+metadesc: 
 para: the digital space is a complex place where tech debt and soft costs kill business. I stay up-to-date in the space finding new opportunites for growth, savings, & improvements; saving you time, money, & migraines in the process.
 prelink: stoqe will save you
 nextlink: why
 nexttext: why you should
-metatitle: saving brands
+
 postsHeading: Latest posts
 archiveButtonText: See all posts
 socialImage: ''
