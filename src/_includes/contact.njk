@@ -1,0 +1,191 @@
+<div class="relative">
+  <div class="relative pt- pb-16 sm:pt-">
+    <form netlify name="contact" action='/thank-you/' class="mt-9 lowercase  text-lg grid grid-cols-1 row-gap-6 sm:grid-cols-2 sm:col-gap-8">
+
+        <div class="sm:col-span-2 my-3">
+            <div class="flex justify-left">
+                <label for="first_name" class="block leading-5 ">your preferred name
+                </label>
+                <span class="text-sm leading-5 ml-3 text-gray-500"> (required)
+                </span>
+            </div>
+            <div class="mt-1 relative shadow-sm">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg class="h-5 w-5 text-red" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                </div>
+                <input id="first_name" class="form-input  pl-10 rounded-sm p-2 shadow-inner block w-full transition ease-in-out duration-150 leading-7 text-black" />
+            </div>
+        </div>
+        <div class="sm:col-span-2">
+            <div class="flex justify-left">
+                <label for="first_name" class="block leading-5 ">your preferred pronouns
+                </label>
+                <span class="text-sm leading-5 ml-3 text-gray-500"> (optional)
+                </span>
+            </div>
+            <div class="mt-1 flex relative shadow-sm">
+                <div class="w-1/2 flex-1 min-w-0 pr-1">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-red" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path></svg>
+                    </div>
+                    <input aria-label="singular pronoun" class="form-input relative block w-full rounded-sm pl-10 p-2 leading-7 text-black bg-white bg-white focus:z-10 transition ease-in-out duration-150" placeholder="single" />
+                </div>
+                <div class="flex-1 min-w-0 pl-1">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <svg class="h-5 w-5 text-red" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path></svg>
+                    </div>
+                    <input aria-label="plural pronoun" class="form-input relative block w-full rounded-sm pl-10 p-2 leading-7 text-black bg-white focus:z-10 transition ease-in-out duration-150" placeholder="plural" />
+                </div>
+            </div>
+        </div>
+
+        <div class="sm:col-span-2 my-3">
+            <div class="flex justify-left">
+                <label for="email" class="block leading-5 ">your contact email
+                </label>
+                <span class="text-sm leading-5 ml-3 text-gray-500">(required)
+                </span>
+            </div>
+            <div class="mt-1 relative shadow-sm">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg class="h-5 w-5 text-red" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                    </svg>
+                </div>
+                <input id="email" type="email" class="form-input pl-10 rounded-sm p-2 block w-full transition ease-in-out duration-150 leading-7 text-black" />
+            </div>
+        </div>
+
+        <div class="sm:col-span-2 my-3">
+            <div class="flex justify-left">
+                <label for="company" class="block leading-5 ">your website
+                </label>
+                <span class="text-sm leading-5 ml-3 text-gray-500">(optional)
+                </span>
+            </div>
+            <div class="mt-1 relative shadow-sm">
+                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                   <svg  class="h-5 w-5 text-red" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                </div>
+                <input id="company" class="form-input pl-10 rounded-sm p-2 block w-full transition ease-in-out duration-150 leading-7 text-black" />
+            </div>
+        </div>
+
+        <fieldset class="sm:col-span-2 my-5">
+            <legend class="block font-bold leading-5">
+                <span class="border-b-2 border-red">what type of work would you like me to do?</span>
+            </legend>
+            <div class="mt-4 grid grid-cols-3 sm:grid-cols-4 row-gap-4">
+                <div class="flex items-center">
+                <input id="paid" name="work_type" value="paid" type="radio" class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" />
+                <label for="paid" class="ml-2">
+                    <span class="block leading-5">paid
+                    </span>
+                </label>
+                </div>
+                <div class="flex items-center">
+                <input id="pro_bono" name="work_type" value="pro_bono" type="radio" class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" />
+                <label for="pro_bono" class="ml-2">
+                    <span class="block leading-5">pro bono
+                    </span>
+                </label>
+                </div>
+                <div class="flex items-center">
+                <input id="contra" name="work_type" value="contra" type="radio" class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" />
+                <label for="contra" class="ml-2">
+                    <span class="block leading-5">contra
+                    </span>
+                </label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="sm:col-span-2 my-5">
+            <legend class="block font-bold leading-5">
+                <span class="border-b-2 border-red">if it's paid work what's your budget?</span>
+            </legend>
+            <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 row-gap-4">
+                <div class="flex items-center">
+                <input id="0-5k" name="budget" value="0-5k" type="radio" class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" />
+                <label for="0-5k" class="ml-2">
+                    <span class="block leading-5">$0 - 5K
+                    </span>
+                </label>
+                </div>
+                <div class="flex items-center">
+                <input id="5k-10k" name="budget" value="5k-10k" type="radio" class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" />
+                <label for="5k-10k" class="ml-2">
+                    <span class="block leading-5">$5K – $10k
+                    </span>
+                </label>
+                </div>
+                <div class="flex items-center">
+                <input id="10-20k" name="budget" value="10-20k" type="radio" class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" />
+                <label for="10-20k" class="ml-2">
+                    <span class="block leading-5">$10K – $20k
+                    </span>
+                </label>
+                </div>
+                <div class="flex items-center">
+                <input id="20k+" name="budget" value="20k+" type="radio" class="form-radio h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" />
+                <label for="20k+" class="ml-2">
+                    <span class="block leading-5">above $20k
+                    </span>
+                </label>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="sm:col-span-2 my-3">
+            <div class="flex justify-between">
+                <label for="how_can_we_help" class="block leading-5 ">the brief — how can i help you?
+                </label>
+                <span class="text-sm leading-5 text-gray-500">Max. 500 characters
+                </span>
+            </div>
+            <div class="mt-1 relative shadow-sm">
+                <textarea id="how_can_we_help" rows="4" class="rounded-sm form-textarea px-3 py-1 block w-full transition ease-in-out duration-150 leading-7 text-black"></textarea>
+            </div>
+        </div>
+
+        <fieldset class="sm:col-span-2">
+            <legend class="block font-bold">
+                <span class="border-b-2 border-red">do our values align?</span>
+            </legend>
+            <div class="mb-6">
+                <label class="block">
+                    <input class="mr-2 leading-tight" type="checkbox">
+                        <span class="text-md">
+                            i acknowledge traditional land holders as the rightful custodians of the land
+                        </span>
+                </label>
+                <label class="block">
+                    <input class="mr-2 leading-tight" type="checkbox">
+                        <span class="text-md">
+                            i believe black lives matter
+                        </span>
+                </label>
+            </div>
+        </fieldset>
+
+        <!--div class="sm:col-span-2">
+            <label for="how_did_you_hear_about_us" class="block leading-5 ">How did you hear about me?
+            </label>
+            <div class="mt-1 relative shadow-sm">
+                <input id="how_did_you_hear_about_us" class="form-input rounded-sm p-2 block w-full transition ease-in-out duration-150 leading-7 text-black" />
+            </div>
+        </div-->
+
+        
+        
+        <div class="text-left sm:col-span-1">
+        <span class="inline-flex rounded-md shadow-sm">
+            <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent text-sm text-black text-xl leading-5 rounded-md bg-yellow hover:bg-red focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition duration-150 ease-in-out">
+            click to submit form
+            </button>
+        </span>
+        </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+{% if quote.items %}
+
+    <div class="">
+      <div class="relative mx-auto divide-y divide-gray-900">
+        {% for item in quote.items %}
+          <div class="py-8">
+            <h2 class="text-2xl tracking-tight font- text-white sm:text-3xl">
+              <span class="text-red font-serif">" </span>{{ item.quote }}<span class="text-red font-serif"> "</span>
+            </h2>
+            <p class="mt-1 text-xl text-gray-500">
+              <span class="text-gray-700">—</span>
+              <span class="font-semibold text-yellow">{{ item.source }}</span>{% if item.position %}, {{ item.position }}{% endif %}
+            </p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+{% endif %}

@@ -1,0 +1,48 @@
+<div class="{% if site.fullheighthome %}h-screen{% endif %} max-w-screen-{% if maxwidth %}{{ maxwidth }}{% else %}md{% endif %} mx-auto text-center">
+
+    
+    <div class="mt-10">
+        
+        {% if page.url == '/' %}
+            <div class="mb-2">
+        {% else %}    
+            <a class="mb-2" href="/">
+        {% endif %}
+                <span class="mb-0 text-3xl sm:text-4xl leading-none" role="img" aria-label="rainbow">🌈</span> 
+                <span class="mb-0 text-3xl sm:text-4xl leading-none" role="img" aria-label="red love heart">❤️</span>
+                <h1 class="-mt-1 mb-3 text-yellow font-serif font-extrabold text-6xl tracking-tight leading-none">
+                    {{ site.name }}
+                </h1>
+        {% if page.url == '/' %}
+            </div>
+        {% else %} 
+            </a>
+        {% endif %}
+
+            <h2 class="mb-4 font-semibold text-white text-2xl tracking-tight leading-tight">
+                <!--coding & consulting-->
+                creative, coding, & consulting
+                <!--expert advice & solutions-->
+                <!--independant expert advice-->
+                <!--full-suite digital creative-->
+                <!--independant expert advice & solutions-->
+            </h2>
+
+    </div>
+
+    {% if page.url !== '/acknowledgement-of-country/' %}
+        <div class="mx-auto max-w-screen-sm">
+            <!--h3 class="font-normal text-white text-lg sm:text-xl tracking-none leading-tight">
+                stoqe saves big & little brands lots of time & money<br class="hidden sm:inline-block">&nbsp;on websites, domains, email. if our values align let's work<br class="hidden sm:inline-block">&nbsp;together, change the world, and save you time & money too.
+            </h3-->
+            <h3 class="font-normal text-white text-lg sm:text-xl tracking-normal leading-tight">
+                stoqe saves big & little brands lots of time & money on<br class="hidden sm:inline-block">&nbsp;websites, domains, & email. if our values align let's work together, change the world, and save you time & money too.
+            </h3>
+            {% if page.url == '/' %}
+                <p class="mt-8 font-semibold text-white text-lg sm:text-xl tracking-none leading-tight">click below to continue...</p>
+            {% endif %}
+        </div>
+    {% else %}
+    {% endif %}
+
+</div>
