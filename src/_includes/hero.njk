@@ -38,9 +38,33 @@
             <h3 class="font-normal text-white text-lg sm:text-xl tracking-normal leading-tight">
                 stoqe saves big & little brands lots of time & money on<br class="hidden sm:inline-block">&nbsp;websites, domains, & email. if our values align let's work together, change the world, and save you time & money too.
             </h3>
+            
             {% if page.url == '/' %}
                 <p class="mt-8 font-semibold text-white text-lg sm:text-xl tracking-none leading-tight">click below to continue...</p>
             {% endif %}
+
+            {#% if page.url !== '/acknowledgement-of-country/' and !== '/' %}
+            <div class="mt-10 relative rounded-lg bg-yellow">
+                <div class="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+                    <div class="pr-16 sm:text-center sm:px-16">
+                        <p class="font-semibold text-black">
+                            <span class="md:hidden">
+                            pro bono & contra offers now available.
+                            </span>
+                            <span class="hidden md:inline">
+                            pro bono & contra offers now available.
+                            </span>
+                            <span class="block sm:ml-2 sm:inline-block">
+                            <a href="#" class="text-black font-bold underline">
+                                Learn more &rarr;
+                            </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endif %#}
+
         </div>
     {% else %}
     {% endif %}
