@@ -42,8 +42,7 @@
         {% if nextlink %}
           <p class="mt-8 text-xl leading-7 text-white">
             <span class="font-bold">{% if page.url == '/contact/' %}return to homepage:{% else %}next page:{% endif %}</span>
-            <a class="text-yellow font-bold tracking-tight border-b-2 border-solid border-red" 
-            {% if orlink %} href="{{ orlink }}" {% else %} href="/{{ nextlink }}/" {% endif %} 
+            <a class="text-yellow font-bold tracking-tight border-b-2 border-solid border-red" href="{% if page.url == '/contact/' %}/{% else %}/{{ nextlink }}/{% endif %}" 
             {% if nextlinkgoal %} onclick="fathom.trackGoal('{{ nextlinkgoal }}', 0);" {% endif %}
             >{{ nexttext }}</a>  
             
