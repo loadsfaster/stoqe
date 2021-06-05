@@ -1,46 +1,15 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+node_modules
+dist
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+# npp modules
+node_modules
 
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
+# generated files
+hashes_*.json
 
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# secret data
+.env
 
 # More #
 ######################
-node_modules
-amta/i/*
 _gi/*
-css/.sass_cache/*
-prepros-6.config
-_*

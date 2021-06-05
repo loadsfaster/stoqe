@@ -1,0 +1,13 @@
+[build]
+  command = "npm run production"
+  publish = "dist"
+
+  [[redirects]]
+  from = "/dns"
+  to = "https://www.whatsmydns.net/"
+  status = 302
+
+  [[redirects]]
+  from = "and.stoqe.com"
+  to = "https://www.stoqe.com/"
+  status = 301
